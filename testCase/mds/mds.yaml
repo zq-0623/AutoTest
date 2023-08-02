@@ -1,0 +1,198 @@
+-    url: http://58.63.252.60:32041/v2/sh1/mink/
+     code: '000001'
+     field: kline
+     field_list:
+     - date
+     - prevClose
+     - open
+     - high
+     - low
+     - close
+     - volume
+     - amount
+     - iopv
+     - fp_volume
+     - fp_amount
+     - avg
+     method: get
+     csv_path: ../testCase/mds/mds.csv
+     request:
+          queryParam:
+               select: date,prevClose,open,high,low,close,volume,amount,iopv,fp_volume,fp_amount,avg
+               begin: 0
+               end: -1
+               period: 1
+               date: '20230222'
+     customName:
+          epic: mds数据比对
+          feature: 历史K线
+          story: mink
+          title: '000001'
+
+
+
+-    url: http://58.63.252.60:32041/v2/sh1/mink/
+     code: '600000'
+     field: kline
+     field_list:
+     - date
+     - prevClose
+     - open
+     - high
+     - low
+     - close
+     - volume
+     - amount
+     - iopv
+     - fp_volume
+     - fp_amount
+     - avg
+     method: get
+     csv_path: ../testCase/mds/mds.csv
+     request:
+          queryParam:
+               select: date,prevClose,open,high,low,close,volume,amount,iopv,fp_volume,fp_amount,avg
+               begin: 0
+               end: -1
+               period: 1
+               date: '20230222'
+     customName:
+          epic: mds数据比对
+          feature: 历史K线
+          story: mink
+          title: '600000'
+
+
+
+-    url: http://58.63.252.60:32041/v2/sh1/mink/
+     code: '600004'
+     field: kline
+     field_list:
+     - date
+     - prevClose
+     - open
+     - high
+     - low
+     - close
+     - volume
+     - amount
+     - iopv
+     - fp_volume
+     - fp_amount
+     - avg
+     method: get
+     csv_path: ../testCase/mds/mds.csv
+     request:
+          queryParam:
+               select: date,prevClose,open,high,low,close,volume,amount,iopv,fp_volume,fp_amount,avg
+               begin: 0
+               end: -1
+               period: 1
+               date: '20230222'
+     customName:
+          epic: mds数据比对
+          feature: 历史K线
+          story: mink
+          title: '600004'
+
+
+
+-    url: http://58.63.252.60:32041/v2/sh1/mink/
+     code: '600010'
+     field: kline
+     field_list:
+     - date
+     - prevClose
+     - open
+     - high
+     - low
+     - close
+     - volume
+     - amount
+     - iopv
+     - fp_volume
+     - fp_amount
+     - avg
+     method: get
+     csv_path: ../testCase/mds/mds.csv
+     request:
+          queryParam:
+               select: date,prevClose,open,high,low,close,volume,amount,iopv,fp_volume,fp_amount,avg
+               begin: 0
+               end: -1
+               period: 1
+               date: '20230222'
+     customName:
+          epic: mds数据比对
+          feature: 历史K线
+          story: mink
+          title: '600010'
+
+
+
+-    url: http://58.63.252.60:32041/v2/sh1/mink/
+     code: '600000'
+     field: kline
+     field_list:
+     - date
+     - prevClose
+     - open
+     - high
+     - low
+     - close
+     - volume
+     - amount
+     - iopv
+     - fp_volume
+     - fp_amount
+     - avg
+     method: get
+     csv_path: ../testCase/mds/mds.csv
+     request:
+          queryParam:
+               select: date,prevClose,open,high,low,close,volume,amount,iopv,fp_volume,fp_amount,avg
+               begin: 0
+               end: -1
+               period: 1
+               date: '20230222'
+     customName:
+          epic: mds数据比对
+          feature: 历史K线
+          story: mink
+          title: '600000'
+
+
+
+-    url: http://58.63.252.60:32041/v2/sh1/mink/
+     code: '600000'
+     field: kline
+     field_list:
+     - date
+     - prevClose
+     - open
+     - high
+     - low
+     - close
+     - volume
+     - amount
+     - iopv
+     - fp_volume
+     - fp_amount
+     - avg
+     method: get
+     csv_path: ../testCase/mds/mds.csv
+     request:
+          queryParam:
+               select: date,prevClose,open,high,low,close,volume,amount,iopv,fp_volume,fp_amount,avg
+               begin: 0
+               end: -1
+               period: 1
+               date: '20230222'
+     customName:
+          epic: mds数据比对
+          feature: 历史K线
+          story: mink
+          title: '600000'
+
+
+

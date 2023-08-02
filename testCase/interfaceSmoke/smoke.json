@@ -1,0 +1,83 @@
+[
+  {
+    "url": "http://114.80.155.47:22013/v2/stockreportlist",
+    "method": "get",
+    "csv_path": "../testCase/InterfaceSmoke/F10.csv",
+    "request": {
+      "header": {
+        "Content-Type": "application/json",
+        "Token": "MitakeWeb",
+        "Symbol": "$csv{Symbol}",
+        "Param": "$csv{Param}",
+        "src": "d"
+      }
+    },
+    "customName": {
+      "epic": "冒烟测试",
+      "feature": "F10",
+      "story": "xx接口",
+      "title": "xx用例1"
+    }
+  },
+  {
+    "url": "http://114.80.155.57:22013/v2/stockreportlist",
+    "method": "get",
+    "csv_path": "../testCase/InterfaceSmoke/F10.csv",
+    "request": {
+      "header": {
+        "Content-Type": "application/json",
+        "Token": "MitakeWeb",
+        "Symbol": "$csv{Symbol}",
+        "Param": "$csv{Param}",
+        "src": "d"
+      }
+    },
+    "customName": {
+      "epic": "冒烟测试",
+      "feature": "F10",
+      "story": "xx接口",
+      "title": "xx用例1"
+    }
+  },
+  {
+    "url": "http://172.34.80.131:9000/api/testPlan/new",
+    "method": "post",
+    "request": {
+      "header": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "filterFactors": [],
+        "location": "",
+        "type": "update",
+        "content": [
+          {
+            "confirmFlag": "1"
+          }
+        ]
+      }
+    },
+    "customName": {
+      "epic": "冒烟测试",
+      "feature": "post",
+      "story": "xx接口",
+      "title": "xx用例1"
+    }
+  },
+  {
+    "url": "http://luyansdk.sseinfo.com/m_public/getRoadShowListByPage.do",
+    "method": "get",
+    "request": {
+      "queryParam": {
+        "pageIndex": 1,
+        "pageSize": 2
+      }
+    },
+    "customName": {
+      "epic": "冒烟测试",
+      "feature": "路演",
+      "story": "xx接口",
+      "title": "xx用例1"
+    }
+  }
+]

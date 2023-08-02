@@ -1,0 +1,804 @@
+{"code":"600157.sh","date":"20230710","time":" 9454500","total":16,"begin":16,"end":16,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9454500","total":16,"begin":16,"end":16,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9454500","total":16,"begin":16,"end":16,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9454500","total":16,"begin":16,"end":16,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9454500","total":16,"begin":16,"end":16,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9454500","total":16,"begin":16,"end":16,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9454500","total":16,"begin":16,"end":16,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9454500","total":16,"begin":16,"end":16,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9454500","total":16,"begin":16,"end":16,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9454500","total":16,"begin":16,"end":16,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9461800","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9461800","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9461800","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9461800","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9461800","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9461800","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9461800","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9461800","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9461800","total":17,"begin":17,"end":17,"line":[]}
+
+
+{"code":"600157.sh","date":"20230710","time":" 9461800","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9461800","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9465700","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9465700","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9465700","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9465700","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9465700","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9465700","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9465700","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9465700","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9465700","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9465700","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9465700","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9465700","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9473300","total":18,"begin":18,"end":18,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9473300","total":18,"begin":18,"end":18,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9473300","total":18,"begin":18,"end":18,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9465700","total":17,"begin":17,"end":17,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9473300","total":18,"begin":18,"end":18,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9473300","total":18,"begin":18,"end":18,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9473300","total":18,"begin":18,"end":18,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9473300","total":18,"begin":18,"end":18,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9473300","total":18,"begin":18,"end":18,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9473300","total":18,"begin":18,"end":18,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9480300","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9480300","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9473300","total":18,"begin":18,"end":18,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9480300","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9480300","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9480300","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9480300","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9480300","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9480300","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9480300","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9480300","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9480300","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9480300","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9484200","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9480300","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9484200","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9484200","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9484200","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9484200","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9484200","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9484200","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9484200","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9484200","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9484200","total":19,"begin":19,"end":19,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9491500","total":20,"begin":20,"end":20,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9500000","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9504500","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9504500","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9504500","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9504500","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9504500","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9504500","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9504500","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9504500","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9504500","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9504500","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9504500","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9504500","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9512100","total":22,"begin":22,"end":22,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9512100","total":22,"begin":22,"end":22,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9504500","total":21,"begin":21,"end":21,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9512100","total":22,"begin":22,"end":22,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9512100","total":22,"begin":22,"end":22,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9512100","total":22,"begin":22,"end":22,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9512100","total":22,"begin":22,"end":22,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9512100","total":22,"begin":22,"end":22,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9512100","total":22,"begin":22,"end":22,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9512100","total":22,"begin":22,"end":22,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9512100","total":22,"begin":22,"end":22,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9512100","total":22,"begin":22,"end":22,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9520000","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9524200","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9524200","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9524200","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9524200","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9524200","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9524200","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9524200","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9524200","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9524200","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9524200","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9524200","total":23,"begin":23,"end":23,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9531500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9531500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9531500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9531500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9531500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9531500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9531500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9531500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9531500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9531500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9534500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9531500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9534500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9534500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9534500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9534500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9534500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9534500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9534500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9534500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9534500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9534500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9534500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9542400","total":25,"begin":25,"end":25,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9542400","total":25,"begin":25,"end":25,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9542400","total":25,"begin":25,"end":25,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9542400","total":25,"begin":25,"end":25,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9534500","total":24,"begin":24,"end":24,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9542400","total":25,"begin":25,"end":25,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9542400","total":25,"begin":25,"end":25,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9542400","total":25,"begin":25,"end":25,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9542400","total":25,"begin":25,"end":25,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9542400","total":25,"begin":25,"end":25,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9542400","total":25,"begin":25,"end":25,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9550000","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9542400","total":25,"begin":25,"end":25,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9550000","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9550000","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9550000","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9550000","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9550000","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9550000","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9550000","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9550000","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9550000","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9550000","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9550000","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9550000","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9554200","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9554200","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9554200","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9554200","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9554200","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9554200","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9554200","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9554200","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9554200","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9554200","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9554200","total":26,"begin":26,"end":26,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9561800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9561800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9561800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9561800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9561800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9561800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9561800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9561800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9561800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9561800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9573000","total":28,"begin":28,"end":28,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9564800","total":27,"begin":27,"end":27,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9573000","total":28,"begin":28,"end":28,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9573000","total":28,"begin":28,"end":28,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9573000","total":28,"begin":28,"end":28,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9573000","total":28,"begin":28,"end":28,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9573000","total":28,"begin":28,"end":28,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9573000","total":28,"begin":28,"end":28,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9573000","total":28,"begin":28,"end":28,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9573000","total":28,"begin":28,"end":28,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9580300","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9580300","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9580300","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9580300","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9573000","total":28,"begin":28,"end":28,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9580300","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9580300","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9580300","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9580300","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9580300","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9580300","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9583600","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9580300","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9583600","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9583600","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9583600","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9583600","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9583600","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9583600","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9583600","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9583600","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9583600","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9583600","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9583600","total":29,"begin":29,"end":29,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":" 9591500","total":30,"begin":30,"end":30,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10000300","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10000300","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10000300","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10000300","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10000300","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10000300","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10000300","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10000300","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10000300","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10000300","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10000300","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10000300","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10012100","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10003900","total":31,"begin":31,"end":31,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10012100","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10012100","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10012100","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10012100","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10012100","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10012100","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10012100","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10012100","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10012100","total":32,"begin":32,"end":32,"line":[]}
+
+{"code":"600157.sh","date":"20230710","time":"10015700","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10012100","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10015700","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10015700","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10015700","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10015700","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10015700","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10015700","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10015700","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10015700","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10015700","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10015700","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10015700","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10015700","total":32,"begin":32,"end":32,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10024200","total":33,"begin":33,"end":33,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10032400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10032400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10032400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10032400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10032400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10032400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10032400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10032400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10032400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10032400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10035400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10035400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10035400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10035400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10035400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10035400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10035400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10035400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10035400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10035400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10035400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10035400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10035400","total":34,"begin":34,"end":34,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10043600","total":35,"begin":35,"end":35,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10043600","total":35,"begin":35,"end":35,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10043600","total":35,"begin":35,"end":35,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10043600","total":35,"begin":35,"end":35,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10043600","total":35,"begin":35,"end":35,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10043600","total":35,"begin":35,"end":35,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10043600","total":35,"begin":35,"end":35,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10043600","total":35,"begin":35,"end":35,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10043600","total":35,"begin":35,"end":35,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10043600","total":35,"begin":35,"end":35,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10043600","total":35,"begin":35,"end":35,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10043600","total":35,"begin":35,"end":35,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10043600","total":35,"begin":35,"end":35,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10051500","total":36,"begin":36,"end":36,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10051500","total":36,"begin":36,"end":36,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10051500","total":36,"begin":36,"end":36,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10051500","total":36,"begin":36,"end":36,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10051500","total":36,"begin":36,"end":36,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10051500","total":36,"begin":36,"end":36,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10051500","total":36,"begin":36,"end":36,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10051500","total":36,"begin":36,"end":36,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10051500","total":36,"begin":36,"end":36,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10051500","total":36,"begin":36,"end":36,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10054800","total":36,"begin":36,"end":36,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10054800","total":36,"begin":36,"end":36,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10054800","total":36,"begin":36,"end":36,"line":[]}
+{"code":"600157.sh","date":"20230710","time":"10051500","total":36,"begin":36,"end":36,"line":[]}
+=================================================================================================
+{"code":"700002.bk","date":"20230710","time":"10445700","blockinfo":["700002.bk","E00001","H股",516912]}
+{"code":"700002.bk","date":"20230710","time":"10445700","blockinfo":["700002.bk","E00001","H股",516912]}
+{"code":"700002.bk","date":"20230710","time":"10445700","blockinfo":["700002.bk","E00001","H股",516912]}
+{"code":"700002.bk","date":"20230710","time":"10445700","blockinfo":["700002.bk","E00001","H股",516912]}
+{"code":"700002.bk","date":"20230710","time":"10445700","blockinfo":["700002.bk","E00001","H股",516912]}
+{"code":"700002.bk","date":"20230710","time":"10445700","blockinfo":["700002.bk","E00001","H股",516912]}
+{"code":"700002.bk","date":"20230710","time":"10445700","blockinfo":["700002.bk","E00001","H股",516912]}
+{"code":"700002.bk","date":"20230710","time":"10445700","blockinfo":["700002.bk","E00001","H股",516912]}
+{"code":"700002.bk","date":"20230710","time":"10445700","blockinfo":["700002.bk","E00001","H股",516912]}
+{"code":"700002.bk","date":"20230710","time":"10445700","blockinfo":["700002.bk","E00001","H股",516912]}
+{"code":"700002.bk","date":"20230710","time":"10452700","blockinfo":["700002.bk","E00001","H股",517042]}
+{"code":"700002.bk","date":"20230710","time":"10452700","blockinfo":["700002.bk","E00001","H股",517042]}
+{"code":"700002.bk","date":"20230710","time":"10452700","blockinfo":["700002.bk","E00001","H股",517042]}
+{"code":"700002.bk","date":"20230710","time":"10445700","blockinfo":["700002.bk","E00001","H股",516912]}
+{"code":"700002.bk","date":"20230710","time":"10452700","blockinfo":["700002.bk","E00001","H股",517042]}
+{"code":"700002.bk","date":"20230710","time":"10452700","blockinfo":["700002.bk","E00001","H股",517042]}
+{"code":"700002.bk","date":"20230710","time":"10452700","blockinfo":["700002.bk","E00001","H股",517042]}
+{"code":"700002.bk","date":"20230710","time":"10452700","blockinfo":["700002.bk","E00001","H股",517042]}
+{"code":"700002.bk","date":"20230710","time":"10452700","blockinfo":["700002.bk","E00001","H股",517042]}
+{"code":"700002.bk","date":"20230710","time":"10452700","blockinfo":["700002.bk","E00001","H股",517042]}
+{"code":"700002.bk","date":"20230710","time":"10452700","blockinfo":["700002.bk","E00001","H股",517042]}
+{"code":"700002.bk","date":"20230710","time":"10452700","blockinfo":["700002.bk","E00001","H股",517042]}
+{"code":"700002.bk","date":"20230710","time":"10452700","blockinfo":["700002.bk","E00001","H股",517042]}
+{"code":"700002.bk","date":"20230710","time":"10460900","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10460900","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10460900","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10460900","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10460900","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10460900","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10460900","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10460900","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10460900","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10460900","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10460900","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10460900","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10464500","blockinfo":["700002.bk","E00001","H股",517023]}
+{"code":"700002.bk","date":"20230710","time":"10460900","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10464500","blockinfo":["700002.bk","E00001","H股",517023]}
+{"code":"700002.bk","date":"20230710","time":"10464500","blockinfo":["700002.bk","E00001","H股",517023]}
+{"code":"700002.bk","date":"20230710","time":"10464500","blockinfo":["700002.bk","E00001","H股",517023]}
+{"code":"700002.bk","date":"20230710","time":"10464500","blockinfo":["700002.bk","E00001","H股",517023]}
+{"code":"700002.bk","date":"20230710","time":"10464500","blockinfo":["700002.bk","E00001","H股",517023]}
+{"code":"700002.bk","date":"20230710","time":"10464500","blockinfo":["700002.bk","E00001","H股",517023]}
+{"code":"700002.bk","date":"20230710","time":"10464500","blockinfo":["700002.bk","E00001","H股",517023]}
+{"code":"700002.bk","date":"20230710","time":"10464500","blockinfo":["700002.bk","E00001","H股",517023]}
+{"code":"700002.bk","date":"20230710","time":"10464500","blockinfo":["700002.bk","E00001","H股",517023]}
+{"code":"700002.bk","date":"20230710","time":"10464500","blockinfo":["700002.bk","E00001","H股",517023]}
+{"code":"700002.bk","date":"20230710","time":"10464500","blockinfo":["700002.bk","E00001","H股",517023]}
+{"code":"700002.bk","date":"20230710","time":"10464500","blockinfo":["700002.bk","E00001","H股",517023]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10481500","blockinfo":["700002.bk","E00001","H股",517109]}
+{"code":"700002.bk","date":"20230710","time":"10473000","blockinfo":["700002.bk","E00001","H股",517228]}
+{"code":"700002.bk","date":"20230710","time":"10481500","blockinfo":["700002.bk","E00001","H股",517109]}
+{"code":"700002.bk","date":"20230710","time":"10481500","blockinfo":["700002.bk","E00001","H股",517109]}
+{"code":"700002.bk","date":"20230710","time":"10481500","blockinfo":["700002.bk","E00001","H股",517109]}
+{"code":"700002.bk","date":"20230710","time":"10481500","blockinfo":["700002.bk","E00001","H股",517109]}
+{"code":"700002.bk","date":"20230710","time":"10481500","blockinfo":["700002.bk","E00001","H股",517109]}
+{"code":"700002.bk","date":"20230710","time":"10481500","blockinfo":["700002.bk","E00001","H股",517109]}
+{"code":"700002.bk","date":"20230710","time":"10481500","blockinfo":["700002.bk","E00001","H股",517109]}
+{"code":"700002.bk","date":"20230710","time":"10481500","blockinfo":["700002.bk","E00001","H股",517109]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10481500","blockinfo":["700002.bk","E00001","H股",517109]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10492700","blockinfo":["700002.bk","E00001","H股",517242]}
+{"code":"700002.bk","date":"20230710","time":"10492700","blockinfo":["700002.bk","E00001","H股",517242]}
+{"code":"700002.bk","date":"20230710","time":"10492700","blockinfo":["700002.bk","E00001","H股",517242]}
+{"code":"700002.bk","date":"20230710","time":"10492700","blockinfo":["700002.bk","E00001","H股",517242]}
+{"code":"700002.bk","date":"20230710","time":"10492700","blockinfo":["700002.bk","E00001","H股",517242]}
+{"code":"700002.bk","date":"20230710","time":"10484500","blockinfo":["700002.bk","E00001","H股",517262]}
+{"code":"700002.bk","date":"20230710","time":"10492700","blockinfo":["700002.bk","E00001","H股",517242]}
+{"code":"700002.bk","date":"20230710","time":"10492700","blockinfo":["700002.bk","E00001","H股",517242]}
+{"code":"700002.bk","date":"20230710","time":"10492700","blockinfo":["700002.bk","E00001","H股",517242]}
+{"code":"700002.bk","date":"20230710","time":"10492700","blockinfo":["700002.bk","E00001","H股",517242]}
+{"code":"700002.bk","date":"20230710","time":"10492700","blockinfo":["700002.bk","E00001","H股",517242]}
+{"code":"700002.bk","date":"20230710","time":"10492700","blockinfo":["700002.bk","E00001","H股",517242]}
+{"code":"700002.bk","date":"20230710","time":"10492700","blockinfo":["700002.bk","E00001","H股",517242]}
+{"code":"700002.bk","date":"20230710","time":"10500900","blockinfo":["700002.bk","E00001","H股",517308]}
+{"code":"700002.bk","date":"20230710","time":"10492700","blockinfo":["700002.bk","E00001","H股",517242]}
+{"code":"700002.bk","date":"20230710","time":"10500900","blockinfo":["700002.bk","E00001","H股",517308]}
+{"code":"700002.bk","date":"20230710","time":"10500900","blockinfo":["700002.bk","E00001","H股",517308]}
+{"code":"700002.bk","date":"20230710","time":"10500900","blockinfo":["700002.bk","E00001","H股",517308]}
+{"code":"700002.bk","date":"20230710","time":"10500900","blockinfo":["700002.bk","E00001","H股",517308]}
+{"code":"700002.bk","date":"20230710","time":"10500900","blockinfo":["700002.bk","E00001","H股",517308]}
+{"code":"700002.bk","date":"20230710","time":"10500900","blockinfo":["700002.bk","E00001","H股",517308]}
+{"code":"700002.bk","date":"20230710","time":"10500900","blockinfo":["700002.bk","E00001","H股",517308]}
+{"code":"700002.bk","date":"20230710","time":"10500900","blockinfo":["700002.bk","E00001","H股",517308]}
+{"code":"700002.bk","date":"20230710","time":"10500900","blockinfo":["700002.bk","E00001","H股",517308]}
+{"code":"700002.bk","date":"20230710","time":"10500900","blockinfo":["700002.bk","E00001","H股",517308]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10512700","blockinfo":["700002.bk","E00001","H股",517338]}
+{"code":"700002.bk","date":"20230710","time":"10512700","blockinfo":["700002.bk","E00001","H股",517338]}
+{"code":"700002.bk","date":"20230710","time":"10512700","blockinfo":["700002.bk","E00001","H股",517338]}
+{"code":"700002.bk","date":"20230710","time":"10504500","blockinfo":["700002.bk","E00001","H股",517416]}
+{"code":"700002.bk","date":"20230710","time":"10512700","blockinfo":["700002.bk","E00001","H股",517338]}
+{"code":"700002.bk","date":"20230710","time":"10512700","blockinfo":["700002.bk","E00001","H股",517338]}
+{"code":"700002.bk","date":"20230710","time":"10512700","blockinfo":["700002.bk","E00001","H股",517338]}
+{"code":"700002.bk","date":"20230710","time":"10512700","blockinfo":["700002.bk","E00001","H股",517338]}
+{"code":"700002.bk","date":"20230710","time":"10512700","blockinfo":["700002.bk","E00001","H股",517338]}
+{"code":"700002.bk","date":"20230710","time":"10512700","blockinfo":["700002.bk","E00001","H股",517338]}
+{"code":"700002.bk","date":"20230710","time":"10512700","blockinfo":["700002.bk","E00001","H股",517338]}
+{"code":"700002.bk","date":"20230710","time":"10512700","blockinfo":["700002.bk","E00001","H股",517338]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10512700","blockinfo":["700002.bk","E00001","H股",517338]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10520300","blockinfo":["700002.bk","E00001","H股",517390]}
+{"code":"700002.bk","date":"20230710","time":"10525100","blockinfo":["700002.bk","E00001","H股",517361]}
+{"code":"700002.bk","date":"20230710","time":"10525100","blockinfo":["700002.bk","E00001","H股",517361]}
+{"code":"700002.bk","date":"20230710","time":"10525100","blockinfo":["700002.bk","E00001","H股",517361]}
+{"code":"700002.bk","date":"20230710","time":"10525100","blockinfo":["700002.bk","E00001","H股",517361]}
+{"code":"700002.bk","date":"20230710","time":"10525100","blockinfo":["700002.bk","E00001","H股",517361]}
+{"code":"700002.bk","date":"20230710","time":"10525100","blockinfo":["700002.bk","E00001","H股",517361]}
+{"code":"700002.bk","date":"20230710","time":"10525100","blockinfo":["700002.bk","E00001","H股",517361]}
+{"code":"700002.bk","date":"20230710","time":"10525100","blockinfo":["700002.bk","E00001","H股",517361]}
+{"code":"700002.bk","date":"20230710","time":"10525100","blockinfo":["700002.bk","E00001","H股",517361]}
+{"code":"700002.bk","date":"20230710","time":"10525100","blockinfo":["700002.bk","E00001","H股",517361]}
+{"code":"700002.bk","date":"20230710","time":"10525100","blockinfo":["700002.bk","E00001","H股",517361]}
+{"code":"700002.bk","date":"20230710","time":"10525100","blockinfo":["700002.bk","E00001","H股",517361]}
+{"code":"700002.bk","date":"20230710","time":"10525100","blockinfo":["700002.bk","E00001","H股",517361]}
+{"code":"700002.bk","date":"20230710","time":"10533000","blockinfo":["700002.bk","E00001","H股",517158]}
+{"code":"700002.bk","date":"20230710","time":"10533000","blockinfo":["700002.bk","E00001","H股",517158]}
+{"code":"700002.bk","date":"20230710","time":"10533000","blockinfo":["700002.bk","E00001","H股",517158]}
+{"code":"700002.bk","date":"20230710","time":"10533000","blockinfo":["700002.bk","E00001","H股",517158]}
+{"code":"700002.bk","date":"20230710","time":"10533000","blockinfo":["700002.bk","E00001","H股",517158]}
+{"code":"700002.bk","date":"20230710","time":"10533000","blockinfo":["700002.bk","E00001","H股",517158]}
+{"code":"700002.bk","date":"20230710","time":"10533000","blockinfo":["700002.bk","E00001","H股",517158]}
+{"code":"700002.bk","date":"20230710","time":"10533000","blockinfo":["700002.bk","E00001","H股",517158]}
+{"code":"700002.bk","date":"20230710","time":"10533000","blockinfo":["700002.bk","E00001","H股",517158]}
+{"code":"700002.bk","date":"20230710","time":"10533000","blockinfo":["700002.bk","E00001","H股",517158]}
+{"code":"700002.bk","date":"20230710","time":"10540000","blockinfo":["700002.bk","E00001","H股",517373]}
+{"code":"700002.bk","date":"20230710","time":"10533000","blockinfo":["700002.bk","E00001","H股",517158]}
+{"code":"700002.bk","date":"20230710","time":"10540000","blockinfo":["700002.bk","E00001","H股",517373]}
+{"code":"700002.bk","date":"20230710","time":"10540000","blockinfo":["700002.bk","E00001","H股",517373]}
+{"code":"700002.bk","date":"20230710","time":"10540000","blockinfo":["700002.bk","E00001","H股",517373]}
+{"code":"700002.bk","date":"20230710","time":"10540000","blockinfo":["700002.bk","E00001","H股",517373]}
+{"code":"700002.bk","date":"20230710","time":"10540000","blockinfo":["700002.bk","E00001","H股",517373]}
+{"code":"700002.bk","date":"20230710","time":"10540000","blockinfo":["700002.bk","E00001","H股",517373]}
+{"code":"700002.bk","date":"20230710","time":"10540000","blockinfo":["700002.bk","E00001","H股",517373]}
+{"code":"700002.bk","date":"20230710","time":"10540000","blockinfo":["700002.bk","E00001","H股",517373]}
+{"code":"700002.bk","date":"20230710","time":"10540000","blockinfo":["700002.bk","E00001","H股",517373]}
+{"code":"700002.bk","date":"20230710","time":"10540000","blockinfo":["700002.bk","E00001","H股",517373]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10552100","blockinfo":["700002.bk","E00001","H股",517381]}
+{"code":"700002.bk","date":"20230710","time":"10543900","blockinfo":["700002.bk","E00001","H股",517391]}
+{"code":"700002.bk","date":"20230710","time":"10552100","blockinfo":["700002.bk","E00001","H股",517381]}
+{"code":"700002.bk","date":"20230710","time":"10552100","blockinfo":["700002.bk","E00001","H股",517381]}
+{"code":"700002.bk","date":"20230710","time":"10552100","blockinfo":["700002.bk","E00001","H股",517381]}
+{"code":"700002.bk","date":"20230710","time":"10552100","blockinfo":["700002.bk","E00001","H股",517381]}
+{"code":"700002.bk","date":"20230710","time":"10552100","blockinfo":["700002.bk","E00001","H股",517381]}
+{"code":"700002.bk","date":"20230710","time":"10552100","blockinfo":["700002.bk","E00001","H股",517381]}
+{"code":"700002.bk","date":"20230710","time":"10552100","blockinfo":["700002.bk","E00001","H股",517381]}
+{"code":"700002.bk","date":"20230710","time":"10552100","blockinfo":["700002.bk","E00001","H股",517381]}
+{"code":"700002.bk","date":"20230710","time":"10552100","blockinfo":["700002.bk","E00001","H股",517381]}
+{"code":"700002.bk","date":"20230710","time":"10552100","blockinfo":["700002.bk","E00001","H股",517381]}
+{"code":"700002.bk","date":"20230710","time":"10552100","blockinfo":["700002.bk","E00001","H股",517381]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10560300","blockinfo":["700002.bk","E00001","H股",517227]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10564500","blockinfo":["700002.bk","E00001","H股",517115]}
+{"code":"700002.bk","date":"20230710","time":"10572700","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"10572700","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"10572700","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"10572700","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"10572700","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"10572700","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"10572700","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"10572700","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"10572700","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"10572700","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"10580000","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10572700","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"10580000","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10580000","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10580000","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10580000","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10580000","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10580000","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10580000","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10580000","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10583000","blockinfo":["700002.bk","E00001","H股",517033]}
+{"code":"700002.bk","date":"20230710","time":"10580000","blockinfo":["700002.bk","E00001","H股",516958]}
+{"code":"700002.bk","date":"20230710","time":"10583000","blockinfo":["700002.bk","E00001","H股",517033]}
+{"code":"700002.bk","date":"20230710","time":"10583000","blockinfo":["700002.bk","E00001","H股",517033]}
+{"code":"700002.bk","date":"20230710","time":"10583000","blockinfo":["700002.bk","E00001","H股",517033]}
+{"code":"700002.bk","date":"20230710","time":"10583000","blockinfo":["700002.bk","E00001","H股",517033]}
+{"code":"700002.bk","date":"20230710","time":"10583000","blockinfo":["700002.bk","E00001","H股",517033]}
+{"code":"700002.bk","date":"20230710","time":"10583000","blockinfo":["700002.bk","E00001","H股",517033]}
+{"code":"700002.bk","date":"20230710","time":"10583000","blockinfo":["700002.bk","E00001","H股",517033]}
+{"code":"700002.bk","date":"20230710","time":"10583000","blockinfo":["700002.bk","E00001","H股",517033]}
+{"code":"700002.bk","date":"20230710","time":"10583000","blockinfo":["700002.bk","E00001","H股",517033]}
+{"code":"700002.bk","date":"20230710","time":"10583000","blockinfo":["700002.bk","E00001","H股",517033]}
+{"code":"700002.bk","date":"20230710","time":"10590900","blockinfo":["700002.bk","E00001","H股",517112]}
+{"code":"700002.bk","date":"20230710","time":"10590900","blockinfo":["700002.bk","E00001","H股",517112]}
+{"code":"700002.bk","date":"20230710","time":"10590900","blockinfo":["700002.bk","E00001","H股",517112]}
+{"code":"700002.bk","date":"20230710","time":"10590900","blockinfo":["700002.bk","E00001","H股",517112]}
+{"code":"700002.bk","date":"20230710","time":"10590900","blockinfo":["700002.bk","E00001","H股",517112]}
+{"code":"700002.bk","date":"20230710","time":"10590900","blockinfo":["700002.bk","E00001","H股",517112]}
+{"code":"700002.bk","date":"20230710","time":"10590900","blockinfo":["700002.bk","E00001","H股",517112]}
+{"code":"700002.bk","date":"20230710","time":"10590900","blockinfo":["700002.bk","E00001","H股",517112]}
+{"code":"700002.bk","date":"20230710","time":"10590900","blockinfo":["700002.bk","E00001","H股",517112]}
+{"code":"700002.bk","date":"20230710","time":"10590900","blockinfo":["700002.bk","E00001","H股",517112]}
+{"code":"700002.bk","date":"20230710","time":"10590900","blockinfo":["700002.bk","E00001","H股",517112]}
+{"code":"700002.bk","date":"20230710","time":"10590900","blockinfo":["700002.bk","E00001","H股",517112]}
+{"code":"700002.bk","date":"20230710","time":"10590900","blockinfo":["700002.bk","E00001","H股",517112]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"10595100","blockinfo":["700002.bk","E00001","H股",516994]}
+{"code":"700002.bk","date":"20230710","time":"11003900","blockinfo":["700002.bk","E00001","H股",517117]}
+{"code":"700002.bk","date":"20230710","time":"11003900","blockinfo":["700002.bk","E00001","H股",517117]}
+{"code":"700002.bk","date":"20230710","time":"11003900","blockinfo":["700002.bk","E00001","H股",517117]}
+{"code":"700002.bk","date":"20230710","time":"11003900","blockinfo":["700002.bk","E00001","H股",517117]}
+{"code":"700002.bk","date":"20230710","time":"11003900","blockinfo":["700002.bk","E00001","H股",517117]}
+{"code":"700002.bk","date":"20230710","time":"11003900","blockinfo":["700002.bk","E00001","H股",517117]}
+{"code":"700002.bk","date":"20230710","time":"11003900","blockinfo":["700002.bk","E00001","H股",517117]}
+{"code":"700002.bk","date":"20230710","time":"11003900","blockinfo":["700002.bk","E00001","H股",517117]}
+{"code":"700002.bk","date":"20230710","time":"11003900","blockinfo":["700002.bk","E00001","H股",517117]}
+{"code":"700002.bk","date":"20230710","time":"11003900","blockinfo":["700002.bk","E00001","H股",517117]}
+{"code":"700002.bk","date":"20230710","time":"11003900","blockinfo":["700002.bk","E00001","H股",517117]}
+{"code":"700002.bk","date":"20230710","time":"11011500","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"11011500","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"11011500","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"11011500","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"11011500","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"11011500","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"11011500","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"11011500","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"11011500","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"11011500","blockinfo":["700002.bk","E00001","H股",517015]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11022700","blockinfo":["700002.bk","E00001","H股",516980]}
+{"code":"700002.bk","date":"20230710","time":"11014500","blockinfo":["700002.bk","E00001","H股",516975]}
+{"code":"700002.bk","date":"20230710","time":"11022700","blockinfo":["700002.bk","E00001","H股",516980]}
+{"code":"700002.bk","date":"20230710","time":"11022700","blockinfo":["700002.bk","E00001","H股",516980]}
+{"code":"700002.bk","date":"20230710","time":"11022700","blockinfo":["700002.bk","E00001","H股",516980]}
+{"code":"700002.bk","date":"20230710","time":"11022700","blockinfo":["700002.bk","E00001","H股",516980]}
+{"code":"700002.bk","date":"20230710","time":"11022700","blockinfo":["700002.bk","E00001","H股",516980]}
+{"code":"700002.bk","date":"20230710","time":"11022700","blockinfo":["700002.bk","E00001","H股",516980]}
+{"code":"700002.bk","date":"20230710","time":"11022700","blockinfo":["700002.bk","E00001","H股",516980]}
+{"code":"700002.bk","date":"20230710","time":"11022700","blockinfo":["700002.bk","E00001","H股",516980]}
+{"code":"700002.bk","date":"20230710","time":"11022700","blockinfo":["700002.bk","E00001","H股",516980]}
+{"code":"700002.bk","date":"20230710","time":"11030000","blockinfo":["700002.bk","E00001","H股",517017]}
+{"code":"700002.bk","date":"20230710","time":"11030000","blockinfo":["700002.bk","E00001","H股",517017]}
+{"code":"700002.bk","date":"20230710","time":"11030000","blockinfo":["700002.bk","E00001","H股",517017]}
+{"code":"700002.bk","date":"20230710","time":"11030000","blockinfo":["700002.bk","E00001","H股",517017]}
+{"code":"700002.bk","date":"20230710","time":"11030000","blockinfo":["700002.bk","E00001","H股",517017]}
+{"code":"700002.bk","date":"20230710","time":"11030000","blockinfo":["700002.bk","E00001","H股",517017]}
+{"code":"700002.bk","date":"20230710","time":"11030000","blockinfo":["700002.bk","E00001","H股",517017]}
+{"code":"700002.bk","date":"20230710","time":"11030000","blockinfo":["700002.bk","E00001","H股",517017]}
+{"code":"700002.bk","date":"20230710","time":"11030000","blockinfo":["700002.bk","E00001","H股",517017]}
+{"code":"700002.bk","date":"20230710","time":"11030000","blockinfo":["700002.bk","E00001","H股",517017]}
+{"code":"700002.bk","date":"20230710","time":"11030000","blockinfo":["700002.bk","E00001","H股",517017]}
+{"code":"700002.bk","date":"20230710","time":"11033300","blockinfo":["700002.bk","E00001","H股",516907]}
+{"code":"700002.bk","date":"20230710","time":"11030000","blockinfo":["700002.bk","E00001","H股",517017]}
+{"code":"700002.bk","date":"20230710","time":"11033300","blockinfo":["700002.bk","E00001","H股",516907]}
+{"code":"700002.bk","date":"20230710","time":"11033300","blockinfo":["700002.bk","E00001","H股",516907]}
+{"code":"700002.bk","date":"20230710","time":"11033300","blockinfo":["700002.bk","E00001","H股",516907]}
+{"code":"700002.bk","date":"20230710","time":"11033300","blockinfo":["700002.bk","E00001","H股",516907]}
+{"code":"700002.bk","date":"20230710","time":"11033300","blockinfo":["700002.bk","E00001","H股",516907]}
+{"code":"700002.bk","date":"20230710","time":"11033300","blockinfo":["700002.bk","E00001","H股",516907]}
+{"code":"700002.bk","date":"20230710","time":"11033300","blockinfo":["700002.bk","E00001","H股",516907]}
+{"code":"700002.bk","date":"20230710","time":"11033300","blockinfo":["700002.bk","E00001","H股",516907]}
+{"code":"700002.bk","date":"20230710","time":"11033300","blockinfo":["700002.bk","E00001","H股",516907]}
+{"code":"700002.bk","date":"20230710","time":"11040900","blockinfo":["700002.bk","E00001","H股",516974]}
+{"code":"700002.bk","date":"20230710","time":"11040900","blockinfo":["700002.bk","E00001","H股",516974]}
+{"code":"700002.bk","date":"20230710","time":"11040900","blockinfo":["700002.bk","E00001","H股",516974]}
+{"code":"700002.bk","date":"20230710","time":"11040900","blockinfo":["700002.bk","E00001","H股",516974]}
+{"code":"700002.bk","date":"20230710","time":"11040900","blockinfo":["700002.bk","E00001","H股",516974]}
+{"code":"700002.bk","date":"20230710","time":"11040900","blockinfo":["700002.bk","E00001","H股",516974]}
+{"code":"700002.bk","date":"20230710","time":"11040900","blockinfo":["700002.bk","E00001","H股",516974]}
+{"code":"700002.bk","date":"20230710","time":"11040900","blockinfo":["700002.bk","E00001","H股",516974]}
+{"code":"700002.bk","date":"20230710","time":"11040900","blockinfo":["700002.bk","E00001","H股",516974]}
+{"code":"700002.bk","date":"20230710","time":"11040900","blockinfo":["700002.bk","E00001","H股",516974]}
+{"code":"700002.bk","date":"20230710","time":"11040900","blockinfo":["700002.bk","E00001","H股",516974]}
+{"code":"700002.bk","date":"20230710","time":"11040900","blockinfo":["700002.bk","E00001","H股",516974]}
+{"code":"700002.bk","date":"20230710","time":"11040900","blockinfo":["700002.bk","E00001","H股",516974]}
+{"code":"700002.bk","date":"20230710","time":"11044800","blockinfo":["700002.bk","E00001","H股",516850]}
+{"code":"700002.bk","date":"20230710","time":"11044800","blockinfo":["700002.bk","E00001","H股",516850]}
+{"code":"700002.bk","date":"20230710","time":"11044800","blockinfo":["700002.bk","E00001","H股",516850]}
+{"code":"700002.bk","date":"20230710","time":"11044800","blockinfo":["700002.bk","E00001","H股",516850]}
+{"code":"700002.bk","date":"20230710","time":"11044800","blockinfo":["700002.bk","E00001","H股",516850]}
+{"code":"700002.bk","date":"20230710","time":"11044800","blockinfo":["700002.bk","E00001","H股",516850]}
+{"code":"700002.bk","date":"20230710","time":"11044800","blockinfo":["700002.bk","E00001","H股",516850]}
+{"code":"700002.bk","date":"20230710","time":"11044800","blockinfo":["700002.bk","E00001","H股",516850]}
+{"code":"700002.bk","date":"20230710","time":"11044800","blockinfo":["700002.bk","E00001","H股",516850]}
+{"code":"700002.bk","date":"20230710","time":"11044800","blockinfo":["700002.bk","E00001","H股",516850]}
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+{"code":"700002.bk","date":"20230710","time":"11052100","blockinfo":["700002.bk","E00001","H股",516952]}
+{"code":"700002.bk","date":"20230710","time":"11060600","blockinfo":["700002.bk","E00001","H股",516795]}
+{"code":"700002.bk","date":"20230710","time":"11060600","blockinfo":["700002.bk","E00001","H股",516795]}
+{"code":"700002.bk","date":"20230710","time":"11060600","blockinfo":["700002.bk","E00001","H股",516795]}
+{"code":"700002.bk","date":"20230710","time":"11060600","blockinfo":["700002.bk","E00001","H股",516795]}

@@ -1,0 +1,34 @@
+sh:
+        env1: http://114.80.155.134:22016/v3/quote
+        env2: http://27.151.2.87:22016/v3/quote
+sz:
+        env1: http://114.80.155.134:22016/v3/quote
+        env2: http://27.151.2.87:22016/v3/quote
+bz:
+        env1: http://114.80.155.134:22016/v3/quote
+        env2: http://27.151.2.87:22016/v3/quote
+csi:
+        env1: http://114.80.155.134:22016/v3/quote
+        env2: http://27.151.2.87:22016/v3/quote
+hk:
+        env1: http://114.80.155.133:22016/v3/quote
+        env2: http://123.125.108.248:22016/v3/quote
+#shl2:
+#        env1: http://114.80.155.62:22016/v3/quote
+#        env2: http://27.151.2.88:22016/v3/quote
+#szl2:
+#        env1: http://114.80.155.47:22016/v3/quote
+#        env2: http://27.151.2.89:22016/v3/quote
+#
+#sh:
+#        env1: http://114.80.155.134:22016/v3/quote
+#        env2: http://27.151.2.87:22016/v3/quote
+#sz:
+#        env1: http://114.80.155.134:22016/v3/quote
+#        env2: http://27.151.2.87:22016/v3/quote
+#bz:
+#        env1: http://114.80.155.134:22016/v3/quote
+#        env2: http://27.151.2.87:22016/v3/quote
+#csi:
+#        env1: http://114.80.155.134:22016/v3/quote
+#        env2: http://27.151.2.87:22016/v3/quote

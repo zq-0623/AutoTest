@@ -1,0 +1,55 @@
+-    url1: http://114.80.155.47:22013/v2/stockreportlist
+     url2: http://114.80.155.47:22013/v2/stockreportlist
+     method: get
+     group_key: ID
+     csv_path: ../testCase/InterfaceCompare/compare.csv
+     request:
+          header:
+               Content-Type: application/json
+               Token: MitakeWeb
+               Symbol: 600000.sh
+               Param: -1,,10
+               src: d
+     customName:
+          epic: 数据比对
+          feature: F10
+          story: xx接口
+          title: xx用例1
+
+
+
+-    url1: http://114.80.155.47:22013/v2/stockreportlist
+     url2: http://114.80.155.47:22013/v2/stockreportlist
+     method: get
+     group_key: ID
+     csv_path: ../testCase/InterfaceCompare/compare.csv
+     request:
+          header:
+               Content-Type: application/json
+               Token: MitakeWeb
+               Symbol: 00700.hk
+               Param: -1,,10
+               src: d
+     customName:
+          epic: 数据比对
+          feature: F10
+          story: xx接口
+          title: xx用例1
+
+
+
+-    url1: http://nvyunhq.sseinfo.com:32041/v1/cna/monitor
+     url2: http://previewyunhq.sse.com.cn:32041/v1/cna/monitor
+     method: get
+     request:
+          header:
+               Content-Type: application/json
+               Token: MitakeWeb
+     customName:
+          epic: 数据比对
+          feature: monitor
+          story: xx接口
+          title: xx用例2
+
+
+
