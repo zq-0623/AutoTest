@@ -5,7 +5,14 @@
 @File ：test.py
 @IDE ：PyCharm
 """
+import json
+import os
+import sys
+
+"""
 import io
+import time
+
 import requests
 
 try:
@@ -29,4 +36,33 @@ try:
 except Exception as e:
     print(e)
 
+"""
 
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+
+print(curPath)
+print(rootPath)
+
+stock_path = f"../../testCase/AllStock"
+
+
+def test(path):
+    with open(path,encoding="utf-8") as stock:
+        text_list = json.load(stock)
+        txt_length = len(text_list)
+        print(text_list)
+        print(txt_length)
+        stock_list = []
+        stock_str = ''
+        for m in range(txt_length):
+            stock_str = text_list[m]['s'] + ","
+            stock_list.append(stock_str)
+        print(stock_list)
+        print(len(stock_list))
+
+
+file = "AllStock_bz.txt"
+file_path = f'{stock_path}/{file}'
+test(file_path)

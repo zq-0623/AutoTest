@@ -92,11 +92,12 @@ def SseOptionQuote(url, headers, **kwargs):
 if __name__ == '__main__':
     headers = {
         "token": "MitakeWeb",
-        "symbol": "000539.sz",
+        "symbol": "513060.sh",
         "param": "0930"
     }
-    url1 = "http://114.80.155.61:22016/v4/line5d"
-    url2 = "http://114.80.155.134:22016/v4/line5d"
+    # url1 = "http://114.80.155.61:22016/v4/line"
+    url1 = "http://114.80.155.61:22016/v1/marketoverview"
+    url2 = "http://114.80.155.134:22016/v4/line"
     response_list1 = []
     response_list2 = []
     response1 = SseOptionQuote(url1,headers=headers)
@@ -109,6 +110,6 @@ if __name__ == '__main__':
         response_list2.append(decode_quote(response2.text))
     else:
         print(f"Failed to get response for url '{url2}'")
-    compare_lists(response_list1,response_list2)
+    # compare_lists(response_list1,response_list2)
     print(f"response_list1=====>'{response_list1}'")
     print(f"response_list2=====>'{response_list2}'")
