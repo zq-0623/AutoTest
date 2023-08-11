@@ -32,9 +32,9 @@ def compare_excel_columns(file1_path, file2_path, file1_column, file2_column):
 
 # 文件和列名列表
 file_pairs = [
-    ('/Users/luowensai/Downloads/mqtt_line.xlsx', '/Users/luowensai/Downloads/http_line.xlsx', 'r最高价(h)', '高'),
-    ('/Users/luowensai/Downloads/mqtt_line.xlsx', '/Users/luowensai/Downloads/http_line.xlsx', 'r最低价(l)', '低'),
-    ('/Users/luowensai/Downloads/mqtt_line.xlsx', '/Users/luowensai/Downloads/http_line.xlsx', '日期时间2', '日期时间1'),
+    (r'D:\workspace\PythonProject\AutoTest\AutoTest\Data\mqtt_line.xlsx', 'D:\workspace\PythonProject\AutoTest\AutoTest\Data\http_line.xlsx', 'r最高价(h)', '高'),
+    (r'D:\workspace\PythonProject\AutoTest\AutoTest\Data\mqtt_line.xlsx', 'D:\workspace\PythonProject\AutoTest\AutoTest\Data\http_line.xlsx', 'r最低价(l)', '低'),
+    (r'D:\workspace\PythonProject\AutoTest\AutoTest\Data\mqtt_line.xlsx', 'D:\workspace\PythonProject\AutoTest\AutoTest\Data\http_line.xlsx', 'r时间(t)', '日期时间'),
     # 添加更多文件和列名组合
 ]
 
