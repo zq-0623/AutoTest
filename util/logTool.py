@@ -5,7 +5,7 @@ import time,os
 import colorlog as colorlog
 
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-print(time.strftime("%y%m%d%H%M%S"))
+# print(time.strftime("%y%m%d%H%M%S"))
 
 # 创建日志文件路径
 LOG_PATH = os.path.join(BASE_PATH,"log")
@@ -19,7 +19,7 @@ class Logger():
         self.logname = os.path.join(LOG_PATH, "{}.log".format(time.strftime("%y%m%d")))
 
         log_colors_config = {
-            'DEBUG': 'white',  # cyan white
+            'DEBUG': 'fg_thin_cyan',  # cyan white
             'INFO': 'green',
             'WARNING': 'yellow',
             'ERROR': 'red',
@@ -47,10 +47,12 @@ class Logger():
 
         # 自定义日志显示格式
         self.file_formatter = logging.Formatter(
-            '%(asctime)s--%(filename)s %(lineno)d--%(levelname)s]: %(message)s'
+            fmt='[%(asctime)s.%(msecs)03d] %(filename)s -> %(funcName)s line:%(lineno)d [%(levelname)s] : %(message)s',
+            datefmt='%Y-%m-%d  %H:%M:%S'
         )
         self.console_formatter = colorlog.ColoredFormatter(
-            fmt= '%(asctime)s--%(filename)s %(lineno)d--%(levelname)s]: %(message)s',
+            fmt='%(log_color)s[%(asctime)s.%(msecs)03d] %(filename)s -> %(funcName)s line:%(lineno)d [%(levelname)s] : %(message)s',
+            datefmt='%Y-%m-%d  %H:%M:%S',
             log_colors=log_colors_config
         )
 
@@ -62,8 +64,8 @@ class Logger():
 logger = Logger().logger
 
 
-logger.debug("==========调试信息==========")
-logger.info("==========调试信息==========")
-logger.warning("==========调试信息==========")
-logger.error("==========调试信息==========")
-logger.critical("==========调试信息==========")
+# logger.debug("==========调试信息==========")
+# logger.info("==========调试信息==========")
+# logger.warning("==========调试信息==========")
+# logger.error("==========调试信息==========")
+# logger.critical("==========调试信息==========")

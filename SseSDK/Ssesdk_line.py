@@ -95,22 +95,22 @@ if __name__ == '__main__':
         "symbol": "513060.sh",
         "param": "0930"
     }
-    url1 = "http://114.80.155.61:22016/v4/line"
+    url1 = "http://114.80.155.61:22016/v3/m1"
     # url1 = "http://114.80.155.61:22016/v4/line5d"
     # url1 = "http://114.80.155.61:22016/v4/line"
-    url2 = "http://114.80.155.134:22016/v4/line"
+    # url2 = "http://114.80.155.134:22016/v4/line"
     response_list1 = []
     response_list2 = []
     response1 = SseOptionQuote(url1,headers=headers)
-    response2 = SseOptionQuote(url2,headers=headers)
+    # response2 = SseOptionQuote(url2,headers=headers)
     if response1:
         response_list1.append(decode_quote(response1.text))
     else:
         print(f"Failed to get response for url '{url1}'")
-    if response2:
-        response_list2.append(decode_quote(response2.text))
-    else:
-        print(f"Failed to get response for url '{url2}'")
+    # if response2:
+    #     response_list2.append(decode_quote(response2.text))
+    # else:
+    #     print(f"Failed to get response for url '{url2}'")
     # compare_lists(response_list1,response_list2)
     print(f"response_list1=====>'{response_list1}'")
     print(f"response_list2=====>'{response_list2}'")

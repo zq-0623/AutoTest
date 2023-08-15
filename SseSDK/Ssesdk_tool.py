@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import requests
 import yaml
 
@@ -24,22 +25,7 @@ def SseOptionQuote(url, headers, **kwargs):
 
 def quote_yaml(path):
     with open(path, 'r', encoding='gbk') as fp:
-        # load()º¯Êý½«fp(Ò»¸öÖ§³Ö.read()µÄÎÄ¼þÀà¶ÔÏó£¬°üº¬Ò»¸öJSONÎÄµµ)·´ÐòÁÐ»¯ÎªÒ»¸öPython¶ÔÏó
+        # load()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fp(Ò»ï¿½ï¿½Ö§ï¿½ï¿½.read()ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬°ï¿½ï¿½ï¿½Ò»ï¿½ï¿½JSONï¿½Äµï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ÎªÒ»ï¿½ï¿½Pythonï¿½ï¿½ï¿½ï¿½
         return yaml.safe_load(fp)
 
 
-data = quote_yaml(yaml_path)
-def decode_quote(msg):
-    res_list = msg.split("\x03")
-    list_result = []
-    if res_list[-1] == '':
-        res_list.remove('')
-    for m in range(len(res_list)- 1):
-        split_list = res_list[m].split("\x02")
-        for i in range(len(split_list)):
-            data_key = list(data[i].keys())[0]
-            data_values = list(data[i].values())[0]
-            if data_values == 'Y':
-                split_list[i] = decode(split_list[i])
-        list_result.append(split_list)
-    return list_result

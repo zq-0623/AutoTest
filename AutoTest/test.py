@@ -1,46 +1,56 @@
-import pandas as pd
+import os
 
 
-def compare_excel_columns(file1_path, file2_path, file1_column, file2_column):
-    # 读取文件内容
-    file1_data = pd.read_excel(file1_path)
-    file2_data = pd.read_excel(file2_path)
+def get_mqtt_file_paths(mqtt_folder):
+    file_paths_mqtt = []
 
-    # 调整行数，使两个文件行数一致
-    max_rows = min(len(file1_data), len(file2_data))
-    file1_data = file1_data.head(max_rows)
-    file2_data = file2_data.head(max_rows)
+    for folder, _, files in os.walk(mqtt_folder):
+        for file in files:
+            file_path = os.path.join(folder, file)
+            file_paths_mqtt.append(file_path)
+    return file_paths_mqtt
 
-    # 获取指定列的值并进行比较
-    file1_column_values = file1_data[file1_column]
-    file2_column_values = file2_data[file2_column]
+def get_http_file_paths(http_folder):
+    file_paths_http = []
+    for folder, _, files in os.walk(http_folder):
+        for file in files:
+            file_path = os.path.join(folder, file)
+            file_paths_http.append(file_path)
 
-    # 重置索引以确保比较
-    file1_column_values = file1_column_values.reset_index(drop=True)
-    file2_column_values = file2_column_values.reset_index(drop=True)
-
-    # 找出不同的结果，包含行号
-    different_results = pd.DataFrame({
-        '行号': file1_column_values.index + 1,  # 为了从1开始计数
-        file1_column: file1_column_values,
-        file2_column: file2_column_values
-    })
-    different_results = different_results[different_results[file1_column] != different_results[file2_column]]
-
-    return different_results
+    return file_paths_http
 
 
-# 文件和列名列表
+mqtt_file_path = r'C:/Users/Administrator/Desktop/mqtt_kline_data'
+http_file_path = r'C:/Users/Administrator/Desktop/http_kline_data'
+
+file_paths_mqtt = get_mqtt_file_paths(mqtt_file_path)
+file_paths_http = get_mqtt_file_paths(http_file_path)
+
 file_pairs = [
-    ('/Users/luowensai/Downloads/mqtt_line.xlsx', '/Users/luowensai/Downloads/http_line.xlsx', 'r最高价(h)', '高'),
-    ('/Users/luowensai/Downloads/mqtt_line.xlsx', '/Users/luowensai/Downloads/http_line.xlsx', 'r最低价(l)', '低'),
-    ('/Users/luowensai/Downloads/mqtt_line.xlsx', '/Users/luowensai/Downloads/http_line.xlsx', '日期时间2', '日期时间1'),
-    # 添加更多文件和列名组合
+    (mqtt_file_path, http_file_path, 'r均价(a)', '均价'),
+    (mqtt_file_path, http_file_path, 'r最高价(h)', '高'),
+    (mqtt_file_path, http_file_path, 'r最低价(l)', '低'),
+    (mqtt_file_path, http_file_path, 'r成交额(m)', '成交额'),
+    (mqtt_file_path, http_file_path, 'r开盘价(o)', '开'),
+    (mqtt_file_path, http_file_path, 'r参考价(r)', '参考价'),
+    (mqtt_file_path, http_file_path, 'r时间(t)', '日期时间'),
+    (mqtt_file_path, http_file_path, 'r成交量(v)', '量'),
+    (mqtt_file_path, http_file_path, 'r最新价(ic)', '基金净值'),
 ]
 
-# 循环比较并打印结果
-for file1_path, file2_path, file1_column, file2_column in file_pairs:
-    result = compare_excel_columns(file1_path, file2_path, file1_column, file2_column)
-    print(f"比较 {file1_path} 中的 '{file1_column}' 和 {file2_path} 中的 '{file2_column}':")
-    print(result)
-    print("-" * 30)
+
+def mqtt_file_name():
+    print("File paths:")
+    for path1 in file_paths_mqtt:
+        pass
+    return path1
+def http_file_name():
+    for path in file_paths_http:
+        pass
+    return path
+
+print("\nFile pairs:")
+# for mqtt_path, http_path, mqtt_col, http_col in file_pairs:
+#     print(f"MQTT path: {mqtt_path}, HTTP path: {http_path}, MQTT column: {mqtt_col}, HTTP column: {http_col}")
+print(mqtt_file_name())
+print(http_file_name())
