@@ -1,3 +1,25 @@
+### 本地代码上传到GitHub
+    1、为Github账户设置SSH key
+        通过$ ssh-keygen -t rsa -C “1209405215@qq.com”来生成
+        首先检查是否已生成密钥 cd ~/.ssh，ls如果有2个文件，则密钥已经生成，id_rsa.pub就是公钥
+        也可以打开我的电脑C:\Users\Y\ .ssh 里面找到
+    2、为github账号配置ssh key
+        切换到github，展开个人头像的小三角，点击settings
+        然后打开SSH keys菜单， 点击Add SSH key新增密钥，填上标题，跟仓库保持一致吧，好区分。
+        接着将id_rsa.pub文件中key粘贴到此，最后Add key生成密钥吧。
+
+### pycharm连接GitHub
+    1、启动PyCharm，点击【File】→【Settings】→【Version Control】→【Git】，
+    选择Git可执行文件路径（系统安装git后此处会默认显示路径），点击【Test】，
+    路径下会显示当前Git版本
+    
+    2、点击【File】→【Settings】→【Version Control】→【GitHub】，点击【Log In via GitHub】
+    
+    3、授权GitHub给PyCharm：
+    ①点击【Authorize in GitHub】，②登录GitHub，③输入收到的GitHub验证码，进行验证
+    ②验证通过后回到PyCharm中，选择GitHub账号，修改连接超时时间，点击【OK】
+
+
 ### git本地上传代码命令
     ssh-keygen -t rsa -C "email"        //生成ssh key
     git init            //把这个目录变成Git可以管理的仓库

@@ -10,7 +10,7 @@ from util.base93 import decode
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
-yaml_path = rootPath + '/testCase/quote/Kline.yaml'
+yaml_path = rootPath + '/testCase/quote/quote.yaml'
 data = quote_yaml(yaml_path)
 
 
@@ -34,14 +34,14 @@ def request_run():
     headers = {
         "token": "MitakeWeb",
         "symbol": "000650.sz",
-        "param": "202308090930"
+        # "param": "202308090930"
     }
     response = SseOptionQuote(url, headers=headers)
     print(f"response_list1=====>'{decode_quote(response.text)}'")
 
 
 if __name__ == '__main__':
-    url = "http://114.80.155.61:22016/v3/m1"
+    url = "http://114.80.155.61:22016/v3/quotentrd10"
     request_run()
 
 

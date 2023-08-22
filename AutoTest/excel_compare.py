@@ -3,6 +3,8 @@ import os.path
 
 import pandas as pd
 from util.logTool import logger
+current_path = os.path.abspath(__file__)
+log_flag = os.path.split(current_path)[1].split(".py")[0]
 
 
 def compare_excel_columns(file1_path, file2_path, file1_column, file2_column):
@@ -59,38 +61,9 @@ H30455
 '''
 
 
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_000001.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_000001.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_000656.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_000656.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_131810.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_131810.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_159792.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_159792.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_200625.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_200625.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_204001.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_204001.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_300059.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_300059.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min5_mqtt_line_513060.xlsx'
-# http_file_path = r'./http_kline_data/min5_http_line_513060.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_600050.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_600050.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_688223.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_688223.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_837592.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_837592.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_900901.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_900901.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_10005650.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_10005650.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_90002344.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_90002344.xlsx'
-# mqtt_file_path = r'./mqtt_kline_data/min120_mqtt_line_H30455.xlsx'
-# http_file_path = r'./http_kline_data/min120_http_line_H30455.xlsx'
-mqtt_file_path = r'C:\Users\Administrator\Desktop\mqtt_kline_data\hk_mqtt_line\min120_mqtt_line_04246.xlsx'
-http_file_path = r'C:\Users\Administrator\Desktop\http_kline_data\hk_htpp_line\min120_http_line_04246.xlsx'
+mqtt_file_path = r'C:/Users/Administrator/Desktop/mqtt_kline_data/min120_mqtt_line_000001.xlsx'
+http_file_path = r'C:/Users/Administrator/Desktop/http_kline_data/min120_http_line_000001.xlsx'
+
 
 # 文件和列名列表
 file_pairs = [
@@ -109,15 +82,15 @@ file_pairs = [
 
 
 # file_pairs = [
-#     (mqtt_file_path, http_file_path, '日期时间', '日期时间'),
-#     (mqtt_file_path, http_file_path, '开', '开'),
-#     (mqtt_file_path, http_file_path, '高', '高'),
-#     (mqtt_file_path, http_file_path, '低', '低'),
-#     (mqtt_file_path, http_file_path, '收', '收'),
-#     (mqtt_file_path, http_file_path, '量', '量'),
-#     (mqtt_file_path, http_file_path, '参考价', '参考价'),
-#     (mqtt_file_path, http_file_path, '成交额', '成交额'),
-#     (mqtt_file_path, http_file_path, '均价', '均价'),
+#     (mqtt_file_path, http_file_path, '时间', '日期时间'),
+#     (mqtt_file_path, http_file_path, '最新价', '收'),
+#     (mqtt_file_path, http_file_path, '成交量', '量'),
+#     (mqtt_file_path, http_file_path, '参考价', '参考价2'),
+#     (mqtt_file_path, http_file_path, '均价', '均价2'),
+#     (mqtt_file_path, http_file_path, '成交额', '成交额2'),
+#     (mqtt_file_path, http_file_path, '开盘价', '开'),
+#     (mqtt_file_path, http_file_path, '最高价', '高'),
+#     (mqtt_file_path, http_file_path, '最低价', '低'),
 #     # 添加更多文件和列名组合
 # ]
 # 循环比较并打印结果

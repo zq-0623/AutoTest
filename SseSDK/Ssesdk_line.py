@@ -6,6 +6,7 @@ from deepdiff import DeepDiff
 from util.base93 import decode
 import requests
 import yaml
+from util.logTool import logger
 import numpy as np
 # python两个数组做对比
 # np.array_equiv
@@ -61,22 +62,22 @@ def compare_lists(list1,list2):
     # 使用 DeepDiff 函数比较两个列表，并忽略元素的顺序
     diff = DeepDiff(list1,list2)
     if not diff:
-        print("对比结果一致")
+        logger.debug("对比结果一致")
     else:
-        print(f"存在差异===》'{diff}'")
+        logger.debug(f"存在差异===》'{diff}'")
         if 'values_changed' in diff:
             values_changed = diff['values_changed']
             key_list = list(values_changed.keys())
             val_list = list(values_changed.values())
-            print(key_list)
+            # print(key_list)
             for i in val_list:
                 new_value = i['new_value']
                 old_value = i['old_value']
                 envList1.append(old_value)
 
                 envList2.append(new_value)
-            print(envList1)
-            print(envList2)
+            # print(envList1)
+            # print(envList2)
 
 
 def SseOptionQuote(url, headers, **kwargs):
@@ -85,32 +86,43 @@ def SseOptionQuote(url, headers, **kwargs):
         response.raise_for_status()
         return response
     except requests.exceptions.RequestException as e:
-        print(f"Error while requesting url '{url}':{e}")
+        logger.debug(f"Error while requesting url '{url}':{e}")
+        logger.debug(f"Error while request headers '{headers}':{e}")
         return None
 
 
 if __name__ == '__main__':
     headers = {
         "token": "MitakeWeb",
-        "symbol": "513060.sh",
+        "symbol": "000902.csi",
         "param": "0930"
     }
-    url1 = "http://114.80.155.61:22016/v3/m1"
-    # url1 = "http://114.80.155.61:22016/v4/line5d"
-    # url1 = "http://114.80.155.61:22016/v4/line"
-    # url2 = "http://114.80.155.134:22016/v4/line"
+    # headers1 = {
+    #     "token": "MitakeWeb",
+    #     "symbol": "getline"
+    #
+    # }
+    # url1 = "http://114.80.155.61:22016/v3/m1"
+    url1 = "http://114.80.155.61:22016/v4/line"
+    url2 = "http://114.80.155.134:22016/v4/line"
+    # url2 = "http://114.80.155.61:22016/v1/sh1/mink/600050?begin=-200&end=-1&period=1&recovered=forward&select=date,
+    # close,avg,volume,ref,amount,open,high,low"
     response_list1 = []
     response_list2 = []
     response1 = SseOptionQuote(url1,headers=headers)
-    # response2 = SseOptionQuote(url2,headers=headers)
+    response2 = SseOptionQuote(url2,headers=headers)
     if response1:
         response_list1.append(decode_quote(response1.text))
+        logger.debug(f"url1 success headers '{headers}'")
     else:
-        print(f"Failed to get response for url '{url1}'")
-    # if response2:
-    #     response_list2.append(decode_quote(response2.text))
-    # else:
-    #     print(f"Failed to get response for url '{url2}'")
-    # compare_lists(response_list1,response_list2)
-    print(f"response_list1=====>'{response_list1}'")
-    print(f"response_list2=====>'{response_list2}'")
+        logger.info(f"Failed to get response for url '{url1}'")
+    # res2 = response2.json()["kline"]
+    # response_list2.append(res2)
+    if response2:
+        response_list2.append(decode_quote(response2.text))
+        logger.debug(f"url2 success headers '{headers}'")
+    else:
+        logger.info(f"Failed to get response for url '{url2}'")
+    compare_lists(response_list1,response_list2)
+    logger.info(f"response_list1=====>'{response_list1}'")
+    logger.info(f"response_list2=====>'{response_list2}'")

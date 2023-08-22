@@ -16,7 +16,7 @@ if not os.path.exists(LOG_PATH):
 class Logger():
     def __init__(self):
         # 创建以年月日为日志文件名
-        self.logname = os.path.join(LOG_PATH, "{}.log".format(time.strftime("%y%m%d")))
+        self.logname = os.path.join(LOG_PATH, "{}_{}.log".format(time.strftime("%y%m%d"),"mqtt_kline"))
 
         log_colors_config = {
             'DEBUG': 'fg_thin_cyan',  # cyan white
