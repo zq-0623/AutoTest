@@ -275,16 +275,6 @@ if '__main__' == __name__:
         url = None
         file = "AllStock_" + url_key + ".txt"
         file_name = url_key
-        # if url_key == "shl2":
-        #     url = compare_url[url_key]
-        # if url_key == "szl2":
-        #     url = compare_url[url_key]
-        # if url_key == "bz":
-        #     url = compare_url[url_key]
-        # if url_key == "csi":
-        #     url = compare_url[url_key]
-        # if url_key == "hk":
-        #     url = compare_url[url_key]
         if url_key == "shl2":
             url = compare_url[url_key]
             file = "AllStock_sh.txt"

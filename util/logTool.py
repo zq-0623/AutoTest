@@ -47,11 +47,11 @@ class Logger():
 
         # 自定义日志显示格式
         self.file_formatter = logging.Formatter(
-            fmt='[%(asctime)s.%(msecs)03d] %(filename)s -> %(funcName)s line:%(lineno)d [%(levelname)s] : %(message)s',
+            fmt='%(asctime)s.%(msecs)02d %(filename)s -> %(funcName)s line:%(lineno)d [%(levelname)s] : %(message)s',
             datefmt='%Y-%m-%d  %H:%M:%S'
         )
         self.console_formatter = colorlog.ColoredFormatter(
-            fmt='%(log_color)s[%(asctime)s.%(msecs)03d] %(filename)s -> %(funcName)s line:%(lineno)d [%(levelname)s] : %(message)s',
+            fmt='%(log_color)s%(asctime)s.%(msecs)03d %(filename)s -> %(funcName)s line:%(lineno)d [%(levelname)s] : %(message)s',
             datefmt='%Y-%m-%d  %H:%M:%S',
             log_colors=log_colors_config
         )
@@ -64,8 +64,4 @@ class Logger():
 logger = Logger().logger
 
 
-# logger.debug("==========调试信息==========")
-# logger.info("==========调试信息==========")
-# logger.warning("==========调试信息==========")
-# logger.error("==========调试信息==========")
-# logger.critical("==========调试信息==========")
+

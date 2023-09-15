@@ -8,9 +8,10 @@ def set_title(report_path, new_title):
     @param report_path: 报告地址
     """
     # report_title_filepath：这里主要是去拿到你的HTML测试报告的绝对路径【记得换成你自己的】
-    report_title_filepath = report_path
+    # report_title_filepath = report_path
+
     # 定义为只读模型，并定义名称为: f
-    with open(report_title_filepath, 'r+', encoding="utf-8") as f:
+    with open(report_path, 'r+', encoding="utf-8") as f:
         # 读取当前文件的所有内容
         all_the_lines = f.readlines()
         f.seek(0)
@@ -20,3 +21,9 @@ def set_title(report_path, new_title):
             f.write(line.replace("Allure Report", new_title))
         # 关闭文件
         f.close()
+
+
+# if __name__ == '__main__':
+#     report_path = f'E:\\workspace\\PythonProject\\AutoTest\\txtCompare\\report\\20230906\\094807\\index.html'
+#     new_title = "码表板块文件比对测试报告1"
+#     set_title(report_path,new_title)

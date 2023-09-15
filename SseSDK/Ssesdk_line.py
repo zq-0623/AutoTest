@@ -1,7 +1,9 @@
 # -*-coding:GBK -*-
 import os
+import re
 import time
 
+import pandas as pd
 from deepdiff import DeepDiff
 from util.base93 import decode
 import requests
@@ -10,10 +12,16 @@ from util.logTool import logger
 import numpy as np
 # python两个数组做对比
 # np.array_equiv
+# 存放比对不上的股票名
+code_list = []
+# 存放比对不上的字段名
+field_list = []
+
+time1 = time.strftime('%Y%m%d_%H%M%S', time.localtime())
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
-yaml_path = rootPath + '/testCase/quote/line.yaml'
+yaml_path = rootPath + '/testCase/quote/Kline.yaml'
 date = time.strftime("%Y%m%d", time.localtime())
 time = time.strftime("%H%M%S", time.localtime())
 file_name = ''
@@ -74,55 +82,89 @@ def compare_lists(list1,list2):
                 new_value = i['new_value']
                 old_value = i['old_value']
                 envList1.append(old_value)
-
                 envList2.append(new_value)
             # print(envList1)
             # print(envList2)
+            for j in key_list:
+                m = re.findall(r'\[\'(.*?)\'\]' , j)
+                code_list.append(m[0])
+                field_list.append(m[1])
 
 
-def SseOptionQuote(url, headers, **kwargs):
+def SseOptionQuote(url, header, **kwargs):
     try:
-        response = requests.Session().get(url,headers=headers)
+        response = requests.Session().get(url, headers=header)
         response.raise_for_status()
         return response
     except requests.exceptions.RequestException as e:
         logger.debug(f"Error while requesting url '{url}':{e}")
-        logger.debug(f"Error while request headers '{headers}':{e}")
+        logger.debug(f"Error while request headers '{header}':{e}")
         return None
+
+
+def write_excel(json1,title):
+    excel_path = curPath + f'\\result\\{time1}_走势数据.xlsx'
+    if not os.path.exists(excel_path):
+        wr = pd.ExcelWriter(excel_path)
+        ew = pd.DataFrame(json1,columns=title)
+        ew.to_excel(wr,sheet_name=date,index=False)
+        wr.close()
+    else:
+        wr = pd.ExcelWriter(excel_path,mode="a",engine='openpyxl')
+        ew = pd.DataFrame(json1,columns=title)
+        ew.to_excel(wr,sheet_name=date,index=False)
+        wr.close()
+
+
+def excel_yaml_title():
+    keys_list = []
+    for i in data:
+        key_name = i.keys()
+        m = re.findall(r"'(.*?)'", str(key_name))
+        sheet_title = str(m).split("['")[1].split("']")[0]
+        keys_list.append(sheet_title)
+    return keys_list
 
 
 if __name__ == '__main__':
     headers = {
         "token": "MitakeWeb",
-        "symbol": "000902.csi",
-        "param": "0930"
+        "symbol": "000002.sz",
+        "permis": "L1"
+        # "param": "20230914"
     }
     # headers1 = {
     #     "token": "MitakeWeb",
     #     "symbol": "getline"
     #
     # }
-    # url1 = "http://114.80.155.61:22016/v3/m1"
-    url1 = "http://114.80.155.61:22016/v4/line"
-    url2 = "http://114.80.155.134:22016/v4/line"
+    url1 = "http://114.80.155.61:22016/v3/dayk"
+    # url2 = "http://114.80.155.61:22016/v1/sh1/dayk/601099?today=y&select=date,open,high,low,close,volume,amount,prevClose,fp_volume,fp_amount,ref,iopv,avg&begin=300&end=202206130930"
+    # url1 = "http://114.80.155.61:22016/v4/line"
+    # url1 = "http://114.80.155.134:22016/v4/line"
     # url2 = "http://114.80.155.61:22016/v1/sh1/mink/600050?begin=-200&end=-1&period=1&recovered=forward&select=date,
     # close,avg,volume,ref,amount,open,high,low"
     response_list1 = []
     response_list2 = []
-    response1 = SseOptionQuote(url1,headers=headers)
-    response2 = SseOptionQuote(url2,headers=headers)
+    response1 = SseOptionQuote(url1, header=headers)
+    # response2 = SseOptionQuote(url2,headers=headers1)
+    # print(type(response1.text))
+    print(response1.text)
+    decode_response = decode_quote(response1.text)
     if response1:
-        response_list1.append(decode_quote(response1.text))
+        response_list1.append(decode_response)
         logger.debug(f"url1 success headers '{headers}'")
     else:
         logger.info(f"Failed to get response for url '{url1}'")
     # res2 = response2.json()["kline"]
     # response_list2.append(res2)
-    if response2:
-        response_list2.append(decode_quote(response2.text))
-        logger.debug(f"url2 success headers '{headers}'")
-    else:
-        logger.info(f"Failed to get response for url '{url2}'")
-    compare_lists(response_list1,response_list2)
-    logger.info(f"response_list1=====>'{response_list1}'")
-    logger.info(f"response_list2=====>'{response_list2}'")
+    # if response2:
+    #     response_list2.append(response2.text)
+    #     logger.debug(f"url2 success headers '{headers}'")
+    # else:
+    #     logger.info(f"Failed to get response for url '{url2}'")
+    # compare_lists(response_list1,response_list2)
+    # logger.info(f"response_list1=====>'{response_list1}'")
+    # logger.info(f"response_list2=====>'{response_list2}'")
+    # print(decode_response)
+    # write_excel(decode_response,excel_yaml_title())

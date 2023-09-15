@@ -1,4 +1,4 @@
-# -*-coding:GBK -*-
+# -*-coding:utf-8 -*-
 import json
 import os
 import sys
@@ -21,32 +21,32 @@ from util.base93 import decode
 
 import paho.mqtt.client as mqtt
 
-# µ±Ç°ÈÕÆÚ
+# å½“å‰æ—¥æœŸ
 date1 = time.strftime('%Y%m%d', time.localtime())
-# µ±Ç°Ê±¼ä
+# å½“å‰æ—¶é—´
 time1 = time.strftime('%Y%m%d_%H%M%S', time.localtime())
-# ¿ìÕÕ×Ö¶ÎÃûÎÄ¼şÂ·¾¶
+# å¿«ç…§å­—æ®µåæ–‡ä»¶è·¯å¾„
 yaml_path = rootPath + '/testCase/quote/mqtt_quote.yaml'
-# ¹ÉÃû±íÎÄ¼şÂ·¾¶
+# è‚¡åè¡¨æ–‡ä»¶è·¯å¾„
 stock_path = f'../testCase/AllStock'
-# urlÎÄ¼şÂ·¾¶
+# urlæ–‡ä»¶è·¯å¾„
 url_path = f'../testCase/quote/mqtt_tcp.yaml'
 
-# ±È¶Ô½á¹û´æ·ÅÂ·¾¶
+# æ¯”å¯¹ç»“æœå­˜æ”¾è·¯å¾„
 result_path = 'result'
-# Ã¿´ÎÇëÇó´«ÈëµÄ¹ÉÆ±ÊıÁ¿
+# æ¯æ¬¡è¯·æ±‚ä¼ å…¥çš„è‚¡ç¥¨æ•°é‡
 interval = 50
-# ´æ·Å¿ìÕÕ×Ö¶Î
+# å­˜æ”¾å¿«ç…§å­—æ®µ
 data = []
-# ´æ·Å»·¾³1¿ìÕÕ
+# å­˜æ”¾ç¯å¢ƒ1å¿«ç…§
 quote_list1 = []
-# ´æ·Å»·¾³2¿ìÕÕ
+# å­˜æ”¾ç¯å¢ƒ2å¿«ç…§
 quote_list2 = []
-# ÎÄ¼şÃû³Æ
+# æ–‡ä»¶åç§°
 file_name = ""
-# ¿ìÕÕÎª¿Õ¹ÉÆ±ÁĞ±í
+# å¿«ç…§ä¸ºç©ºè‚¡ç¥¨åˆ—è¡¨
 none_list = []
-# ÇëÇóÒì³£µÄ¹ÉÆ±ÁĞ±í
+# è¯·æ±‚å¼‚å¸¸çš„è‚¡ç¥¨åˆ—è¡¨
 exception_list = []
 
 client1_topic = dict()
@@ -57,26 +57,26 @@ def arr_spits(item, n):
     return [item[i:i + n] for i in range(0, len(item), n)]
 
 
-# ¶ÁÈ¡¿ìÕÕ×Ö¶ÎÃûÎÄ¼ş
+# è¯»å–å¿«ç…§å­—æ®µåæ–‡ä»¶
 def quote_yaml(path):
     with open(path, 'r', encoding='gbk') as fp:
-        # load()º¯Êı½«fp(Ò»¸öÖ§³Ö.read()µÄÎÄ¼şÀà¶ÔÏó£¬°üº¬Ò»¸öJSONÎÄµµ)·´ĞòÁĞ»¯ÎªÒ»¸öPython¶ÔÏó
+        # load()å‡½æ•°å°†fp(ä¸€ä¸ªæ”¯æŒ.read()çš„æ–‡ä»¶ç±»å¯¹è±¡ï¼ŒåŒ…å«ä¸€ä¸ªJSONæ–‡æ¡£)ååºåˆ—åŒ–ä¸ºä¸€ä¸ªPythonå¯¹è±¡
         return yaml.safe_load(fp)
 
 
-# ·Ö¸î¹ÉÆ±´úÂë
+# åˆ†å‰²è‚¡ç¥¨ä»£ç 
 def interval_stock(path, item):
     stock_list = []
     stock_str = ''
     index = 0
     with open(path, 'r', encoding='utf-8') as stock:
-        # load()º¯Êı½«fp(Ò»¸öÖ§³Ö.read()µÄÎÄ¼şÀà¶ÔÏó£¬°üº¬Ò»¸öJSONÎÄµµ)·´ĞòÁĞ»¯ÎªÒ»¸öPython¶ÔÏó
+        # load()å‡½æ•°å°†fp(ä¸€ä¸ªæ”¯æŒ.read()çš„æ–‡ä»¶ç±»å¯¹è±¡ï¼ŒåŒ…å«ä¸€ä¸ªJSONæ–‡æ¡£)ååºåˆ—åŒ–ä¸ºä¸€ä¸ªPythonå¯¹è±¡
         txt_list = json.load(stock)
         txt_length = len(txt_list)
-        # ¹ÉÃû±í¹ÉÆ±ÊıÁ¿È¡Óà
+        # è‚¡åè¡¨è‚¡ç¥¨æ•°é‡å–ä½™
         num = txt_length % interval
-        # Ã¿intervalÖ»È¡³ö¹ÉÃû±íÖĞµÄ¹ÉÆ±´úÂë
-        # ÊıÁ¿ÄÜ±»intervalÕû³ıÊ±
+        # æ¯intervalåªå–å‡ºè‚¡åè¡¨ä¸­çš„è‚¡ç¥¨ä»£ç 
+        # æ•°é‡èƒ½è¢«intervalæ•´é™¤æ—¶
         if num == 0:
             for m in range(txt_length):
                 stock_str = stock_str + txt_list[m]['s'] + ","
@@ -85,12 +85,12 @@ def interval_stock(path, item):
                     stock_list.append(stock_str)
                     index = 0
                     stock_str = ''
-        # ÊıÁ¿Ğ¡ÓÚintervalÊ±
+        # æ•°é‡å°äºintervalæ—¶
         elif num == txt_length:
             for m in range(txt_length):
                 stock_str = stock_str + txt_list[m]['s'] + ","
                 stock_list.append(stock_str)
-        # ÊıÁ¿²»ÄÜ±»intervalÕû³ıÊ±
+        # æ•°é‡ä¸èƒ½è¢«intervalæ•´é™¤æ—¶
         else:
             for m in range(txt_length):
                 stock_str = stock_str + txt_list[m]['s'] + ","
@@ -104,165 +104,167 @@ def interval_stock(path, item):
     thread_run(stock_list, item)
 
 
-# ¶¨ÒåÒ»¸öÃûÎªthread_runµÄº¯Êı£¬´«Èë²ÎÊıÎªstock_listºÍitem
+# å®šä¹‰ä¸€ä¸ªåä¸ºthread_runçš„å‡½æ•°ï¼Œä¼ å…¥å‚æ•°ä¸ºstock_listå’Œitem
 def thread_run(stock_list, item):
-    print("ÍÆËÍÖĞ....")
+    print("æ¨é€ä¸­....")
     try:
-        # ½âÎöitemÖĞµÄenv1ÖµÎªurl1
+        # è§£æitemä¸­çš„env1å€¼ä¸ºurl1
         url1 = QUrl(item["env1"])
-        # ´´½¨Ò»¸öÃûÎªclient1µÄmqtt¿Í»§¶Ë¶ÔÏó£¬Ö¸¶¨¿Í»§¶ËIDÎªquote-check-1£¬²¢Ö¸¶¨on_messageÊÂ¼ş´¦Àíº¯ÊıÎªon_message_1
+        # åˆ›å»ºä¸€ä¸ªåä¸ºclient1çš„mqttå®¢æˆ·ç«¯å¯¹è±¡ï¼ŒæŒ‡å®šå®¢æˆ·ç«¯IDä¸ºquote-check-1ï¼Œå¹¶æŒ‡å®šon_messageäº‹ä»¶å¤„ç†å‡½æ•°ä¸ºon_message_1
         client1 = mqtt.Client("quote-check-1")
         client1.on_message = on_message_1
-        # Á¬½Óµ½url1ËùÖ¸¶¨µÄmqtt·şÎñÆ÷£¬²¢Ö¸¶¨Á¬½Ó³¬Ê±Ê±¼äÎª60ÃëÖÓ
+        # è¿æ¥åˆ°url1æ‰€æŒ‡å®šçš„mqttæœåŠ¡å™¨ï¼Œå¹¶æŒ‡å®šè¿æ¥è¶…æ—¶æ—¶é—´ä¸º60ç§’é’Ÿ
         client1.connect(url1.host(), url1.port(), 60)
-        # ±éÀústock_listÖĞµÄÃ¿¸ö¹ÉÆ±´úÂë£¬²¢ÒÀ´ÎÏòclient1¶©ÔÄÆäËùÓĞÏà¹ØµÄÖ÷Ìâ
+        print(url1.host())
+        print(url1.port())
+        # éå†stock_listä¸­çš„æ¯ä¸ªè‚¡ç¥¨ä»£ç ï¼Œå¹¶ä¾æ¬¡å‘client1è®¢é˜…å…¶æ‰€æœ‰ç›¸å…³çš„ä¸»é¢˜
         for k in stock_list:
             for topic in str(k[:-1]).split(','):
                 client1.subscribe(topic)
                 client1_topic[topic] = ''
-        # ¿ªÆôÒ»¸öĞÂÏß³ÌÀ´´¦Àí¸Ãmqtt¿Í»§¶ËµÄÏûÏ¢
+        # å¼€å¯ä¸€ä¸ªæ–°çº¿ç¨‹æ¥å¤„ç†è¯¥mqttå®¢æˆ·ç«¯çš„æ¶ˆæ¯
         client1.loop_start()
     except Exception as e:
-        # Óöµ½Òì³£Ê±½«µ±Ç°ÎÄ¼şÃû¼ÓÈëexception_listÖĞ£¬²¢Å×³öÒì³£
+        # é‡åˆ°å¼‚å¸¸æ—¶å°†å½“å‰æ–‡ä»¶ååŠ å…¥exception_listä¸­ï¼Œå¹¶æŠ›å‡ºå¼‚å¸¸
         exception_list.append(file_name)
         raise
 
     try:
-        # ½âÎöitemÖĞµÄenv2ÖµÎªurl2
+        # è§£æitemä¸­çš„env2å€¼ä¸ºurl2
         url2 = QUrl(item["env2"])
-        # ´´½¨Ò»¸öÃûÎªclient2µÄmqtt¿Í»§¶Ë¶ÔÏó£¬Ö¸¶¨¿Í»§¶ËIDÎªquote-check£¬²¢Ö¸¶¨on_messageÊÂ¼ş´¦Àíº¯ÊıÎªon_message_2
+        # åˆ›å»ºä¸€ä¸ªåä¸ºclient2çš„mqttå®¢æˆ·ç«¯å¯¹è±¡ï¼ŒæŒ‡å®šå®¢æˆ·ç«¯IDä¸ºquote-checkï¼Œå¹¶æŒ‡å®šon_messageäº‹ä»¶å¤„ç†å‡½æ•°ä¸ºon_message_2
         client2 = mqtt.Client("quote-check")
         client2.on_message = on_message_2
-        # Á¬½Óµ½url2ËùÖ¸¶¨µÄmqtt·şÎñÆ÷£¬²¢Ö¸¶¨Á¬½Ó³¬Ê±Ê±¼äÎª60ÃëÖÓ
+        # è¿æ¥åˆ°url2æ‰€æŒ‡å®šçš„mqttæœåŠ¡å™¨ï¼Œå¹¶æŒ‡å®šè¿æ¥è¶…æ—¶æ—¶é—´ä¸º60ç§’é’Ÿ
         client2.connect(url2.host(), url2.port(), 60)
-        # ±éÀústock_listÖĞµÄÃ¿¸ö¹ÉÆ±´úÂë£¬²¢ÒÀ´ÎÏòclient2¶©ÔÄÆäËùÓĞÏà¹ØµÄÖ÷Ìâ
+        # éå†stock_listä¸­çš„æ¯ä¸ªè‚¡ç¥¨ä»£ç ï¼Œå¹¶ä¾æ¬¡å‘client2è®¢é˜…å…¶æ‰€æœ‰ç›¸å…³çš„ä¸»é¢˜
         for k in stock_list:
             for topic in str(k[:-1]).split(','):
                 client2.subscribe(topic)
                 client2_topic[topic] = ''
-        # ¿ªÆôÒ»¸öĞÂÏß³ÌÀ´´¦Àí¸Ãmqtt¿Í»§¶ËµÄÏûÏ¢
+        # å¼€å¯ä¸€ä¸ªæ–°çº¿ç¨‹æ¥å¤„ç†è¯¥mqttå®¢æˆ·ç«¯çš„æ¶ˆæ¯
         client2.loop_start()
     except Exception as e:
-        # Óöµ½Òì³£Ê±½«µ±Ç°ÎÄ¼şÃû¼ÓÈëexception_listÖĞ£¬²¢Å×³öÒì³£
+        # é‡åˆ°å¼‚å¸¸æ—¶å°†å½“å‰æ–‡ä»¶ååŠ å…¥exception_listä¸­ï¼Œå¹¶æŠ›å‡ºå¼‚å¸¸
         exception_list.append(file_name)
         raise
 
-    # ³õÊ¼»¯Ñ­»·¼ÆÊıÆ÷Îª0
+    # åˆå§‹åŒ–å¾ªç¯è®¡æ•°å™¨ä¸º0
     cycle_index = 0
-    # µ±client1_topicºÍclient2_topicÖĞ»¹´æÔÚÖµÊ±£¬Ñ­»·ÍÆËÍÊı¾İ
+    # å½“client1_topicå’Œclient2_topicä¸­è¿˜å­˜åœ¨å€¼æ—¶ï¼Œå¾ªç¯æ¨é€æ•°æ®
     while len(client1_topic) != 0 or len(client2_topic) != 0:
-        print("ÍÆËÍÊı¾İ´¦ÀíÖĞ...")
-        # µ±Ñ­»·¼ÆÊıÆ÷´óÓÚµÈÓÚ30Ê±£¬Ìø³öÑ­»·
+        print("æ¨é€æ•°æ®å¤„ç†ä¸­...")
+        # å½“å¾ªç¯è®¡æ•°å™¨å¤§äºç­‰äº30æ—¶ï¼Œè·³å‡ºå¾ªç¯
         if cycle_index >= 30:
             break
-        # ½«Ñ­»·¼ÆÊıÆ÷¼Ó1
+        # å°†å¾ªç¯è®¡æ•°å™¨åŠ 1
         cycle_index = cycle_index + 1
         time.sleep(10)
 
-    # ¶Ï¿ªclient1ºÍclient2µÄÁ¬½Ó
+    # æ–­å¼€client1å’Œclient2çš„è¿æ¥
     client1.disconnect()
     client2.disconnect()
 
     compare_result(item)
 
 
-# ¶¨ÒåÒ»¸öÃûÎªon_message_1µÄÊÂ¼ş´¦Àíº¯Êı£¬´«Èë²ÎÊıÎªclient¡¢userdata¡¢msg
+# å®šä¹‰ä¸€ä¸ªåä¸ºon_message_1çš„äº‹ä»¶å¤„ç†å‡½æ•°ï¼Œä¼ å…¥å‚æ•°ä¸ºclientã€userdataã€msg
 def on_message_1(client, userdata, msg):
-    # ½âÑ¹Ëõmsg.payloadµÄÊı¾İ²¢×ª»»Îªutf8±àÂë¸ñÊ½
+    # è§£å‹ç¼©msg.payloadçš„æ•°æ®å¹¶è½¬æ¢ä¸ºutf8ç¼–ç æ ¼å¼
     data_all = zstd.decompress(msg.payload).decode('utf8')
-    # Èô½âÑ¹ËõºóµÄÊı¾İĞ¡ÓÚµÈÓÚ1¸ö£¬Ôò½«¸ÃÏûÏ¢µÄÖ÷ÌâºÍ»·¾³ĞÅÏ¢¼ÓÈënone_listÖĞ£¬²¢´Óclient1_topicÖĞÒÆ³ı¸ÃÖ÷Ìâ
+    # è‹¥è§£å‹ç¼©åçš„æ•°æ®å°äºç­‰äº1ä¸ªï¼Œåˆ™å°†è¯¥æ¶ˆæ¯çš„ä¸»é¢˜å’Œç¯å¢ƒä¿¡æ¯åŠ å…¥none_listä¸­ï¼Œå¹¶ä»client1_topicä¸­ç§»é™¤è¯¥ä¸»é¢˜
     if len(str(data_all).split("\x02")) <= 1:
-        none_str = "´úÂë£º" + msg.topic + ",»·¾³£º" + str(client._host)
+        none_str = "ä»£ç ï¼š" + msg.topic + ",ç¯å¢ƒï¼š" + str(client._host)
         none_list.append(none_str)
         client1_topic.pop(msg.topic, '')
         return
-    # ¶¨ÒåÒ»¸ö×Öµä½á¹¹µÄ±äÁ¿quote_dictºÍÒ»¸ö×Öµä½á¹¹µÄ±äÁ¿dataMap
+    # å®šä¹‰ä¸€ä¸ªå­—å…¸ç»“æ„çš„å˜é‡quote_dictå’Œä¸€ä¸ªå­—å…¸ç»“æ„çš„å˜é‡dataMap
     quote_dict = {}
     dataMap = {}
-    # ±éÀúdata_allÖĞµÄÃ¿¸öÊı¾İ¿é£¬½«Æä°´ÕÕ¡°=¡±·ûºÅ½øĞĞ²ğ·Ö²¢´æ´¢µ½dataMapÖĞ
+    # éå†data_allä¸­çš„æ¯ä¸ªæ•°æ®å—ï¼Œå°†å…¶æŒ‰ç…§â€œ=â€ç¬¦å·è¿›è¡Œæ‹†åˆ†å¹¶å­˜å‚¨åˆ°dataMapä¸­
     for d in str(data_all).split("\x02"):
         ds = d.split('=')
         if len(ds) >= 2:
             dataMap[ds[0]] = ds[1]
-    # ±éÀúdataÖĞµÄÃ¿¸öÊı¾İÏî
+    # éå†dataä¸­çš„æ¯ä¸ªæ•°æ®é¡¹
     for d in data:
-        # Èô¸ÃÊı¾İÏîµÄ´úÂë²»ÔÚdataMapÖĞ¡¢dataMapÖĞµÄÖµÎª¿Õ»òÕßÖµÎª''£¬Ôò½«quote_dictÖĞ¸ÃÊı¾İÏîµÄÖµÉèÎª¿Õ×Ö·û´®
+        # è‹¥è¯¥æ•°æ®é¡¹çš„ä»£ç ä¸åœ¨dataMapä¸­ã€dataMapä¸­çš„å€¼ä¸ºç©ºæˆ–è€…å€¼ä¸º''ï¼Œåˆ™å°†quote_dictä¸­è¯¥æ•°æ®é¡¹çš„å€¼è®¾ä¸ºç©ºå­—ç¬¦ä¸²
         if d[0] not in dataMap or dataMap[d[0]] is None or dataMap[d[0]] == '':
             quote_dict[d[1]] = ''
-        # ·ñÔò£¬ÔÚquote_dictÖĞÎª¸ÃÊı¾İÏîµÄÖµ½âÂë²¢´æ´¢ÔÚquote_dictÖĞ
+        # å¦åˆ™ï¼Œåœ¨quote_dictä¸­ä¸ºè¯¥æ•°æ®é¡¹çš„å€¼è§£ç å¹¶å­˜å‚¨åœ¨quote_dictä¸­
         elif d[2] == 'Y':
             quote_dict[d[1]] = decode(dataMap[d[0]])
         else:
             quote_dict[d[1]] = dataMap[d[0]]
-    # ½«quote_dict¼ÓÈëquote_list1ÖĞ
+    # å°†quote_dictåŠ å…¥quote_list1ä¸­
     quote_list1.append(quote_dict)
-    # È¡Ïû¸ÃÖ÷ÌâµÄ¶©ÔÄ£¬²¢´Óclient1_topicÖĞÒÆ³ı¸ÃÖ÷Ìâ
+    # å–æ¶ˆè¯¥ä¸»é¢˜çš„è®¢é˜…ï¼Œå¹¶ä»client1_topicä¸­ç§»é™¤è¯¥ä¸»é¢˜
     client.unsubscribe(msg.topic)
     client1_topic.pop(msg.topic, '')
 
 
-# ¶¨ÒåÒ»¸öÃûÎªon_message_2µÄÊÂ¼ş´¦Àíº¯Êı£¬´«Èë²ÎÊıÎªclient¡¢userdata¡¢msg
+# å®šä¹‰ä¸€ä¸ªåä¸ºon_message_2çš„äº‹ä»¶å¤„ç†å‡½æ•°ï¼Œä¼ å…¥å‚æ•°ä¸ºclientã€userdataã€msg
 def on_message_2(client, userdata, msg):
-    # ½âÑ¹Ëõmsg.payloadµÄÊı¾İ²¢×ª»»Îªutf8±àÂë¸ñÊ½
+    # è§£å‹ç¼©msg.payloadçš„æ•°æ®å¹¶è½¬æ¢ä¸ºutf8ç¼–ç æ ¼å¼
     data_all = zstd.decompress(msg.payload).decode('utf8')
-    # Èô½âÑ¹ËõºóµÄÊı¾İĞ¡ÓÚµÈÓÚ1¸ö£¬Ôò½«¸ÃÏûÏ¢µÄÖ÷ÌâºÍ»·¾³ĞÅÏ¢¼ÓÈënone_listÖĞ£¬²¢´Óclient2_topicÖĞÒÆ³ı¸ÃÖ÷Ìâ
+    # è‹¥è§£å‹ç¼©åçš„æ•°æ®å°äºç­‰äº1ä¸ªï¼Œåˆ™å°†è¯¥æ¶ˆæ¯çš„ä¸»é¢˜å’Œç¯å¢ƒä¿¡æ¯åŠ å…¥none_listä¸­ï¼Œå¹¶ä»client2_topicä¸­ç§»é™¤è¯¥ä¸»é¢˜
     if len(str(data_all).split("\x02")) <= 1:
-        none_str = "´úÂë£º" + msg.topic + ",»·¾³£º" + str(client._host)
+        none_str = "ä»£ç ï¼š" + msg.topic + ",ç¯å¢ƒï¼š" + str(client._host)
         none_list.append(none_str)
         client2_topic.pop(msg.topic, '')
         return
-    # ¶¨ÒåÒ»¸ö×Öµä½á¹¹µÄ±äÁ¿quote_dictºÍÒ»¸ö×Öµä½á¹¹µÄ±äÁ¿dataMap
+    # å®šä¹‰ä¸€ä¸ªå­—å…¸ç»“æ„çš„å˜é‡quote_dictå’Œä¸€ä¸ªå­—å…¸ç»“æ„çš„å˜é‡dataMap
     quote_dict = {}
     dataMap = {}
-    # ±éÀúdata_allÖĞµÄÃ¿¸öÊı¾İ¿é£¬½«Æä°´ÕÕ¡°=¡±·ûºÅ½øĞĞ²ğ·Ö²¢´æ´¢µ½dataMapÖĞ
+    # éå†data_allä¸­çš„æ¯ä¸ªæ•°æ®å—ï¼Œå°†å…¶æŒ‰ç…§â€œ=â€ç¬¦å·è¿›è¡Œæ‹†åˆ†å¹¶å­˜å‚¨åˆ°dataMapä¸­
     for d in str(data_all).split("\x02"):
         ds = d.split('=')
         if len(ds) >= 2:
             dataMap[ds[0]] = ds[1]
-    # ±éÀúdataÖĞµÄÃ¿¸öÊı¾İÏî
+    # éå†dataä¸­çš„æ¯ä¸ªæ•°æ®é¡¹
     for d in data:
-        # Èô¸ÃÊı¾İÏîµÄ´úÂë²»ÔÚdataMapÖĞ¡¢dataMapÖĞµÄÖµÎª¿Õ»òÕßÖµÎª''£¬Ôò½«quote_dictÖĞ¸ÃÊı¾İÏîµÄÖµÉèÎª¿Õ×Ö·û´®
+        # è‹¥è¯¥æ•°æ®é¡¹çš„ä»£ç ä¸åœ¨dataMapä¸­ã€dataMapä¸­çš„å€¼ä¸ºç©ºæˆ–è€…å€¼ä¸º''ï¼Œåˆ™å°†quote_dictä¸­è¯¥æ•°æ®é¡¹çš„å€¼è®¾ä¸ºç©ºå­—ç¬¦ä¸²
         if d[0] not in dataMap or dataMap[d[0]] is None or dataMap[d[0]] == '':
             quote_dict[d[1]] = ''
-        # ·ñÔò£¬ÔÚquote_dictÖĞÎª¸ÃÊı¾İÏîµÄÖµ½âÂë²¢´æ´¢ÔÚquote_dictÖĞ
+        # å¦åˆ™ï¼Œåœ¨quote_dictä¸­ä¸ºè¯¥æ•°æ®é¡¹çš„å€¼è§£ç å¹¶å­˜å‚¨åœ¨quote_dictä¸­
         elif d[2] == 'Y':
             quote_dict[d[1]] = decode(dataMap[d[0]])
         else:
             quote_dict[d[1]] = dataMap[d[0]]
-    # ½«quote_dict¼ÓÈëquote_list2ÖĞ
+    # å°†quote_dictåŠ å…¥quote_list2ä¸­
     quote_list2.append(quote_dict)
-    # È¡Ïû¸ÃÖ÷ÌâµÄ¶©ÔÄ£¬²¢´Óclient2_topicÖĞÒÆ³ı¸ÃÖ÷Ìâ
+    # å–æ¶ˆè¯¥ä¸»é¢˜çš„è®¢é˜…ï¼Œå¹¶ä»client2_topicä¸­ç§»é™¤è¯¥ä¸»é¢˜
     client.unsubscribe(msg.topic)
     client2_topic.pop(msg.topic, '')
 
 
-# ¿ìÕÕ±È¶Ô
+# å¿«ç…§æ¯”å¯¹
 def compare_result(item):
-    print("¿ªÊ¼±È¶Ô....")
+    print("å¼€å§‹æ¯”å¯¹....")
     # print(quote_list1)
     # print(len(quote_list2))
-    # list1 = key_sort_group(quote_list1, '´úÂë')
-    # list2 = key_sort_group(quote_list2, '´úÂë')
+    # list1 = key_sort_group(quote_list1, 'ä»£ç ')
+    # list2 = key_sort_group(quote_list2, 'ä»£ç ')
     # print(list1)
-    print("¹ÉÆ±ÊıÁ¿£º", len(quote_list1))
-    print("¹ÉÆ±ÊıÁ¿£º", len(quote_list2))
-    # ½á¹û±È¶Ô
-    resp_list1 = DeepDiff(quote_list1, quote_list2, group_by='´úÂë')
+    print("è‚¡ç¥¨æ•°é‡ï¼š", len(quote_list1))
+    print("è‚¡ç¥¨æ•°é‡ï¼š", len(quote_list2))
+    # ç»“æœæ¯”å¯¹
+    resp_list1 = DeepDiff(quote_list1, quote_list2, group_by='ä»£ç ')
     # print(resp_list1)
-    # ´æ·Å»·¾³1Êı¾İ
+    # å­˜æ”¾ç¯å¢ƒ1æ•°æ®
     envList1 = []
-    # ´æ·Å»·¾³2Êı¾İ
+    # å­˜æ”¾ç¯å¢ƒ2æ•°æ®
     envList2 = []
     key_list = []
-    # ´æ·Å±È¶Ô²»ÉÏµÄ¹ÉÆ±Ãû
+    # å­˜æ”¾æ¯”å¯¹ä¸ä¸Šçš„è‚¡ç¥¨å
     code_list = []
-    # ´æ·Å±È¶Ô²»ÉÏµÄ×Ö¶ÎÃû
+    # å­˜æ”¾æ¯”å¯¹ä¸ä¸Šçš„å­—æ®µå
     field_list = []
     # print(resp_list1)
-    # ÅĞ¶Ï±È¶Ô½á¹û
+    # åˆ¤æ–­æ¯”å¯¹ç»“æœ
     if resp_list1:
-        # print("´íÎóµÄ£º", item)
-        # »ñÈ¡±È¶Ô²»ÉÏµÄ×Ö¶Î
+        # print("é”™è¯¯çš„ï¼š", item)
+        # è·å–æ¯”å¯¹ä¸ä¸Šçš„å­—æ®µ
         if 'values_changed' in resp_list1:
             values_changed = resp_list1['values_changed']
             key_list = list(values_changed.keys())
@@ -272,38 +274,38 @@ def compare_result(item):
                 new_value = i['new_value']
                 envList1.append(old_value)
                 envList2.append(new_value)
-            # ½ØÈ¡¹ÉÆ±´úÂëÒÔ¼°×Ö¶Î
+            # æˆªå–è‚¡ç¥¨ä»£ç ä»¥åŠå­—æ®µ
             for j in key_list:
                 m = re.findall(r'\[\'(.*?)\'\]', j)
                 code_list.append(m[0])
                 field_list.append(m[1])
-        # »ñÈ¡¶àµÄ×Ö¶Î
+        # è·å–å¤šçš„å­—æ®µ
         # if 'iterable_item_added' in resp_list1:
         #     iterable_item_added = resp_list1['iterable_item_added']
         #     print(iterable_item_added)
         #     # code_list.append(iterable_item_added)
-        # # »ñÈ¡ÉÙµÄ×Ö¶Î
+        # # è·å–å°‘çš„å­—æ®µ
         # if 'iterable_item_removed' in resp_list1:
         #     iterable_item_removed = resp_list1['iterable_item_removed']
         #     print(iterable_item_removed)
         # code_list.append(iterable_item_removed)
         # print(code_list)
-        json1 = {'¹ÉÆ±Ãû³Æ': code_list, '×Ö¶ÎÃû': field_list, item['env1']: envList1, item['env2']: envList2}
+        json1 = {'è‚¡ç¥¨åç§°': code_list, 'å­—æ®µå': field_list, item['env1']: envList1, item['env2']: envList2}
         write_excel(json1, file_name)
     else:
-        # print("ÕıÈ·µÄ£º", item)
-        json1 = {'±È¶Ô½á¹û': ['ÍêÈ«ÏàÍ¬']}
+        # print("æ­£ç¡®çš„ï¼š", item)
+        json1 = {'æ¯”å¯¹ç»“æœ': ['å®Œå…¨ç›¸åŒ']}
         write_excel(json1, file_name)
-    print("±È¶ÔÍê³ÉĞ´Èëexcel")
+    print("æ¯”å¯¹å®Œæˆå†™å…¥excel")
 
 
-# ÅÅĞò·Ö×é
+# æ’åºåˆ†ç»„
 def key_sort_group(quote_list, str1):
-    """¶ÔÁĞ±íÖĞdictÊı¾İÖ¸¶¨keyÅÅĞò£¬·Ö×é"""
-    quote_list.sort(key=itemgetter(str1))  # codeÅÅĞò£»ÎŞ·µ»ØÖµ
+    """å¯¹åˆ—è¡¨ä¸­dictæ•°æ®æŒ‡å®škeyæ’åºï¼Œåˆ†ç»„"""
+    quote_list.sort(key=itemgetter(str1))  # codeæ’åºï¼›æ— è¿”å›å€¼
     # print(data)
     result = dict()
-    for code, items in groupby(quote_list, key=itemgetter(str1)):  # °´ÕÕcode·Ö×é
+    for code, items in groupby(quote_list, key=itemgetter(str1)):  # æŒ‰ç…§codeåˆ†ç»„
         # print(type(items))
         # d = dict(ChainMap(*items))
         result[str(code)] = list(items)
@@ -311,22 +313,22 @@ def key_sort_group(quote_list, str1):
 
 
 def sort_dict_by_keys(d, reverse=True):
-    # ÕâÀïÈç¹û²»Ç¿ÖÆ×ª»»»á±¨´í£¬ÒòÎªd.keys()µÄÀàĞÍÊÇ£º<class 'dict_keys'>£¬Ã»ÓĞsort·½·¨
+    # è¿™é‡Œå¦‚æœä¸å¼ºåˆ¶è½¬æ¢ä¼šæŠ¥é”™ï¼Œå› ä¸ºd.keys()çš„ç±»å‹æ˜¯ï¼š<class 'dict_keys'>ï¼Œæ²¡æœ‰sortæ–¹æ³•
     keys = list(d.keys())
     keys.sort(reverse=reverse)
     return [(key, d[key]) for key in keys]
 
 
-# ½á¹ûĞ´Èëexcel
+# ç»“æœå†™å…¥excel
 def write_excel(json1, item):
-    # Èç¹ûÎÄ¼ş²»´æÔÚ
-    write_path = curPath + f'\\result\\mqttResult\\{time1}_ÍÆËÍ¿ìÕÕ±È¶Ô½á¹û.xlsx'
+    # å¦‚æœæ–‡ä»¶ä¸å­˜åœ¨
+    write_path = curPath + f'\\result\\mqttResult\\{time1}_æ¨é€å¿«ç…§æ¯”å¯¹ç»“æœ.xlsx'
     if not os.path.exists(write_path):
         ew = pd.ExcelWriter(write_path)
         wr = pd.DataFrame(json1)
         wr.to_excel(ew, sheet_name=item, index=False)
         ew.close()
-    # Èç¹ûÎÄ¼ş´æÔÚ
+    # å¦‚æœæ–‡ä»¶å­˜åœ¨
     else:
         # wb = load_workbook(write_path, mode='a', engine='openpyxl')
         ew = pd.ExcelWriter(write_path, mode='a', engine='openpyxl')
@@ -337,20 +339,20 @@ def write_excel(json1, item):
 
 
 if '__main__' == __name__:
-    # ÅĞ¶Ï´æ·ÅÂ·¾¶ÊÇ·ñ´æÔÚ
+    # åˆ¤æ–­å­˜æ”¾è·¯å¾„æ˜¯å¦å­˜åœ¨
     if os.path.exists(result_path):
         pass
     else:
         os.makedirs(result_path)
-    # ¶ÁÈ¡¿ìÕÕ×Ö¶ÎÎÄ¼ş
+    # è¯»å–å¿«ç…§å­—æ®µæ–‡ä»¶
     data = quote_yaml(yaml_path)
-    # ¶ÁÈ¡urlÎÄ¼ş
+    # è¯»å–urlæ–‡ä»¶
     compare_url = quote_yaml(url_path)
-    # ¶ÁÈ¡¹ÉÃû±íÎÄ¼ş¼Ğ
+    # è¯»å–è‚¡åè¡¨æ–‡ä»¶å¤¹
     dirs = os.listdir(stock_path)
-    # ±È¶Ô»·¾³µÄurl
+    # æ¯”å¯¹ç¯å¢ƒçš„url
     url = None
-    # Êä³öËùÓĞÎÄ¼şºÍÎÄ¼ş¼Ğ
+    # è¾“å‡ºæ‰€æœ‰æ–‡ä»¶å’Œæ–‡ä»¶å¤¹
     # for file in dirs:
     #     file_name = file
     # print(compare_url.keys())
@@ -374,19 +376,19 @@ if '__main__' == __name__:
         if url_key == "szl2":
             url = compare_url[url_key]
             file = "AllStock_sz.txt"
-        # ´æ·Å»·¾³1¿ìÕÕ
+        # å­˜æ”¾ç¯å¢ƒ1å¿«ç…§
         quote_list1 = []
-        # ´æ·Å»·¾³2¿ìÕÕ
+        # å­˜æ”¾ç¯å¢ƒ2å¿«ç…§
         quote_list2 = []
         print("==============================")
-        print(f"ÊĞ³¡£º{file_name} \n»·¾³1£º {url['env1']}\n»·¾³2£º {url['env2']}")
+        print(f"å¸‚åœºï¼š{file_name} \nç¯å¢ƒ1ï¼š {url['env1']}\nç¯å¢ƒ2ï¼š {url['env2']}")
 
         print("==============================")
         file_path = f'{stock_path}/{file}'
         interval_stock(file_path, url)
-        time.sleep(10)  # ĞİÃß5Ãë
+        time.sleep(10)  # ä¼‘çœ 5ç§’
     print("==============================")
-    print("¿ìÕÕÎª¿ÕµÄ¹ÉÆ±£º")
+    print("å¿«ç…§ä¸ºç©ºçš„è‚¡ç¥¨ï¼š")
     print(none_list)
-    print("ÇëÇóÒì³£µÄµÄÊĞ³¡£º")
+    print("è¯·æ±‚å¼‚å¸¸çš„çš„å¸‚åœºï¼š")
     print(exception_list)

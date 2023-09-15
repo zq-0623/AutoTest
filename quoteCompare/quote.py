@@ -99,7 +99,6 @@ def interval_stock(path, item):
 
 # 多线程请求接口
 def thread_run(stock_list, item):
-    # env = None
     thread_array = []
     for i in range(2):
         key = "env" + str(i + 1)
@@ -114,11 +113,8 @@ def thread_run(stock_list, item):
 
 # 接口请求
 def request_run(stock_list, env, flag):
-    print("接口调用中....")
-    # resp_list = []
+    print(f"接口调用中....",{env})
     for k in stock_list:
-        # print(env)
-        # time.sleep(1)  # 休眠0.3秒
         header = {
             'Token': 'MitakeWeb',
             'Symbol': k,
@@ -127,26 +123,15 @@ def request_run(stock_list, env, flag):
                      '66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,'
                      '97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117| '
         }
-
-        # 'Param': '0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,'
-        # '35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,'
-        # '66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,'
-        # '97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117| '
         try:
             resp = requests.session().get(url=env, headers=header,verify=False)
             resp_list = resp.text.split("\x03")
             if resp_list[-1] == '':
                 resp_list.remove('')
-            # print(len(resp_list))
-            # print(resp_list)
             for m in range(len(resp_list)):
                 split_list = resp_list[m].split("\x02")
-                # print(split_list)
-                # if split_list:
                 quote_dict = dict()
-                # print(split_list)
                 for i in range(len(split_list)):
-                    # print(len(split_list))
                     data_key = list(data[i].keys())[0]
                     data_value = list(data[i].values())[0]
                     # 判断该字段是否压缩
@@ -172,8 +157,6 @@ def request_run(stock_list, env, flag):
                     codes = k.split(',')
                     none_str = "代码：" + codes[m] + ",环境：" + env
                     none_list.append(none_str)
-                    # print(codes)
-                    # print("快照为空：", codes[m], "，环境：", env)
                 else:
                     if flag == 0:
                         quote_list1.append(quote_dict)
@@ -184,36 +167,23 @@ def request_run(stock_list, env, flag):
             raise
 
 
-# print(quote_list1)
-# print(quote_list2)
-
-
 # 快照比对
 def compare_result(item):
     print("开始比对....")
-    # print(quote_list1)
-    # print(len(quote_list2))
-    # list1 = key_sort_group(quote_list1, '代码')
-    # list2 = key_sort_group(quote_list2, '代码')
-    # print(list1)
     print("股票数量：", len(quote_list1))
     print("股票数量：", len(quote_list2))
     # 结果比对
     resp_list1 = DeepDiff(quote_list1, quote_list2, group_by='代码')
-    # print(resp_list1)
     # 存放环境1数据
     envList1 = []
     # 存放环境2数据
     envList2 = []
-    key_list = []
     # 存放比对不上的股票名
     code_list = []
     # 存放比对不上的字段名
     field_list = []
-    # print(resp_list1)
     # 判断比对结果
     if resp_list1:
-        # print("错误的：", item)
         # 获取比对不上的字段
         if 'values_changed' in resp_list1:
             values_changed = resp_list1['values_changed']
@@ -226,6 +196,7 @@ def compare_result(item):
                 envList2.append(new_value)
             # 截取股票代码以及字段
             for j in key_list:
+                print(j)
                 m = re.findall(r'\[\'(.*?)\'\]', j)
                 code_list.append(m[0])
                 field_list.append(m[1])
@@ -253,11 +224,8 @@ def compare_result(item):
 def key_sort_group(quote_list, str1):
     """对列表中dict数据指定key排序，分组"""
     quote_list.sort(key=itemgetter(str1))  # code排序；无返回值
-    # print(data)
     result = dict()
     for code, items in groupby(quote_list, key=itemgetter(str1)):  # 按照code分组
-        # print(type(items))
-        # d = dict(ChainMap(*items))
         result[str(code)] = list(items)
     return result
 
@@ -310,16 +278,16 @@ if '__main__' == __name__:
         url = None
         file = "AllStock_" + url_key + ".txt"
         file_name = url_key
-        if url_key == "sh":
-            url = compare_url[url_key]
-        if url_key == "sz":
-            url = compare_url[url_key]
+        # if url_key == "sh":
+        #     url = compare_url[url_key]
+        # if url_key == "sz":
+        #     url = compare_url[url_key]
         if url_key == "bz":
             url = compare_url[url_key]
-        if url_key == "csi":
-            url = compare_url[url_key]
-        if url_key == "hk":
-            url = compare_url[url_key]
+        # if url_key == "csi":
+        #     url = compare_url[url_key]
+        # if url_key == "hk":
+        #     url = compare_url[url_key]
         # if url_key == "shl2":
         #     url = compare_url[url_key]
         #     file = "AllStock_sh.txt"
