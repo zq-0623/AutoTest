@@ -130,30 +130,32 @@ if __name__ == '__main__':
     headers = {
         "token": "MitakeWeb",
         "symbol": "000002.sz",
-        "permis": "L1"
-        # "param": "20230914"
+        # "permis": "L1"
+        # "param": "202309180930"
     }
-    # headers1 = {
-    #     "token": "MitakeWeb",
-    #     "symbol": "getline"
-    #
-    # }
-    url1 = "http://114.80.155.61:22016/v3/dayk"
-    # url2 = "http://114.80.155.61:22016/v1/sh1/dayk/601099?today=y&select=date,open,high,low,close,volume,amount,prevClose,fp_volume,fp_amount,ref,iopv,avg&begin=300&end=202206130930"
-    # url1 = "http://114.80.155.61:22016/v4/line"
-    # url1 = "http://114.80.155.134:22016/v4/line"
-    # url2 = "http://114.80.155.61:22016/v1/sh1/mink/600050?begin=-200&end=-1&period=1&recovered=forward&select=date,
-    # close,avg,volume,ref,amount,open,high,low"
+    headers1 = {
+        "token": "MitakeWeb",
+        "symbol": "getline"
+
+    }
+    # url1 = "http://114.80.155.61:22016/v3/m1"
+    # url1 = "http://114.80.155.61:22016/v1/sh1/dayk/601099?today=y&select=date,open,high,low,close,volume,amount,prevClose,fp_volume,fp_amount,ref,iopv,avg&begin=300&end=202206130930"
+    url1 = "http://114.80.155.61:22016/v4/line5d"
+    # # url1 = "http://114.80.155.134:22016/v4/line"
+    # url1 = "http://114.80.155.61:22016/v1/sh1/mink/600000?begin=20230914000000&end=20230920240000&period=1&select=date,close,volume,avg,prevClose,open,high,low,amount,iopv&today=y"
+    # close,avg,volume,ref,amount,open,high,low
     response_list1 = []
     response_list2 = []
     response1 = SseOptionQuote(url1, header=headers)
     # response2 = SseOptionQuote(url2,headers=headers1)
     # print(type(response1.text))
+    # MDS接口返回数据未解码，直接输出
     print(response1.text)
+    # SDK接口返回数据加密，需要解码
     decode_response = decode_quote(response1.text)
     if response1:
         response_list1.append(decode_response)
-        logger.debug(f"url1 success headers '{headers}'")
+        logger.debug(f"url1 success headers '{headers1}'")
     else:
         logger.info(f"Failed to get response for url '{url1}'")
     # res2 = response2.json()["kline"]
@@ -164,7 +166,8 @@ if __name__ == '__main__':
     # else:
     #     logger.info(f"Failed to get response for url '{url2}'")
     # compare_lists(response_list1,response_list2)
-    # logger.info(f"response_list1=====>'{response_list1}'")
+    logger.info(f"response_list1=====>'{response_list1}'")
+    logger.debug(len(response_list1))
     # logger.info(f"response_list2=====>'{response_list2}'")
     # print(decode_response)
     # write_excel(decode_response,excel_yaml_title())

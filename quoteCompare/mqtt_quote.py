@@ -362,20 +362,20 @@ if '__main__' == __name__:
         file_name = url_key
         if url_key == "sh":
             url = compare_url[url_key]
-        if url_key == "sz":
-            url = compare_url[url_key]
-        if url_key == "bz":
-            url = compare_url[url_key]
-        if url_key == "csi":
-            url = compare_url[url_key]
-        if url_key == "hk":
-            url = compare_url[url_key]
-        if url_key == "shl2":
-            url = compare_url[url_key]
-            file = "AllStock_sh.txt"
-        if url_key == "szl2":
-            url = compare_url[url_key]
-            file = "AllStock_sz.txt"
+        # if url_key == "sz":
+        #     url = compare_url[url_key]
+        # if url_key == "bz":
+        #     url = compare_url[url_key]
+        # if url_key == "csi":
+        #     url = compare_url[url_key]
+        # if url_key == "hk":
+        #     url = compare_url[url_key]
+        # if url_key == "shl2":
+        #     url = compare_url[url_key]
+        #     file = "AllStock_sh.txt"
+        # if url_key == "szl2":
+        #     url = compare_url[url_key]
+        #     file = "AllStock_sz.txt"
         # 存放环境1快照
         quote_list1 = []
         # 存放环境2快照

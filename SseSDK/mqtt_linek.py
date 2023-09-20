@@ -27,7 +27,7 @@ def on_message_min1(client, userdata, msg):
         code = dataMap.get("1")
         subtype = dataMap.get("6")
         sb = dataMap.get("sb")
-        h5 = json.loads(dataMap.get("h5"))
+        h5 = json.loads(dataMap.get("h5").strip())
         # h15 = json.loads(dataMap.get("h15"))
         # h30 = json.loads(dataMap.get("h30"))
         # h60 = json.loads(dataMap.get("h60"))
@@ -43,7 +43,7 @@ def on_message_min1(client, userdata, msg):
         print(subtype)
         print(sb)
         # print("h5333333=====>", h5)
-        print("h5=====>", decode_quote(h5))
+        print("h5=====>", h5)
         # print("h15=====>",decode_quote(h15))
         # print("h30=====>",decode_quote(h30))
         # print("h60=====>",decode_quote(h30))
@@ -90,8 +90,6 @@ def quote_yaml(path):
 def decode_quote(msg):
     res_list = [msg.get('a'), msg.get('c'), msg.get('ot'), msg.get('h'), msg.get('i'), msg.get('l'), msg.get('m'),
                 msg.get('o'), msg.get('dt'), msg.get('r'), msg.get('t'), msg.get('v'), msg.get('r'), msg.get('ic')]
-    res_list.pop()
-    print(res_list)
     for i in range(len(res_list)):
         data_values = list(data[i].values())[0]
         if data_values == 'Y':
@@ -99,11 +97,11 @@ def decode_quote(msg):
     return res_list
 
 
-# while True:
-#     try:
-#
-#     except Exception as e:
-#         pass
-for i in range(1,4):
-    if i <4:
+while True:
+    try:
         on_subscribe()
+    except Exception as e:
+        pass
+# for i in range(1,5):
+#     if i <5:
+#         on_subscribe()
