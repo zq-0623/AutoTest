@@ -1,0 +1,1560 @@
+[2023-08-17  11:10:56.204] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_600000.xlsx
+[2023-08-17  11:10:57.867] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_600000.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_600000.xlsx 中的 '时间2':
+[2023-08-17  11:10:57.880] excel_compare.py -> <module> line:130 [INFO] :       行号            时间             时间2
+0      1  202308110930  20230811093000
+1      2  202308110931  20230811093100
+2      3  202308110932  20230811093200
+3      4  202308110933  20230811093300
+4      5  202308110934  20230811093400
+..   ...           ...             ...
+959  960  202308161456  20230816145600
+960  961  202308161457  20230816145700
+961  962  202308161458  20230816145800
+962  963  202308161459  20230816145900
+963  964  202308161500  20230816150000
+
+[964 rows x 3 columns]
+[2023-08-17  11:10:58.251] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_600000.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_600000.xlsx 中的 '最新价2':
+[2023-08-17  11:10:58.251] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最新价, 最新价2]
+Index: []
+[2023-08-17  11:10:58.558] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_600000.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_600000.xlsx 中的 '成交量2':
+[2023-08-17  11:10:58.558] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  11:10:58.876] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_600000.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_600000.xlsx 中的 '参考价2':
+[2023-08-17  11:10:58.876] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 参考价, 参考价2]
+Index: []
+[2023-08-17  11:10:59.200] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_600000.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_600000.xlsx 中的 '成交额2':
+[2023-08-17  11:10:59.200] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  11:10:59.505] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_600000.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_600000.xlsx 中的 '开盘价2':
+[2023-08-17  11:10:59.506] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 开盘价, 开盘价2]
+Index: []
+[2023-08-17  11:10:59.833] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_600000.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_600000.xlsx 中的 '最高价2':
+[2023-08-17  11:10:59.834] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最高价, 最高价2]
+Index: []
+[2023-08-17  11:11:00.165] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_600000.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_600000.xlsx 中的 '最低价2':
+[2023-08-17  11:11:00.165] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最低价, 最低价2]
+Index: []
+[2023-08-17  11:11:00.167] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  11:11:23.379] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_900901.xlsx
+[2023-08-17  11:11:24.119] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_900901.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_900901.xlsx 中的 '时间2':
+[2023-08-17  11:11:24.120] excel_compare.py -> <module> line:130 [INFO] :       行号            时间             时间2
+0      1  202308110930  20230811093000
+1      2  202308110931  20230811093100
+2      3  202308110932  20230811093200
+3      4  202308110933  20230811093300
+4      5  202308110934  20230811093400
+..   ...           ...             ...
+959  960  202308161456  20230816145600
+960  961  202308161457  20230816145700
+961  962  202308161458  20230816145800
+962  963  202308161459  20230816145900
+963  964  202308161500  20230816150000
+
+[964 rows x 3 columns]
+[2023-08-17  11:11:24.447] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_900901.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_900901.xlsx 中的 '最新价2':
+[2023-08-17  11:11:24.447] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最新价, 最新价2]
+Index: []
+[2023-08-17  11:11:24.774] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_900901.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_900901.xlsx 中的 '成交量2':
+[2023-08-17  11:11:24.774] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  11:11:25.099] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_900901.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_900901.xlsx 中的 '参考价2':
+[2023-08-17  11:11:25.100] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 参考价, 参考价2]
+Index: []
+[2023-08-17  11:11:25.428] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_900901.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_900901.xlsx 中的 '成交额2':
+[2023-08-17  11:11:25.428] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  11:11:25.750] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_900901.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_900901.xlsx 中的 '开盘价2':
+[2023-08-17  11:11:25.751] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 开盘价, 开盘价2]
+Index: []
+[2023-08-17  11:11:26.077] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_900901.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_900901.xlsx 中的 '最高价2':
+[2023-08-17  11:11:26.077] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最高价, 最高价2]
+Index: []
+[2023-08-17  11:11:26.438] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_900901.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_900901.xlsx 中的 '最低价2':
+[2023-08-17  11:11:26.438] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最低价, 最低价2]
+Index: []
+[2023-08-17  11:11:26.440] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  11:17:49.431] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_688223.xlsx
+[2023-08-17  11:17:50.123] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_688223.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_688223.xlsx 中的 '时间2':
+[2023-08-17  11:17:50.123] excel_compare.py -> <module> line:130 [INFO] :       行号            时间             时间2
+0      1  202308110930  20230811093000
+1      2  202308110931  20230811093100
+2      3  202308110932  20230811093200
+3      4  202308110933  20230811093300
+4      5  202308110934  20230811093400
+..   ...           ...             ...
+959  960  202308161456  20230816145600
+960  961  202308161457  20230816145700
+961  962  202308161458  20230816145800
+962  963  202308161459  20230816145900
+963  964  202308161500  20230816150000
+
+[964 rows x 3 columns]
+[2023-08-17  11:17:50.434] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_688223.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_688223.xlsx 中的 '最新价2':
+[2023-08-17  11:17:50.434] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最新价, 最新价2]
+Index: []
+[2023-08-17  11:17:50.751] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_688223.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_688223.xlsx 中的 '成交量2':
+[2023-08-17  11:17:50.751] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  11:17:51.061] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_688223.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_688223.xlsx 中的 '参考价2':
+[2023-08-17  11:17:51.061] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 参考价, 参考价2]
+Index: []
+[2023-08-17  11:17:51.364] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_688223.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_688223.xlsx 中的 '成交额2':
+[2023-08-17  11:17:51.364] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  11:17:51.665] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_688223.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_688223.xlsx 中的 '开盘价2':
+[2023-08-17  11:17:51.665] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 开盘价, 开盘价2]
+Index: []
+[2023-08-17  11:17:51.971] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_688223.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_688223.xlsx 中的 '最高价2':
+[2023-08-17  11:17:51.971] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最高价, 最高价2]
+Index: []
+[2023-08-17  11:17:52.277] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_688223.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_688223.xlsx 中的 '最低价2':
+[2023-08-17  11:17:52.277] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最低价, 最低价2]
+Index: []
+[2023-08-17  11:17:52.278] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  11:26:16.139] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_513330.xlsx
+[2023-08-17  11:26:16.787] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_513330.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_513330.xlsx 中的 '时间2':
+[2023-08-17  11:26:16.787] excel_compare.py -> <module> line:130 [INFO] :       行号            时间             时间2
+0      1  202308110930  20230811093000
+1      2  202308110931  20230811093100
+2      3  202308110932  20230811093200
+3      4  202308110933  20230811093300
+4      5  202308110934  20230811093400
+..   ...           ...             ...
+959  960  202308161456  20230816145600
+960  961  202308161457  20230816145700
+961  962  202308161458  20230816145800
+962  963  202308161459  20230816145900
+963  964  202308161500  20230816150000
+
+[964 rows x 3 columns]
+[2023-08-17  11:26:17.094] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_513330.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_513330.xlsx 中的 '最新价2':
+[2023-08-17  11:26:17.095] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最新价, 最新价2]
+Index: []
+[2023-08-17  11:26:17.376] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_513330.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_513330.xlsx 中的 '成交量2':
+[2023-08-17  11:26:17.376] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  11:26:17.687] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_513330.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_513330.xlsx 中的 '参考价2':
+[2023-08-17  11:26:17.687] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 参考价, 参考价2]
+Index: []
+[2023-08-17  11:26:18.009] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_513330.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_513330.xlsx 中的 '成交额2':
+[2023-08-17  11:26:18.009] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  11:26:18.311] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_513330.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_513330.xlsx 中的 '开盘价2':
+[2023-08-17  11:26:18.311] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 开盘价, 开盘价2]
+Index: []
+[2023-08-17  11:26:18.626] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_513330.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_513330.xlsx 中的 '最高价2':
+[2023-08-17  11:26:18.626] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最高价, 最高价2]
+Index: []
+[2023-08-17  11:26:18.912] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_513330.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_513330.xlsx 中的 '最低价2':
+[2023-08-17  11:26:18.912] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最低价, 最低价2]
+Index: []
+[2023-08-17  11:26:18.913] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  11:30:48.434] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_204001.xlsx
+[2023-08-17  11:30:49.138] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '时间2':
+[2023-08-17  11:30:49.138] excel_compare.py -> <module> line:130 [INFO] :         行号            时间             时间2
+0        1  202308110930  20230811093000
+1        2  202308110931  20230811093100
+2        3  202308110932  20230811093200
+3        4  202308110933  20230811093300
+4        5  202308110934  20230811093400
+...    ...           ...             ...
+1079  1080  202308161526  20230816152600
+1080  1081  202308161527  20230816152700
+1081  1082  202308161528  20230816152800
+1082  1083  202308161529  20230816152900
+1083  1084  202308161530  20230816153000
+
+[1084 rows x 3 columns]
+[2023-08-17  11:30:49.500] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '最新价2':
+[2023-08-17  11:30:49.501] excel_compare.py -> <module> line:130 [INFO] :         行号   最新价    最新价2
+740    741  2015  2015.0
+741    742  2030  2030.0
+742    743  2030  2030.0
+743    744  2010  2010.0
+744    745  2015  2015.0
+746    747  2010  2010.0
+749    750  2030  2030.0
+750    751  2035  2035.0
+753    754  2010  2010.0
+909    910  2010  2010.0
+911    912  2010  2010.0
+927    928  2015  2015.0
+930    931  2015  2015.0
+933    934  2010  2010.0
+940    941  2010  2010.0
+941    942  2015  2015.0
+942    943  2030  2030.0
+943    944  2010  2010.0
+944    945  2010  2010.0
+946    947  2030  2030.0
+969    970  2010  2010.0
+970    971  2015  2015.0
+972    973  2030  2030.0
+977    978  2015  2015.0
+978    979  2015  2015.0
+984    985  2015  2015.0
+985    986  2010  2010.0
+989    990  2030  2030.0
+992    993  2010  2010.0
+993    994  2010  2010.0
+995    996  2030  2030.0
+1003  1004  2035  2035.0
+1004  1005  2015  2015.0
+1005  1006  2015  2015.0
+1006  1007  2015  2015.0
+1007  1008  2010  2010.0
+1015  1016  2015  2015.0
+1019  1020  2030  2030.0
+1021  1022  2030  2030.0
+1027  1028  2030  2030.0
+1038  1039  2035  2035.0
+1039  1040  2030  2030.0
+1045  1046  2035  2035.0
+1049  1050  2015  2015.0
+1050  1051  2035  2035.0
+1051  1052  2010  2010.0
+1053  1054  2010  2010.0
+[2023-08-17  11:30:49.875] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '成交量2':
+[2023-08-17  11:30:49.875] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  11:30:50.213] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '参考价2':
+[2023-08-17  11:30:50.213] excel_compare.py -> <module> line:130 [INFO] :         行号   参考价    参考价2
+741    742  2015  2015.0
+742    743  2030  2030.0
+743    744  2030  2030.0
+744    745  2010  2010.0
+745    746  2015  2015.0
+747    748  2010  2010.0
+750    751  2030  2030.0
+751    752  2035  2035.0
+754    755  2010  2010.0
+910    911  2010  2010.0
+912    913  2010  2010.0
+928    929  2015  2015.0
+931    932  2015  2015.0
+934    935  2010  2010.0
+941    942  2010  2010.0
+942    943  2015  2015.0
+943    944  2030  2030.0
+944    945  2010  2010.0
+945    946  2010  2010.0
+947    948  2030  2030.0
+970    971  2010  2010.0
+971    972  2015  2015.0
+973    974  2030  2030.0
+978    979  2015  2015.0
+979    980  2015  2015.0
+985    986  2015  2015.0
+986    987  2010  2010.0
+990    991  2030  2030.0
+993    994  2010  2010.0
+994    995  2010  2010.0
+996    997  2030  2030.0
+1004  1005  2035  2035.0
+1005  1006  2015  2015.0
+1006  1007  2015  2015.0
+1007  1008  2015  2015.0
+1008  1009  2010  2010.0
+1016  1017  2015  2015.0
+1020  1021  2030  2030.0
+1022  1023  2030  2030.0
+1028  1029  2030  2030.0
+1039  1040  2035  2035.0
+1040  1041  2030  2030.0
+1046  1047  2035  2035.0
+1050  1051  2015  2015.0
+1051  1052  2035  2035.0
+1052  1053  2010  2010.0
+1054  1055  2010  2010.0
+[2023-08-17  11:30:50.585] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '成交额2':
+[2023-08-17  11:30:50.585] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  11:30:50.919] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '开盘价2':
+[2023-08-17  11:30:50.920] excel_compare.py -> <module> line:130 [INFO] :         行号   开盘价    开盘价2
+741    742  2015  2015.0
+742    743  2035  2035.0
+743    744  2030  2030.0
+744    745  2010  2010.0
+745    746  2015  2015.0
+746    747  2010  2010.0
+750    751  2035  2035.0
+751    752  2035  2035.0
+754    755  2010  2010.0
+910    911  2010  2010.0
+912    913  2010  2010.0
+928    929  2010  2010.0
+933    934  2030  2030.0
+939    940  2010  2010.0
+941    942  2010  2010.0
+942    943  2015  2015.0
+943    944  2030  2030.0
+945    946  2010  2010.0
+969    970  2015  2015.0
+970    971  2015  2015.0
+971    972  2015  2015.0
+973    974  2030  2030.0
+978    979  2015  2015.0
+979    980  2015  2015.0
+982    983  2015  2015.0
+985    986  2015  2015.0
+986    987  2010  2010.0
+990    991  2030  2030.0
+993    994  2010  2010.0
+994    995  2010  2010.0
+998    999  2030  2030.0
+1003  1004  2030  2030.0
+1004  1005  2035  2035.0
+1005  1006  2015  2015.0
+1006  1007  2015  2015.0
+1008  1009  2010  2010.0
+1016  1017  2010  2010.0
+1020  1021  2030  2030.0
+1022  1023  2030  2030.0
+1024  1025  2030  2030.0
+1025  1026  2035  2035.0
+1028  1029  2035  2035.0
+1038  1039  2035  2035.0
+1039  1040  2035  2035.0
+1048  1049  2030  2030.0
+1050  1051  2015  2015.0
+1052  1053  2010  2010.0
+1054  1055  2010  2010.0
+[2023-08-17  11:30:51.293] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '最高价2':
+[2023-08-17  11:30:51.293] excel_compare.py -> <module> line:130 [INFO] :         行号   最高价    最高价2
+739    740  2015  2015.0
+740    741  2030  2030.0
+743    744  2030  2030.0
+744    745  2030  2030.0
+745    746  2015  2015.0
+746    747  2010  2010.0
+908    909  2010  2010.0
+909    910  2015  2015.0
+912    913  2010  2010.0
+932    933  2035  2035.0
+937    938  2010  2010.0
+939    940  2010  2010.0
+940    941  2015  2015.0
+941    942  2015  2015.0
+942    943  2030  2030.0
+943    944  2030  2030.0
+972    973  2030  2030.0
+973    974  2030  2030.0
+974    975  2030  2030.0
+975    976  2030  2030.0
+983    984  2030  2030.0
+985    986  2015  2015.0
+986    987  2010  2010.0
+993    994  2015  2015.0
+995    996  2035  2035.0
+998    999  2030  2030.0
+1003  1004  2035  2035.0
+1004  1005  2035  2035.0
+1009  1010  2010  2010.0
+1017  1018  2030  2030.0
+1019  1020  2035  2035.0
+1046  1047  2035  2035.0
+1047  1048  2035  2035.0
+1049  1050  2030  2030.0
+1050  1051  2035  2035.0
+1051  1052  2030  2030.0
+1052  1053  2015  2015.0
+1053  1054  2015  2015.0
+1054  1055  2010  2010.0
+[2023-08-17  11:30:51.683] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '最低价2':
+[2023-08-17  11:30:51.683] excel_compare.py -> <module> line:130 [INFO] :         行号   最低价    最低价2
+741    742  2015  2015.0
+743    744  2010  2010.0
+744    745  2010  2010.0
+750    751  2030  2030.0
+751    752  2010  2010.0
+752    753  2030  2030.0
+753    754  2010  2010.0
+910    911  2010  2010.0
+911    912  2010  2010.0
+931    932  2015  2015.0
+932    933  2010  2010.0
+941    942  2010  2010.0
+942    943  2015  2015.0
+943    944  2010  2010.0
+944    945  2010  2010.0
+945    946  2010  2010.0
+969    970  2010  2010.0
+970    971  2015  2015.0
+971    972  2015  2015.0
+975    976  2015  2015.0
+976    977  2015  2015.0
+977    978  2015  2015.0
+978    979  2015  2015.0
+979    980  2010  2010.0
+982    983  2015  2015.0
+983    984  2015  2015.0
+984    985  2015  2015.0
+985    986  2010  2010.0
+989    990  2030  2030.0
+992    993  2010  2010.0
+994    995  2010  2010.0
+1004  1005  2015  2015.0
+1005  1006  2010  2010.0
+1006  1007  2010  2010.0
+1007  1008  2010  2010.0
+1013  1014  2010  2010.0
+1015  1016  2015  2015.0
+1020  1021  2030  2030.0
+1021  1022  2030  2030.0
+1022  1023  2030  2030.0
+1023  1024  2030  2030.0
+1024  1025  2030  2030.0
+1025  1026  2035  2035.0
+1026  1027  2030  2030.0
+1027  1028  2030  2030.0
+1028  1029  2030  2030.0
+1036  1037  2035  2035.0
+1037  1038  2035  2035.0
+1038  1039  2030  2030.0
+1045  1046  2010  2010.0
+1046  1047  2015  2015.0
+1049  1050  2015  2015.0
+1050  1051  2015  2015.0
+1051  1052  2010  2010.0
+1083  1084  1955     NaN
+[2023-08-17  11:30:51.701] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  11:34:29.231] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_204001.xlsx
+[2023-08-17  11:34:29.886] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '时间2':
+[2023-08-17  11:34:29.886] excel_compare.py -> <module> line:130 [INFO] :         行号            时间             时间2
+0        1  202308110930  20230811093000
+1        2  202308110931  20230811093100
+2        3  202308110932  20230811093200
+3        4  202308110933  20230811093300
+4        5  202308110934  20230811093400
+...    ...           ...             ...
+1079  1080  202308161526  20230816152600
+1080  1081  202308161527  20230816152700
+1081  1082  202308161528  20230816152800
+1082  1083  202308161529  20230816152900
+1083  1084  202308161530  20230816153000
+
+[1084 rows x 3 columns]
+[2023-08-17  11:34:30.231] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '最新价2':
+[2023-08-17  11:34:30.231] excel_compare.py -> <module> line:130 [INFO] :         行号   最新价     最新价2
+740    741  2015  20150.0
+741    742  2030  20300.0
+742    743  2030  20300.0
+743    744  2010  20100.0
+744    745  2015  20150.0
+...    ...   ...      ...
+1079  1080  1950  19500.0
+1080  1081  1960  19600.0
+1081  1082  1960  19600.0
+1082  1083  1995  19950.0
+1083  1084  1990  19900.0
+
+[344 rows x 3 columns]
+[2023-08-17  11:34:30.587] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '成交量2':
+[2023-08-17  11:34:30.587] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  11:34:30.917] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '参考价2':
+[2023-08-17  11:34:30.917] excel_compare.py -> <module> line:130 [INFO] :         行号   参考价     参考价2
+740    741  2000  20000.0
+741    742  2015  20150.0
+742    743  2030  20300.0
+743    744  2030  20300.0
+744    745  2010  20100.0
+...    ...   ...      ...
+1079  1080  1950  19500.0
+1080  1081  1950  19500.0
+1081  1082  1960  19600.0
+1082  1083  1960  19600.0
+1083  1084  1995  19950.0
+
+[344 rows x 3 columns]
+[2023-08-17  11:34:31.281] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '成交额2':
+[2023-08-17  11:34:31.281] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  11:34:31.617] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '开盘价2':
+[2023-08-17  11:34:31.617] excel_compare.py -> <module> line:130 [INFO] :         行号   开盘价     开盘价2
+740    741  2000  20000.0
+741    742  2015  20150.0
+742    743  2035  20350.0
+743    744  2030  20300.0
+744    745  2010  20100.0
+...    ...   ...      ...
+1079  1080  1945  19450.0
+1080  1081  1950  19500.0
+1081  1082  1980  19800.0
+1082  1083  1960  19600.0
+1083  1084  1995  19950.0
+
+[344 rows x 3 columns]
+[2023-08-17  11:34:31.987] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '最高价2':
+[2023-08-17  11:34:31.988] excel_compare.py -> <module> line:130 [INFO] :         行号   最高价     最高价2
+739    740  2015   2015.0
+740    741  2030  20300.0
+741    742  2050  20500.0
+742    743  2045  20450.0
+743    744  2030  20300.0
+...    ...   ...      ...
+1079  1080  1955  19550.0
+1080  1081  1970  19700.0
+1081  1082  1995  19950.0
+1082  1083  1995  19950.0
+1083  1084  2005  20050.0
+
+[345 rows x 3 columns]
+[2023-08-17  11:34:32.360] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_204001.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_204001.xlsx 中的 '最低价2':
+[2023-08-17  11:34:32.361] excel_compare.py -> <module> line:130 [INFO] :         行号   最低价     最低价2
+740    741  2000  20000.0
+741    742  2015  20150.0
+742    743  2025  20250.0
+743    744  2010  20100.0
+744    745  2010  20100.0
+...    ...   ...      ...
+1079  1080  1940  19400.0
+1080  1081  1950  19500.0
+1081  1082  1960  19600.0
+1082  1083  1960  19600.0
+1083  1084  1955      NaN
+
+[344 rows x 3 columns]
+[2023-08-17  11:34:32.374] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  11:41:02.590] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_000002.xlsx
+[2023-08-17  11:41:03.216] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '时间2':
+[2023-08-17  11:41:03.216] excel_compare.py -> <module> line:130 [INFO] :       行号            时间             时间2
+0      1  202308110930  20230811093000
+1      2  202308110931  20230811093100
+2      3  202308110932  20230811093200
+3      4  202308110933  20230811093300
+4      5  202308110934  20230811093400
+..   ...           ...             ...
+959  960  202308161456  20230816145600
+960  961  202308161457  20230816145700
+961  962  202308161458  20230816145800
+962  963  202308161459  20230816145900
+963  964  202308161500  20230816150000
+
+[964 rows x 3 columns]
+[2023-08-17  11:41:03.520] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '最新价2':
+[2023-08-17  11:41:03.520] excel_compare.py -> <module> line:130 [INFO] :       行号        最新价     最新价2
+0      1  341173100  3411731
+1      2  340838100  3408381
+2      3  340726600  3407266
+3      4  340673200  3406732
+4      5  340649400  3406494
+..   ...        ...      ...
+959  960  330220300  3302203
+960  961  330230200  3302302
+961  962  330234300  3302343
+962  963  330234300  3302343
+963  964  330246000  3302460
+
+[964 rows x 3 columns]
+[2023-08-17  11:41:03.841] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '成交量2':
+[2023-08-17  11:41:03.841] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  11:41:04.153] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '参考价2':
+[2023-08-17  11:41:04.154] excel_compare.py -> <module> line:130 [INFO] :       行号        参考价     参考价2
+0      1  341182600  3411826
+1      2  341173100  3411731
+2      3  340838100  3408381
+3      4  340726600  3407266
+4      5  340673200  3406732
+..   ...        ...      ...
+959  960  330336700  3303367
+960  961  330220300  3302203
+961  962  330230200  3302302
+962  963  330234300  3302343
+963  964  330234300  3302343
+
+[964 rows x 3 columns]
+[2023-08-17  11:41:04.505] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '成交额2':
+[2023-08-17  11:41:04.505] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  11:41:04.818] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '开盘价2':
+[2023-08-17  11:41:04.818] excel_compare.py -> <module> line:130 [INFO] :       行号        开盘价     开盘价2
+0      1  341173100  3411731
+1      2  341127200  3411272
+2      3  340890800  3408908
+3      4  340656400  3406564
+4      5  340682800  3406828
+..   ...        ...      ...
+959  960  330319500  3303195
+960  961  330268600  3302686
+961  962  330226500  3302265
+962  963  330234300  3302343
+963  964  330254200  3302542
+
+[964 rows x 3 columns]
+[2023-08-17  11:41:05.152] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '最高价2':
+[2023-08-17  11:41:05.152] excel_compare.py -> <module> line:130 [INFO] :       行号        最高价     最高价2
+0      1  341173100  3411731
+1      2  341127200  3411272
+2      3  340890800  3408908
+3      4  340739800  3407398
+4      5  340705400  3407054
+..   ...        ...      ...
+959  960  330361900  3303619
+960  961  330300800  3303008
+961  962  330234300  3302343
+962  963  330234300  3302343
+963  964  330254200  3302542
+
+[964 rows x 3 columns]
+[2023-08-17  11:41:05.474] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '最低价2':
+[2023-08-17  11:41:05.474] excel_compare.py -> <module> line:130 [INFO] :       行号        最低价     最低价2
+0      1  341173100  3411731
+1      2  340797500  3407975
+2      3  340629700  3406297
+3      4  340554800  3405548
+4      5  340611000  3406110
+..   ...        ...      ...
+959  960  330220300  3302203
+960  961  330202900  3302029
+961  962  330226500  3302265
+962  963  330234300  3302343
+963  964  330245900  3302459
+
+[964 rows x 3 columns]
+[2023-08-17  11:41:05.486] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  11:43:04.125] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_000002.xlsx
+[2023-08-17  11:43:04.737] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '时间2':
+[2023-08-17  11:43:04.737] excel_compare.py -> <module> line:130 [INFO] :       行号            时间             时间2
+0      1  202308110930  20230811093000
+1      2  202308110931  20230811093100
+2      3  202308110932  20230811093200
+3      4  202308110933  20230811093300
+4      5  202308110934  20230811093400
+..   ...           ...             ...
+959  960  202308161456  20230816145600
+960  961  202308161457  20230816145700
+961  962  202308161458  20230816145800
+962  963  202308161459  20230816145900
+963  964  202308161500  20230816150000
+
+[964 rows x 3 columns]
+[2023-08-17  11:43:05.046] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '最新价2':
+[2023-08-17  11:43:05.047] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最新价, 最新价2]
+Index: []
+[2023-08-17  11:43:05.331] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '成交量2':
+[2023-08-17  11:43:05.332] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  11:43:05.632] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '参考价2':
+[2023-08-17  11:43:05.632] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 参考价, 参考价2]
+Index: []
+[2023-08-17  11:43:05.927] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '成交额2':
+[2023-08-17  11:43:05.927] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  11:43:06.226] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '开盘价2':
+[2023-08-17  11:43:06.226] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 开盘价, 开盘价2]
+Index: []
+[2023-08-17  11:43:06.525] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '最高价2':
+[2023-08-17  11:43:06.525] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最高价, 最高价2]
+Index: []
+[2023-08-17  11:43:06.809] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000002.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000002.xlsx 中的 '最低价2':
+[2023-08-17  11:43:06.809] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最低价, 最低价2]
+Index: []
+[2023-08-17  11:43:06.810] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  13:36:29.157] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_000656.xlsx
+[2023-08-17  13:36:30.816] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000656.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000656.xlsx 中的 '时间2':
+[2023-08-17  13:36:30.829] excel_compare.py -> <module> line:130 [INFO] :       行号            时间             时间2
+0      1  202308110930  20230811093000
+1      2  202308110931  20230811093100
+2      3  202308110932  20230811093200
+3      4  202308110933  20230811093300
+4      5  202308110934  20230811093400
+..   ...           ...             ...
+959  960  202308161456  20230816145600
+960  961  202308161457  20230816145700
+961  962  202308161458  20230816145800
+962  963  202308161459  20230816145900
+963  964  202308161500  20230816150000
+
+[964 rows x 3 columns]
+[2023-08-17  13:36:31.155] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000656.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000656.xlsx 中的 '最新价2':
+[2023-08-17  13:36:31.156] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最新价, 最新价2]
+Index: []
+[2023-08-17  13:36:31.454] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000656.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000656.xlsx 中的 '成交量2':
+[2023-08-17  13:36:31.454] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  13:36:31.759] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000656.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000656.xlsx 中的 '参考价2':
+[2023-08-17  13:36:31.760] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 参考价, 参考价2]
+Index: []
+[2023-08-17  13:36:32.317] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000656.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000656.xlsx 中的 '成交额2':
+[2023-08-17  13:36:32.318] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  13:36:32.675] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000656.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000656.xlsx 中的 '开盘价2':
+[2023-08-17  13:36:32.676] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 开盘价, 开盘价2]
+Index: []
+[2023-08-17  13:36:32.994] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000656.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000656.xlsx 中的 '最高价2':
+[2023-08-17  13:36:32.995] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最高价, 最高价2]
+Index: []
+[2023-08-17  13:36:33.275] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_000656.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_000656.xlsx 中的 '最低价2':
+[2023-08-17  13:36:33.275] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最低价, 最低价2]
+Index: []
+[2023-08-17  13:36:33.276] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  13:45:48.384] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_200625.xlsx
+[2023-08-17  13:45:49.037] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_200625.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_200625.xlsx 中的 '时间2':
+[2023-08-17  13:45:49.037] excel_compare.py -> <module> line:130 [INFO] :       行号            时间             时间2
+0      1  202308110930  20230811093000
+1      2  202308110931  20230811093100
+2      3  202308110932  20230811093200
+3      4  202308110933  20230811093300
+4      5  202308110934  20230811093400
+..   ...           ...             ...
+959  960  202308161456  20230816145600
+960  961  202308161457  20230816145700
+961  962  202308161458  20230816145800
+962  963  202308161459  20230816145900
+963  964  202308161500  20230816150000
+
+[964 rows x 3 columns]
+[2023-08-17  13:45:49.367] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_200625.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_200625.xlsx 中的 '最新价2':
+[2023-08-17  13:45:49.367] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最新价, 最新价2]
+Index: []
+[2023-08-17  13:45:49.655] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_200625.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_200625.xlsx 中的 '成交量2':
+[2023-08-17  13:45:49.655] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  13:45:49.957] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_200625.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_200625.xlsx 中的 '参考价2':
+[2023-08-17  13:45:49.957] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 参考价, 参考价2]
+Index: []
+[2023-08-17  13:45:50.258] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_200625.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_200625.xlsx 中的 '成交额2':
+[2023-08-17  13:45:50.258] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  13:45:50.563] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_200625.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_200625.xlsx 中的 '开盘价2':
+[2023-08-17  13:45:50.563] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 开盘价, 开盘价2]
+Index: []
+[2023-08-17  13:45:50.885] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_200625.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_200625.xlsx 中的 '最高价2':
+[2023-08-17  13:45:50.886] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最高价, 最高价2]
+Index: []
+[2023-08-17  13:45:51.189] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_200625.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_200625.xlsx 中的 '最低价2':
+[2023-08-17  13:45:51.189] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最低价, 最低价2]
+Index: []
+[2023-08-17  13:45:51.190] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  13:53:22.151] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_300059.xlsx
+[2023-08-17  13:53:22.756] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_300059.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_300059.xlsx 中的 '时间2':
+[2023-08-17  13:53:22.756] excel_compare.py -> <module> line:130 [INFO] :       行号            时间             时间2
+0      1  202308110930  20230811093000
+1      2  202308110931  20230811093100
+2      3  202308110932  20230811093200
+3      4  202308110933  20230811093300
+4      5  202308110934  20230811093400
+..   ...           ...             ...
+959  960  202308161456  20230816145600
+960  961  202308161457  20230816145700
+961  962  202308161458  20230816145800
+962  963  202308161459  20230816145900
+963  964  202308161500  20230816150000
+
+[964 rows x 3 columns]
+[2023-08-17  13:53:23.129] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_300059.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_300059.xlsx 中的 '最新价2':
+[2023-08-17  13:53:23.130] excel_compare.py -> <module> line:130 [INFO] :       行号    最新价     最新价2
+63    64  16350  16350.0
+64    65  16370  16370.0
+66    67  16350  16350.0
+72    73  16280  16280.0
+73    74  16260  16260.0
+..   ...    ...      ...
+958  959  16280  16280.0
+960  961  16280  16280.0
+961  962  16280  16280.0
+962  963  16280  16280.0
+963  964  16260  16260.0
+
+[238 rows x 3 columns]
+[2023-08-17  13:53:23.854] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_300059.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_300059.xlsx 中的 '成交量2':
+[2023-08-17  13:53:23.854] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  13:53:24.257] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_300059.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_300059.xlsx 中的 '参考价2':
+[2023-08-17  13:53:24.257] excel_compare.py -> <module> line:130 [INFO] :       行号    参考价     参考价2
+64    65  16350  16350.0
+65    66  16370  16370.0
+67    68  16350  16350.0
+73    74  16280  16280.0
+74    75  16260  16260.0
+..   ...    ...      ...
+956  957  16310  16310.0
+959  960  16280  16280.0
+961  962  16280  16280.0
+962  963  16280  16280.0
+963  964  16280  16280.0
+
+[237 rows x 3 columns]
+[2023-08-17  13:53:24.605] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_300059.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_300059.xlsx 中的 '成交额2':
+[2023-08-17  13:53:24.605] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  13:53:24.914] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_300059.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_300059.xlsx 中的 '开盘价2':
+[2023-08-17  13:53:24.914] excel_compare.py -> <module> line:130 [INFO] :       行号    开盘价     开盘价2
+64    65  16350  16350.0
+65    66  16370  16370.0
+66    67  16350  16350.0
+67    68  16330  16330.0
+68    69  16330  16330.0
+..   ...    ...      ...
+951  952  16330  16330.0
+959  960  16280  16280.0
+961  962  16280  16280.0
+962  963  16280  16280.0
+963  964  16280  16280.0
+
+[226 rows x 3 columns]
+[2023-08-17  13:53:25.234] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_300059.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_300059.xlsx 中的 '最高价2':
+[2023-08-17  13:53:25.234] excel_compare.py -> <module> line:130 [INFO] :       行号    最高价     最高价2
+64    65  16380  16380.0
+65    66  16380  16380.0
+66    67  16350  16350.0
+68    69  16370  16370.0
+69    70  16350  16350.0
+..   ...    ...      ...
+951  952  16330  16330.0
+954  955  16310  16310.0
+961  962  16280  16280.0
+962  963  16280  16280.0
+963  964  16280  16280.0
+
+[202 rows x 3 columns]
+[2023-08-17  13:53:25.590] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_300059.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_300059.xlsx 中的 '最低价2':
+[2023-08-17  13:53:25.596] excel_compare.py -> <module> line:130 [INFO] :       行号    最低价     最低价2
+56    57  16370  16370.0
+59    60  16380  16380.0
+64    65  16330  16330.0
+65    66  16350  16350.0
+68    69  16330  16330.0
+..   ...    ...      ...
+959  960  16280  16280.0
+960  961  16280  16280.0
+961  962  16280  16280.0
+962  963  16280  16280.0
+963  964  16260  16260.0
+
+[252 rows x 3 columns]
+[2023-08-17  13:53:25.610] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  14:32:13.629] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_159605.xlsx
+[2023-08-17  14:32:15.270] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_159605.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_159605.xlsx 中的 '时间2':
+[2023-08-17  14:32:15.283] excel_compare.py -> <module> line:130 [INFO] :       行号            时间             时间2
+0      1  202308110930  20230811093000
+1      2  202308110931  20230811093100
+2      3  202308110932  20230811093200
+3      4  202308110933  20230811093300
+4      5  202308110934  20230811093400
+..   ...           ...             ...
+959  960  202308161456  20230816145600
+960  961  202308161457  20230816145700
+961  962  202308161458  20230816145800
+962  963  202308161459  20230816145900
+963  964  202308161500  20230816150000
+
+[964 rows x 3 columns]
+[2023-08-17  14:32:15.628] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_159605.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_159605.xlsx 中的 '最新价2':
+[2023-08-17  14:32:15.629] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最新价, 最新价2]
+Index: []
+[2023-08-17  14:32:15.947] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_159605.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_159605.xlsx 中的 '成交量2':
+[2023-08-17  14:32:15.947] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  14:32:16.262] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_159605.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_159605.xlsx 中的 '参考价2':
+[2023-08-17  14:32:16.262] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 参考价, 参考价2]
+Index: []
+[2023-08-17  14:32:16.550] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_159605.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_159605.xlsx 中的 '成交额2':
+[2023-08-17  14:32:16.550] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  14:32:16.889] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_159605.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_159605.xlsx 中的 '开盘价2':
+[2023-08-17  14:32:16.889] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 开盘价, 开盘价2]
+Index: []
+[2023-08-17  14:32:17.204] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_159605.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_159605.xlsx 中的 '最高价2':
+[2023-08-17  14:32:17.204] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最高价, 最高价2]
+Index: []
+[2023-08-17  14:32:17.502] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_159605.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_159605.xlsx 中的 '最低价2':
+[2023-08-17  14:32:17.502] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 最低价, 最低价2]
+Index: []
+[2023-08-17  14:32:17.503] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  14:51:29.160] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_131810.xlsx
+[2023-08-17  14:51:29.837] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_131810.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_131810.xlsx 中的 '时间2':
+[2023-08-17  14:51:29.837] excel_compare.py -> <module> line:130 [INFO] :         行号            时间             时间2
+0        1  202308110930  20230811093000
+1        2  202308110931  20230811093100
+2        3  202308110932  20230811093200
+3        4  202308110933  20230811093300
+4        5  202308110934  20230811093400
+...    ...           ...             ...
+1079  1080  202308161526  20230816152600
+1080  1081  202308161527  20230816152700
+1081  1082  202308161528  20230816152800
+1082  1083  202308161529  20230816152900
+1083  1084  202308161530  20230816153000
+
+[1084 rows x 3 columns]
+[2023-08-17  14:51:30.213] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_131810.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_131810.xlsx 中的 '最新价2':
+[2023-08-17  14:51:30.213] excel_compare.py -> <module> line:130 [INFO] :         行号   最新价    最新价2
+743    744  2015  2015.0
+754    755  2010  2010.0
+908    909  2010  2010.0
+909    910  2010  2010.0
+947    948  2010  2010.0
+968    969  2015  2015.0
+970    971  2010  2010.0
+975    976  2010  2010.0
+977    978  2030  2030.0
+979    980  2010  2010.0
+980    981  2010  2010.0
+981    982  2030  2030.0
+985    986  2010  2010.0
+986    987  2010  2010.0
+991    992  2010  2010.0
+994    995  2010  2010.0
+999   1000  2030  2030.0
+1002  1003  2010  2010.0
+1005  1006  2010  2010.0
+1006  1007  2015  2015.0
+1007  1008  2010  2010.0
+1009  1010  2015  2015.0
+1010  1011  2010  2010.0
+1018  1019  2010  2010.0
+1025  1026  2010  2010.0
+1026  1027  2015  2015.0
+1027  1028  2035  2035.0
+1028  1029  2030  2030.0
+1029  1030  2030  2030.0
+1032  1033  2035  2035.0
+1037  1038  2030  2030.0
+1039  1040  2015  2015.0
+1041  1042  2035  2035.0
+1042  1043  2030  2030.0
+1043  1044  2015  2015.0
+1044  1045  2030  2030.0
+1045  1046  2030  2030.0
+1048  1049  2035  2035.0
+1049  1050  2015  2015.0
+1050  1051  2010  2010.0
+1053  1054  2010  2010.0
+[2023-08-17  14:51:30.660] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_131810.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_131810.xlsx 中的 '成交量2':
+[2023-08-17  14:51:30.660] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  14:51:31.016] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_131810.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_131810.xlsx 中的 '参考价2':
+[2023-08-17  14:51:31.016] excel_compare.py -> <module> line:130 [INFO] :         行号   参考价    参考价2
+744    745  2015  2015.0
+755    756  2010  2010.0
+909    910  2010  2010.0
+910    911  2010  2010.0
+948    949  2010  2010.0
+969    970  2015  2015.0
+971    972  2010  2010.0
+976    977  2010  2010.0
+978    979  2030  2030.0
+980    981  2010  2010.0
+981    982  2010  2010.0
+982    983  2030  2030.0
+986    987  2010  2010.0
+987    988  2010  2010.0
+992    993  2010  2010.0
+995    996  2010  2010.0
+1000  1001  2030  2030.0
+1003  1004  2010  2010.0
+1006  1007  2010  2010.0
+1007  1008  2015  2015.0
+1008  1009  2010  2010.0
+1010  1011  2015  2015.0
+1011  1012  2010  2010.0
+1019  1020  2010  2010.0
+1026  1027  2010  2010.0
+1027  1028  2015  2015.0
+1028  1029  2035  2035.0
+1029  1030  2030  2030.0
+1030  1031  2030  2030.0
+1033  1034  2035  2035.0
+1038  1039  2030  2030.0
+1040  1041  2015  2015.0
+1042  1043  2035  2035.0
+1043  1044  2030  2030.0
+1044  1045  2015  2015.0
+1045  1046  2030  2030.0
+1046  1047  2030  2030.0
+1049  1050  2035  2035.0
+1050  1051  2015  2015.0
+1051  1052  2010  2010.0
+1054  1055  2010  2010.0
+[2023-08-17  14:51:31.392] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_131810.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_131810.xlsx 中的 '成交额2':
+[2023-08-17  14:51:31.393] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  14:51:31.725] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_131810.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_131810.xlsx 中的 '开盘价2':
+[2023-08-17  14:51:31.726] excel_compare.py -> <module> line:130 [INFO] :         行号   开盘价    开盘价2
+744    745  2015  2015.0
+755    756  2010  2010.0
+909    910  2010  2010.0
+910    911  2010  2010.0
+946    947  2010  2010.0
+947    948  2010  2010.0
+948    949  2015  2015.0
+950    951  2030  2030.0
+969    970  2015  2015.0
+971    972  2010  2010.0
+976    977  2010  2010.0
+978    979  2035  2035.0
+979    980  2035  2035.0
+980    981  2010  2010.0
+982    983  2030  2030.0
+984    985  2010  2010.0
+989    990  2030  2030.0
+997    998  2010  2010.0
+999   1000  2010  2010.0
+1003  1004  2015  2015.0
+1006  1007  2010  2010.0
+1007  1008  2015  2015.0
+1008  1009  2010  2010.0
+1011  1012  2010  2010.0
+1016  1017  2010  2010.0
+1019  1020  2015  2015.0
+1021  1022  2010  2010.0
+1026  1027  2010  2010.0
+1027  1028  2015  2015.0
+1028  1029  2030  2030.0
+1030  1031  2030  2030.0
+1040  1041  2015  2015.0
+1041  1042  2030  2030.0
+1042  1043  2035  2035.0
+1043  1044  2030  2030.0
+1044  1045  2015  2015.0
+1046  1047  2030  2030.0
+1048  1049  2035  2035.0
+1050  1051  2015  2015.0
+[2023-08-17  14:51:32.122] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_131810.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_131810.xlsx 中的 '最高价2':
+[2023-08-17  14:51:32.123] excel_compare.py -> <module> line:130 [INFO] :         行号   最高价    最高价2
+748    749  2010  2010.0
+753    754  2030  2030.0
+754    755  2015  2015.0
+755    756  2010  2010.0
+908    909  2015  2015.0
+909    910  2015  2015.0
+910    911  2010  2010.0
+911    912  2010  2010.0
+945    946  2010  2010.0
+946    947  2010  2010.0
+949    950  2035  2035.0
+969    970  2015  2015.0
+971    972  2015  2015.0
+975    976  2010  2010.0
+977    978  2035  2035.0
+981    982  2030  2030.0
+982    983  2035  2035.0
+983    984  2015  2015.0
+984    985  2015  2015.0
+985    986  2015  2015.0
+986    987  2010  2010.0
+987    988  2010  2010.0
+992    993  2010  2010.0
+993    994  2015  2015.0
+994    995  2015  2015.0
+995    996  2015  2015.0
+996    997  2015  2015.0
+998    999  2010  2010.0
+1003  1004  2030  2030.0
+1006  1007  2015  2015.0
+1007  1008  2015  2015.0
+1009  1010  2015  2015.0
+1010  1011  2010  2010.0
+1011  1012  2010  2010.0
+1016  1017  2010  2010.0
+1019  1020  2015  2015.0
+1020  1021  2010  2010.0
+1021  1022  2010  2010.0
+1026  1027  2015  2015.0
+1027  1028  2035  2035.0
+1028  1029  2030  2030.0
+1029  1030  2030  2030.0
+1040  1041  2030  2030.0
+1042  1043  2035  2035.0
+1043  1044  2030  2030.0
+1044  1045  2035  2035.0
+1048  1049  2035  2035.0
+1049  1050  2030  2030.0
+1050  1051  2015  2015.0
+1051  1052  2010  2010.0
+1052  1053  2010  2010.0
+1054  1055  2010  2010.0
+[2023-08-17  14:51:32.505] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_131810.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_131810.xlsx 中的 '最低价2':
+[2023-08-17  14:51:32.506] excel_compare.py -> <module> line:130 [INFO] :         行号   最低价    最低价2
+909    910  2010  2010.0
+948    949  2015  2015.0
+950    951  2030  2030.0
+976    977  2010  2010.0
+977    978  2015  2015.0
+989    990  2030  2030.0
+990    991  2010  2010.0
+999   1000  2010  2010.0
+1001  1002  2015  2015.0
+1002  1003  2010  2010.0
+1003  1004  2015  2015.0
+1004  1005  2010  2010.0
+1005  1006  2010  2010.0
+1006  1007  2010  2010.0
+1025  1026  2010  2010.0
+1026  1027  2010  2010.0
+1027  1028  2015  2015.0
+1030  1031  2030  2030.0
+1032  1033  2030  2030.0
+1033  1034  2030  2030.0
+1035  1036  2030  2030.0
+1037  1038  2030  2030.0
+1040  1041  2015  2015.0
+1041  1042  2015  2015.0
+1042  1043  2015  2015.0
+1043  1044  2010  2010.0
+1044  1045  2010  2010.0
+1049  1050  2015  2015.0
+[2023-08-17  14:51:32.519] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  14:51:49.340] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_399379.xlsx
+[2023-08-17  14:51:49.977] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_399379.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_399379.xlsx 中的 '时间2':
+[2023-08-17  14:51:49.977] excel_compare.py -> <module> line:130 [INFO] :       行号            时间             时间2
+0      1  202308110930  20230811093000
+1      2  202308110931  20230811093100
+2      3  202308110932  20230811093200
+3      4  202308110933  20230811093300
+4      5  202308110934  20230811093400
+..   ...           ...             ...
+959  960  202308161456  20230816145600
+960  961  202308161457  20230816145700
+961  962  202308161458  20230816145800
+962  963  202308161459  20230816145900
+963  964  202308161500  20230816150000
+
+[964 rows x 3 columns]
+[2023-08-17  14:51:50.289] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_399379.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_399379.xlsx 中的 '最新价2':
+[2023-08-17  14:51:50.289] excel_compare.py -> <module> line:130 [INFO] :       行号      最新价       最新价2
+0      1  7487964  7487964.7
+1      2  7480841  7480841.9
+2      3  7476091  7476091.6
+3      4  7471067  7471067.2
+4      5  7470197  7470197.9
+..   ...      ...        ...
+959  960  7219141  7219141.2
+960  961  7218195  7218195.2
+961  962  7218100  7218100.1
+962  963  7217341  7217341.3
+963  964  7216164  7216164.4
+
+[869 rows x 3 columns]
+[2023-08-17  14:51:50.657] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_399379.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_399379.xlsx 中的 '成交量2':
+[2023-08-17  14:51:50.657] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  14:51:50.993] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_399379.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_399379.xlsx 中的 '参考价2':
+[2023-08-17  14:51:50.993] excel_compare.py -> <module> line:130 [INFO] :       行号      参考价       参考价2
+0      1  7482921  7482921.5
+1      2  7487964  7487964.7
+2      3  7480841  7480841.9
+3      4  7476091  7476091.6
+4      5  7471067  7471067.2
+..   ...      ...        ...
+959  960  7219533  7219533.9
+960  961  7219141  7219141.2
+961  962  7218195  7218195.2
+962  963  7218100  7218100.1
+963  964  7217341  7217341.3
+
+[869 rows x 3 columns]
+[2023-08-17  14:51:51.350] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_399379.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_399379.xlsx 中的 '成交额2':
+[2023-08-17  14:51:51.350] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  14:51:51.646] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_399379.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_399379.xlsx 中的 '开盘价2':
+[2023-08-17  14:51:51.646] excel_compare.py -> <module> line:130 [INFO] :       行号      开盘价       开盘价2
+0      1  7487964  7487964.7
+1      2  7487821  7487821.7
+2      3  7480847  7480847.8
+3      4  7475348  7475348.5
+4      5  7471225  7471225.9
+..   ...      ...        ...
+959  960  7219762  7219762.5
+960  961  7219315  7219315.1
+961  962  7218392  7218392.3
+962  963  7217559  7217559.9
+963  964  7217922  7217922.1
+
+[862 rows x 3 columns]
+[2023-08-17  14:51:52.005] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_399379.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_399379.xlsx 中的 '最高价2':
+[2023-08-17  14:51:52.006] excel_compare.py -> <module> line:130 [INFO] :       行号      最高价       最高价2
+0      1  7487964  7487964.7
+1      2  7488129  7488129.8
+2      3  7480847  7480847.8
+3      4  7475348  7475348.5
+4      5  7472287  7472287.1
+..   ...      ...        ...
+959  960  7220111  7220111.3
+960  961  7219455  7219455.1
+961  962  7218392  7218392.3
+962  963  7218337  7218337.5
+963  964  7218330  7218330.9
+
+[865 rows x 3 columns]
+[2023-08-17  14:51:52.344] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_399379.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_399379.xlsx 中的 '最低价2':
+[2023-08-17  14:51:52.344] excel_compare.py -> <module> line:130 [INFO] :       行号      最低价       最低价2
+0      1  7487964  7487964.7
+1      2  7480828  7480828.8
+2      3  7474432  7474432.7
+4      5  7470090  7470090.2
+6      7  7464876  7464876.8
+..   ...      ...        ...
+957  958  7220290  7220290.9
+959  960  7218678  7218678.1
+960  961  7217921  7217921.9
+961  962  7217213  7217213.8
+963  964  7216164  7216164.4
+
+[876 rows x 3 columns]
+[2023-08-17  14:51:52.359] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  14:55:11.384] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_90002342.xlsx
+[2023-08-17  14:55:36.402] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_90002342.xlsx
+[2023-08-17  14:55:37.094] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_90002342.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_9002342.xlsx 中的 '时间2':
+[2023-08-17  14:55:37.094] excel_compare.py -> <module> line:130 [INFO] :       行号            时间             时间2
+0      1  202308110930  20230811093000
+1      2  202308110931  20230811093100
+2      3  202308110932  20230811093200
+3      4  202308110933  20230811093300
+4      5  202308110934  20230811093400
+..   ...           ...             ...
+959  960  202308161456  20230816145600
+960  961  202308161457  20230816145700
+961  962  202308161458  20230816145800
+962  963  202308161459  20230816145900
+963  964  202308161500  20230816150000
+
+[964 rows x 3 columns]
+[2023-08-17  14:55:37.433] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_90002342.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_9002342.xlsx 中的 '最新价2':
+[2023-08-17  14:55:37.433] excel_compare.py -> <module> line:130 [INFO] :       行号  最新价   最新价2
+6      7  894  894.0
+8      9  894  894.0
+16    17  855  855.0
+20    21  860  860.0
+27    28  826  826.0
+..   ...  ...    ...
+933  934  181  181.0
+945  946  163  163.0
+947  948  158  158.0
+948  949  163  163.0
+956  957  163  163.0
+
+[133 rows x 3 columns]
+[2023-08-17  14:55:37.851] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_90002342.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_9002342.xlsx 中的 '成交量2':
+[2023-08-17  14:55:37.851] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交量, 成交量2]
+Index: []
+[2023-08-17  14:55:38.229] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_90002342.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_9002342.xlsx 中的 '参考价2':
+[2023-08-17  14:55:38.230] excel_compare.py -> <module> line:130 [INFO] :       行号  参考价   参考价2
+7      8  894  894.0
+9     10  894  894.0
+17    18  855  855.0
+21    22  860  860.0
+28    29  826  826.0
+..   ...  ...    ...
+934  935  181  181.0
+946  947  163  163.0
+948  949  158  158.0
+949  950  163  163.0
+957  958  163  163.0
+
+[133 rows x 3 columns]
+[2023-08-17  14:55:38.595] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_90002342.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_9002342.xlsx 中的 '成交额2':
+[2023-08-17  14:55:38.596] excel_compare.py -> <module> line:130 [INFO] : Empty DataFrame
+Columns: [行号, 成交额, 成交额2]
+Index: []
+[2023-08-17  14:55:38.946] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_90002342.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_9002342.xlsx 中的 '开盘价2':
+[2023-08-17  14:55:38.946] excel_compare.py -> <module> line:130 [INFO] :       行号  开盘价   开盘价2
+7      8  894  894.0
+9     10  894  894.0
+17    18  855  855.0
+21    22  860  860.0
+28    29  826  826.0
+..   ...  ...    ...
+934  935  181  181.0
+946  947  163  163.0
+948  949  158  158.0
+949  950  163  163.0
+960  961  158  158.0
+
+[133 rows x 3 columns]
+[2023-08-17  14:55:39.347] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_90002342.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_9002342.xlsx 中的 '最高价2':
+[2023-08-17  14:55:39.348] excel_compare.py -> <module> line:130 [INFO] :       行号  最高价   最高价2
+6      7  913  913.0
+8      9  899  899.0
+9     10  894  894.0
+12    13  884  884.0
+17    18  855  855.0
+..   ...  ...    ...
+933  934  181  181.0
+934  935  181  181.0
+942  943  163  163.0
+948  949  163  163.0
+954  955  163  163.0
+
+[127 rows x 3 columns]
+[2023-08-17  14:55:39.739] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_90002342.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_9002342.xlsx 中的 '最低价2':
+[2023-08-17  14:55:39.739] excel_compare.py -> <module> line:130 [INFO] :       行号  最低价   最低价2
+1      2  918  918.0
+2      3  894  894.0
+5      6  879  879.0
+20    21  860  860.0
+23    24  855  855.0
+..   ...  ...    ...
+953  954  158  158.0
+954  955  158  158.0
+956  957  163  163.0
+957  958  158  158.0
+959  960  158  158.0
+
+[136 rows x 3 columns]
+[2023-08-17  14:55:39.752] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  15:23:47.912] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_837592.xlsx
+[2023-08-17  15:23:49.483] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_837592.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_837592.xlsx 中的 '时间2':
+[2023-08-17  15:23:49.495] excel_compare.py -> <module> line:130 [INFO] :       行号            时间             时间2
+0      1  202308110930  20230811093000
+1      2  202308110931  20230811093100
+2      3  202308110932  20230811093200
+3      4  202308110933  20230811093300
+4      5  202308110934  20230811093400
+..   ...           ...             ...
+959  960  202308161456  20230816145600
+960  961  202308161457  20230816145700
+961  962  202308161458  20230816145800
+962  963  202308161459  20230816145900
+963  964  202308161500  20230816150000
+
+[964 rows x 3 columns]
+[2023-08-17  15:23:49.876] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_837592.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_837592.xlsx 中的 '最新价2':
+[2023-08-17  15:23:49.876] excel_compare.py -> <module> line:130 [INFO] :       行号    最新价   最新价2
+830  831  14180  14200
+[2023-08-17  15:23:50.226] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_837592.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_837592.xlsx 中的 '成交量2':
+[2023-08-17  15:23:50.226] excel_compare.py -> <module> line:130 [INFO] :       行号    成交量   成交量2
+830  831  14334  13534
+831  832  39252  40052
+[2023-08-17  15:23:50.585] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_837592.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_837592.xlsx 中的 '参考价2':
+[2023-08-17  15:23:50.586] excel_compare.py -> <module> line:130 [INFO] :       行号    参考价   参考价2
+831  832  14180  14200
+[2023-08-17  15:23:50.935] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_837592.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_837592.xlsx 中的 '成交额2':
+[2023-08-17  15:23:50.936] excel_compare.py -> <module> line:130 [INFO] :       行号      成交额        成交额2
+0      1  1550735  1550735.16
+1      2  4308193  4308193.97
+2      3  1342205  1342205.28
+3      4   827786   827786.89
+4      5  1781345  1781345.75
+..   ...      ...         ...
+956  957     8668     8668.68
+958  959    35808    35808.32
+959  960   188608   188608.97
+960  961   340021   340021.96
+963  964   584266   584266.80
+
+[695 rows x 3 columns]
+[2023-08-17  15:23:51.336] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_837592.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_837592.xlsx 中的 '开盘价2':
+[2023-08-17  15:23:51.337] excel_compare.py -> <module> line:130 [INFO] :       行号    开盘价   开盘价2
+618  619  12840  12860
+[2023-08-17  15:23:51.684] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_837592.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_837592.xlsx 中的 '最高价2':
+[2023-08-17  15:23:51.684] excel_compare.py -> <module> line:130 [INFO] :       行号    最高价   最高价2
+618  619  12840  12860
+[2023-08-17  15:23:52.030] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_837592.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_837592.xlsx 中的 '最低价2':
+[2023-08-17  15:23:52.031] excel_compare.py -> <module> line:130 [INFO] :       行号    最低价   最低价2
+42    43  14050  14060
+711  712  12790  12800
+[2023-08-17  15:23:52.039] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  15:26:36.045] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_899050.xlsx
+[2023-08-17  15:26:36.695] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '时间2':
+[2023-08-17  15:26:36.696] excel_compare.py -> <module> line:130 [INFO] :         行号            时间             时间2
+0        1  202308110930  20230811093000
+1        2  202308110931  20230811093100
+2        3  202308110932  20230811093200
+3        4  202308110933  20230811093300
+4        5  202308110934  20230811093400
+...    ...           ...             ...
+1199  1200  202308171455  20230817145500
+1200  1201  202308171456  20230817145600
+1201  1202  202308171457  20230817145700
+1202  1203  202308171458  20230817145800
+1203  1204  202308171500  20230817145900
+
+[1204 rows x 3 columns]
+[2023-08-17  15:26:37.090] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '最新价2':
+[2023-08-17  15:26:37.091] excel_compare.py -> <module> line:130 [INFO] :         行号     最新价    最新价2
+830    831  814232  814373
+1019  1020  807801  807629
+1061  1062  808307  808393
+1086  1087  807908  807861
+1092  1093  808413  808483
+1177  1178  808791  808834
+1203  1204  809181  808474
+[2023-08-17  15:26:37.504] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '成交量2':
+[2023-08-17  15:26:37.504] excel_compare.py -> <module> line:130 [INFO] :         行号      成交量    成交量2
+289    290   162091  161091
+290    291   189206  190206
+830    831   196780  185314
+831    832   236775  248241
+852    853   173458  171058
+853    854   262191  264591
+1203  1204  1267269       0
+[2023-08-17  15:26:37.877] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '参考价2':
+[2023-08-17  15:26:37.877] excel_compare.py -> <module> line:130 [INFO] :         行号     参考价    参考价2
+831    832  814232  814373
+1020  1021  807801  807629
+1062  1063  808307  808393
+1087  1088  807908  807861
+1093  1094  808413  808483
+1178  1179  808791  808834
+[2023-08-17  15:26:38.253] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '成交额2':
+[2023-08-17  15:26:38.253] excel_compare.py -> <module> line:130 [INFO] :         行号       成交额     成交额2
+289    290   3024598  3020158
+290    291   3346682  3351122
+830    831   2622692  2495557
+831    832   2772903  2900038
+852    853   2318456  2275164
+853    854   3853821  3897113
+1203  1204  15721853        0
+[2023-08-17  15:26:38.649] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '开盘价2':
+[2023-08-17  15:26:38.650] excel_compare.py -> <module> line:130 [INFO] :         行号     开盘价    开盘价2
+853    854  813392  813421
+904    905  810559  810565
+1203  1204  809181  808474
+[2023-08-17  15:26:38.995] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '最高价2':
+[2023-08-17  15:26:38.995] excel_compare.py -> <module> line:130 [INFO] :         行号     最高价    最高价2
+488    489  817925  817891
+853    854  813392  813421
+1061  1062  808307  808393
+1092  1093  808413  808483
+1203  1204  809181  808474
+[2023-08-17  15:26:39.377] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '最低价2':
+[2023-08-17  15:26:39.377] excel_compare.py -> <module> line:130 [INFO] :         行号     最低价    最低价2
+504    505  819057  819069
+830    831  814232  814345
+1019  1020  807793  807629
+1037  1038  807753  807749
+1086  1087  807908  807861
+1203  1204  809181  808474
+[2023-08-17  15:26:39.384] excel_compare.py -> <module> line:131 [INFO] : ============================================================
+[2023-08-17  15:29:37.535] excel_compare.py -> <module> line:126 [INFO] : 文件名===================》cs_line5d_899050.xlsx
+[2023-08-17  15:29:38.195] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '时间' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '时间2':
+[2023-08-17  15:29:38.196] excel_compare.py -> <module> line:130 [INFO] :         行号            时间             时间2
+0        1  202308110930  20230811093000
+1        2  202308110931  20230811093100
+2        3  202308110932  20230811093200
+3        4  202308110933  20230811093300
+4        5  202308110934  20230811093400
+...    ...           ...             ...
+1199  1200  202308171455  20230817145500
+1200  1201  202308171456  20230817145600
+1201  1202  202308171457  20230817145700
+1202  1203  202308171458  20230817145800
+1203  1204  202308171500  20230817150000
+
+[1204 rows x 3 columns]
+[2023-08-17  15:29:38.591] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '最新价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '最新价2':
+[2023-08-17  15:29:38.591] excel_compare.py -> <module> line:130 [INFO] :         行号     最新价    最新价2
+830    831  814232  814373
+1019  1020  807801  807629
+1061  1062  808307  808393
+1086  1087  807908  807861
+1092  1093  808413  808483
+1177  1178  808791  808834
+[2023-08-17  15:29:38.971] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '成交量' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '成交量2':
+[2023-08-17  15:29:38.971] excel_compare.py -> <module> line:130 [INFO] :       行号     成交量    成交量2
+289  290  162091  161091
+290  291  189206  190206
+830  831  196780  185314
+831  832  236775  248241
+852  853  173458  171058
+853  854  262191  264591
+[2023-08-17  15:29:39.330] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '参考价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '参考价2':
+[2023-08-17  15:29:39.330] excel_compare.py -> <module> line:130 [INFO] :         行号     参考价    参考价2
+831    832  814232  814373
+1020  1021  807801  807629
+1062  1063  808307  808393
+1087  1088  807908  807861
+1093  1094  808413  808483
+1178  1179  808791  808834
+[2023-08-17  15:29:39.718] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '成交额' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '成交额2':
+[2023-08-17  15:29:39.718] excel_compare.py -> <module> line:130 [INFO] :       行号      成交额     成交额2
+289  290  3024598  3020158
+290  291  3346682  3351122
+830  831  2622692  2495557
+831  832  2772903  2900038
+852  853  2318456  2275164
+853  854  3853821  3897113
+[2023-08-17  15:29:40.088] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '开盘价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '开盘价2':
+[2023-08-17  15:29:40.088] excel_compare.py -> <module> line:130 [INFO] :         行号     开盘价    开盘价2
+853    854  813392  813421
+904    905  810559  810565
+1203  1204  809181  808474
+[2023-08-17  15:29:40.438] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '最高价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '最高价2':
+[2023-08-17  15:29:40.438] excel_compare.py -> <module> line:130 [INFO] :         行号     最高价    最高价2
+488    489  817925  817891
+853    854  813392  813421
+1061  1062  808307  808393
+1092  1093  808413  808483
+[2023-08-17  15:29:40.815] excel_compare.py -> <module> line:129 [INFO] : 比较 C:/Users/Administrator/Desktop/line_Kline/cs_line5d_899050.xlsx 中的 '最低价' 和 C:/Users/Administrator/Desktop/line_Kline/qz_min1_Kline5d_899050.xlsx 中的 '最低价2':
+[2023-08-17  15:29:40.816] excel_compare.py -> <module> line:130 [INFO] :         行号     最低价    最低价2
+504    505  819057  819069
+830    831  814232  814345
+1019  1020  807793  807629
+1037  1038  807753  807749
+1086  1087  807908  807861
+1203  1204  809181  808474
+[2023-08-17  15:29:40.824] excel_compare.py -> <module> line:131 [INFO] : ============================================================
