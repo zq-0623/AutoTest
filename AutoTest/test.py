@@ -1,36 +1,19 @@
-# encoding=utf-8
-import uuid
-
-import paho.mqtt.client as mqtt
-import zstd
-from PyQt5.QtCore import QUrl
+# -*-coding:utf-8 -*-
+import os
+import time
+import pandas as pd
 
 
-def on_connect(client, userdata, flags, rc):
-    rc_status = ["连接成功", "协议版本不正确", "客户端标识符无效", "服务器不可用", "用户名或密码不正确", "未经授权"]
-    print("connect：", rc_status[rc])
+time1 = time.strftime('%Y%m%d_%H%M%S', time.localtime())
+curPath = os.path.abspath(os.path.dirname(__file__))
+file_path = r'E:\workspace\PythonProject\AutoTest\SseSDK\result\110013K线数据.xlsx'
+# 读取Excel文件
+df = pd.read_excel(file_path)
 
+# 合并两列文字
+df['交易时间111'] = df['日期'].astype(str) + df['时间'].apply(lambda x: str(x).zfill(6))
+df['交易时间111'] = df['交易时间111'].str[:-2]
 
-def on_message(client,userdata,msg):
-    data_all = zstd.decompress(msg.payload).decode("utf-8")
-    print(data_all)
+# 保存合并后的结果
+df.to_excel('K线数据1.xlsx',index=False)
 
-
-def mqtt_connect():
-    mqtt_min1 = mqtt.Client(str(uuid.uuid4()))
-    # mqtt_min1.on_connect = on_connect
-    mqtt_min1.on_message = on_message
-    url = "tcp://114.80.155.61:22017"
-    url_tcp = QUrl(url)
-    mqtt_min1.connect(url_tcp.host(),url_tcp.port(),30)
-    mqtt_min1.loop_start()
-    return mqtt_min1
-
-
-def on_subscribe():
-    mqtt_min1 = mqtt_connect()
-    mqtt_min1.subscribe("600000.sh",qos=1)
-    while True:
-        pass
-
-on_subscribe()

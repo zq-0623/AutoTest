@@ -1,3 +1,6 @@
+### PyQt5 - 使用 Qt 设计器生成对应的python文件
+    pyuic5 -x demo.ui -o demo.py
+
 ### 本地代码上传到GitHub
     1、为Github账户设置SSH key
         通过$ ssh-keygen -t rsa -C “1209405215@qq.com”来生成

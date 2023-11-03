@@ -1,8 +1,8 @@
 # -*-coding:GBK -*-
-import json
 import os
 import re
 import time
+from datetime import datetime
 
 import pandas as pd
 from deepdiff import DeepDiff
@@ -21,10 +21,10 @@ field_list = []
 time1 = time.strftime('%Y%m%d_%H%M%S', time.localtime())
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
-yaml_path = rootPath + '/testCase/quote/line.yaml'
-stock_path = f'../testCase/AllStock/AllStock_sz.txt'
+yaml_path = rootPath + '/testCase/quote/Kline.yaml'
 date = time.strftime("%Y%m%d", time.localtime())
 time = time.strftime("%H%M%S", time.localtime())
+current_date = int(datetime.now().strftime('%Y%m%d'))
 file_name = ''
 
 
@@ -104,12 +104,16 @@ def SseOptionQuote(url, header, **kwargs):
 
 
 def write_excel(json1,title):
-    excel_path = curPath + f'\\result\\{time}走势数据.xlsx'
+    """
+    :param json1: 写入的数据
+    :param title: title
+    :return: excel
+    """
+    excel_path = curPath + f'\\result\\{time}K线数据.xlsx'
     if not os.path.exists(excel_path):
         wr = pd.ExcelWriter(excel_path)
         ew = pd.DataFrame(json1,columns=title)
         ew.to_excel(wr,sheet_name=date,index=False)
-
         wr.close()
     else:
         wr = pd.ExcelWriter(excel_path,mode="a",engine='openpyxl')
@@ -131,8 +135,8 @@ def excel_yaml_title():
 if __name__ == '__main__':
     headers = {
         "token": "MitakeWeb",
-        "symbol": "000002.sz"
-        # "param" : "20231031150000"
+        "symbol": "600000.sh"
+        # "param": "20231031140200"
 
     }
     # headers1 = {
@@ -140,32 +144,31 @@ if __name__ == '__main__':
     #     "symbol": "getline"
     #
     # }
-    url1 = "http://114.80.155.61:22016/v4/line"
     # url1 = "http://114.80.155.61:22016/v1/sh1/dayk/601099?today=y&select=date,open,high,low,close,volume,amount,prevClose,fp_volume,fp_amount,ref,iopv,avg&begin=300&end=202206130930"
-    # url2 = "http://114.80.155.61:22016/v3/m1"
-    # # url1 = "http://114.80.155.134:22016/v4/line"
-    # url1 = "http://114.80.155.61:22016/v1/sh1/mink/600000?begin=20230914000000&end=20230920240000&period=1&select=date,close,volume,avg,prevClose,open,high,low,amount,iopv&today=y"
-    # close,avg,volume,ref,amount,open,high,low
+    url2 = "http://114.80.155.134:22016/v3/m1"
     response_list1 = []
     response_list2 = []
-    response1 = SseOptionQuote(url1, header=headers)
+    response1 = SseOptionQuote(url2, header=headers)
     # response2 = SseOptionQuote(url2, header=headers1)
     # print(type(response1.text))
     # MDS接口返回数据未解码，直接输出
     # print(response1.text)
     # SDK接口返回数据加密，需要解码
     decode_response = decode_quote(response1.text)
+    print(decode_response)
     if response1:
         response_list1.append(decode_response)
         logger.debug(f"url1 success headers '{headers}'")
     else:
-        logger.info(f"Failed to get response for url '{url1}'")
-    # logger.info(f"response_list1=====>'{response_list1}'")
-    # for items in range(len(response_list1)):
-        # for item in range(len(response_list1[0])):
-        #     data += response_list1[items][item]
+        logger.info(f"Failed to get response for url '{url2}'")
+    logger.info(f"所有K线数据=====>'{response_list1}'")
+    # 创建空列表  在所有K线数据中拿出当天的K线数据，以便和当天走势做数据对比
+    filtered_data = []
     for items in response_list1:
-        logger.info(f"items=====>'{items}'")
+        for row in items:
+            if row[0] == current_date:
+                filtered_data.append(row)
+        logger.info(f"当天K线数据=====>'{filtered_data}'")
     # res2 = response2.json()["kline"]
     # response_list2.append(res2)
     # if response2:
@@ -174,8 +177,6 @@ if __name__ == '__main__':
     # else:
     #     logger.info(f"Failed to get response for url '{url2}'")
     # compare_lists(response_list1,response_list2)
-
-    # logger.debug(len(response_list1))
     # logger.info(f"response_list2=====>'{response_list2}'")
-    # print(decode_response)
-    # write_excel(decode_response,excel_yaml_title())
+    write_excel(filtered_data,excel_yaml_title())
+

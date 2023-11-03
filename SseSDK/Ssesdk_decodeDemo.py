@@ -35,7 +35,7 @@ def decode_quote(msg):
 def request_run():
     headers = {
         "token":"MitakeWeb",
-        "symbol":"019813.sh",
+        "symbol":"600000.sh",
         "param":"0,1000,-1"
     }
     response = SseOptionQuote(url, headers=headers)
@@ -44,7 +44,7 @@ def request_run():
 
 
 if __name__ == '__main__':
-    url = "http://114.80.155.61:9527/v1/dayk"
+    url = "http://114.80.155.61:22016/v3/m1"
     request_run()
 
 

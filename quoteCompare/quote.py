@@ -282,7 +282,7 @@ if '__main__' == __name__:
         #     url = compare_url[url_key]
         # if url_key == "sz":
         #     url = compare_url[url_key]
-        if url_key == "bz":
+        if url_key == "sz":
             url = compare_url[url_key]
         # if url_key == "csi":
         #     url = compare_url[url_key]
@@ -299,10 +299,11 @@ if '__main__' == __name__:
         # 存放环境2快照
         quote_list2 = []
         print("==============================")
-        print(f"市场：{file_name} \n环境1： {url['env1']}\n环境2： {url['env2']}")
+        # print(f"市场：{file_name} \n环境1： {url['env1']}\n环境2： {url['env2']}")
 
         print("==============================")
         file_path = f'{stock_path}/{file}'
+        print(url)
         interval_stock(file_path, url)
         time.sleep(5)  # 休眠5秒
     print("==============================")

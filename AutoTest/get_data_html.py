@@ -37,6 +37,7 @@ def getData(baseurl):
     for row in rows:
         cells = row.find_all('td')
         td_content = [cell.get_text(strip=True) for cell in cells]
+        td_content[3] = re.findall(r'\d{2}',td_content[3])
         link = row.find('a')
         if link:
             a_content = link.get_text(strip=True)
@@ -68,7 +69,7 @@ def askUrl(requesturl):
 
 
 def write_excel(json1, title):
-    excel_path = f'{sheet_name}.xlsx'
+    excel_path = f'./{sheet_name}.xlsx'
     if not os.path.exists(excel_path):
         # 如果文件不存在，创建新文件并写入数据
         wr = pd.ExcelWriter(excel_path)
