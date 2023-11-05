@@ -282,7 +282,7 @@ if '__main__' == __name__:
         #     url = compare_url[url_key]
         # if url_key == "sz":
         #     url = compare_url[url_key]
-        if url_key == "sz":
+        if url_key == "bz":
             url = compare_url[url_key]
         # if url_key == "csi":
         #     url = compare_url[url_key]

@@ -19,6 +19,6 @@ def SseOptionQuote(url, header, **kwargs):
         response.raise_for_status()
         return response
     except requests.exceptions.RequestException as e:
-        logger.debug(f"Error while requesting url '{url}':{e}")
-        logger.debug(f"Error while request headers '{header}':{e}")
+        logger.error(f"Error while requesting url '{url}':{e}")
+        logger.error(f"Error while request headers '{header}':{e}")
         return None

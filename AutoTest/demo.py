@@ -1,36 +1,29 @@
-# -*-coding:GBK -*-
-import os
-import time
-
+"""
+1 è¯»å– AllStock ç è¡¨ä¸­çš„è‚¡ç¥¨ä»£ç 
+2 è¯·æ±‚ä¸¤ä¸ªç¯å¢ƒçš„èµ°åŠ¿æ¥å£/v4/line å°†è¿”å›ç»“æœè¿›è¡Œæ¯”è¾ƒ
+"""
+import json,os,yaml
+import re
+from itertools import groupby
+from threading import Thread
 from deepdiff import DeepDiff
 from util.base93 import decode
-import requests
-import yaml
-import numpy as np
-# pythonÁ½¸öÊı×é×ö¶Ô±È
-# np.array_equiv
-
+from util.logTool import logger
+from util.requestTools import SseOptionQuote
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
+stock_path = f"../testCase/AllStock/AllStock_bz.txt"
 yaml_path = rootPath + '/testCase/quote/line.yaml'
-date = time.strftime("%Y%m%d", time.localtime())
-time = time.strftime("%H%M%S", time.localtime())
-file_name = ''
-
-
-def request(url, methods, **kwargs):
-    methods = methods.lower()
-    if methods == "get":
-        res = requests.Session().get(url, **kwargs)
-        return res
-    elif methods == "post":
-        res = requests.Session().post(url, **kwargs)
-        return res
+url_path = f'../testCase/quote/url_line.yaml'
+# å­˜æ”¾ç¯å¢ƒ1èµ°åŠ¿æ•°æ®
+line_list1 = []
+# å­˜æ”¾ç¯å¢ƒ2èµ°åŠ¿æ•°æ®
+line_list2 = []
 
 
 def quote_yaml(path):
     with open(path, 'r', encoding='gbk') as fp:
-        # load()º¯Êı½«fp(Ò»¸öÖ§³Ö.read()µÄÎÄ¼şÀà¶ÔÏó£¬°üº¬Ò»¸öJSONÎÄµµ)·´ĞòÁĞ»¯ÎªÒ»¸öPython¶ÔÏó
+        # load()å‡½æ•°å°†fp(ä¸€ä¸ªæ”¯æŒ.read()çš„æ–‡ä»¶ç±»å¯¹è±¡ï¼ŒåŒ…å«ä¸€ä¸ªJSONæ–‡æ¡£)ååºåˆ—åŒ–ä¸ºä¸€ä¸ªPythonå¯¹è±¡
         return yaml.safe_load(fp)
 
 
@@ -53,65 +46,91 @@ def decode_quote(msg):
     return list_result
 
 
-def compare_lists(list1,list2):
-    # # ´æ·Å»·¾³1Êı¾İ
+def read_AllStock(path):
+    try:
+        with open(path, 'r', encoding='utf-8') as stock:
+            stocks_list = []
+            stock_list = json.load(stock)
+            stock_length = len(stock_list)
+            for stock_i in stock_list:
+                stock_s = stock_i.get('s')
+                stocks_list.append(stock_s)
+            # print(stocks_list)
+            print("size", stock_length)
+    except IOError as e:
+        print("Error" + format(str(e)))
+        raise
+    thread_run(stocks_list,url)
+
+
+def thread_run(stock_list, item):
+    thread_array = []
+    for i in range(2):
+        key = "env" + str(i + 1)
+        env = item[key]
+        t = Thread(target=request_run, args=(stock_list, env, i))
+        thread_array.append(t)
+        t.start()
+    for t in thread_array:
+        t.join()
+    compare_result(item)
+
+
+def request_run(stock_list,env,flag):
+    logger.info("æ¥å£è°ƒç”¨ç¯å¢ƒä¸ºï¼š%s",{env})
+    stock_data = {}
+    for stock in stock_list:
+        header = {
+            'Token': 'MitakeWeb',
+            'Symbol': stock,
+        }
+        try:
+            response = SseOptionQuote(url=env,header=header,verify=False)
+            stock_data[stock] = decode_quote(response.text)
+            if flag:
+                line_list1.append(stock_data)
+            else:
+                line_list2.append(stock_data)
+        except Exception as e:
+            print(e)
+
+
+def compare_result(item):
+    logger.info("å¼€å§‹æ¯”å¯¹â€¦â€¦â€¦â€¦")
+    logger.info("è‚¡ç¥¨æ•°é‡ï¼š%d",len(line_list1))
+    logger.info("è‚¡ç¥¨æ•°é‡ï¼š%d",len(line_list1))
+    response_list = DeepDiff(line_list1,line_list2)
+    # å­˜æ”¾ç¯å¢ƒ1æ•°æ®
     envList1 = []
-    # # ´æ·Å»·¾³2Êı¾İ
+    # å­˜æ”¾ç¯å¢ƒ2æ•°æ®
     envList2 = []
-    # Ê¹ÓÃ DeepDiff º¯Êı±È½ÏÁ½¸öÁĞ±í£¬²¢ºöÂÔÔªËØµÄË³Ğò
-    diff = DeepDiff(list1,list2)
-    if not diff:
-        print("¶Ô±È½á¹ûÒ»ÖÂ")
-    else:
-        print(f"´æÔÚ²îÒì===¡·'{diff}'")
-        if 'values_changed' in diff:
-            values_changed = diff['values_changed']
+    # # å­˜æ”¾æ¯”å¯¹ä¸ä¸Šçš„è‚¡ç¥¨å
+    code_list = []
+    # å­˜æ”¾æ¯”å¯¹ä¸ä¸Šçš„å­—æ®µå
+    field_list = []
+    # # åˆ¤æ–­æ¯”å¯¹ç»“æœ
+    print("response_list",response_list)
+    if response_list:
+        # è·å–æ¯”å¯¹ä¸ä¸Šçš„å­—æ®µ
+        if 'values_changed' in response_list:
+            values_changed = response_list['values_changed']
             key_list = list(values_changed.keys())
             val_list = list(values_changed.values())
-            print(key_list)
             for i in val_list:
-                new_value = i['new_value']
                 old_value = i['old_value']
+                new_value = i['new_value']
                 envList1.append(old_value)
-
                 envList2.append(new_value)
-            print(envList1)
-            print(envList2)
-
-
-def SseOptionQuote(url, headers, **kwargs):
-    try:
-        response = requests.Session().get(url,headers=headers)
-        response.raise_for_status()
-        return response
-    except requests.exceptions.RequestException as e:
-        print(f"Error while requesting url '{url}':{e}")
-        return None
+            for j in key_list:
+                # å¯¹æ¯”ä¸ä¸€æ ·çš„è‚¡ç¥¨ä»£ç 
+                matches = re.findall(r'\[\'(.*?)\'\]', j)
+                code_list.append(matches)
 
 
 if __name__ == '__main__':
-    headers = {
-        "token": "MitakeWeb",
-        "symbol": "getline"
-        # "symbol": "513060.sh",
-        # "param": "0930"
-    }
-    url1 = "http://114.80.155.61:22016/v1/sh1/mink/600000?begin=-200&end=-1&period=1&recovered=forward&select=date,close,avg,volume,ref,amount,open,high,low"
-    # url1 = "http://114.80.155.61:22016/v1/marketoverview"
-    # url2 = "http://114.80.155.134:22016/v4/line"
-    response_list1 = []
-    response_list2 = []
-    response1 = SseOptionQuote(url1,headers=headers)
-    # response2 = SseOptionQuote(url2,headers=headers)
-    # if response1:
-    #     response_list1.append(decode_quote(response1.text))
-    # else:
-    #     print(f"Failed to get response for url '{url1}'")
-    # if response2:
-    #     response_list2.append(decode_quote(response2.text))
-    # else:
-    #     print(f"Failed to get response for url '{url2}'")
-    # compare_lists(response_list1,response_list2)
-    print(f"response_list1=====>'{response1.json()}'")
-    # print(f"response_list2=====>'{response_list2}'")
-    compare_lists(response_list1, response1.json())
+    compare_url = quote_yaml(url_path)
+    for url_key in  compare_url.keys():
+        url = compare_url[url_key]
+    read_AllStock(stock_path)
+
+

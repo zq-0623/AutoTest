@@ -1,12 +1,12 @@
 #sh:
 #        env1: http://114.80.155.61:22016/v3/quote
 #        env2: http://114.141.177.5:22016/v3/quote
-sz:
-        env1: http://114.80.155.61:22016/v3/quote
-        env2: http://114.141.177.5:22016/v3/quote
-#bz:
+#sz:
 #        env1: http://114.80.155.61:22016/v3/quote
-#        env2: http://114.80.155.134:22016/v3/quote
+#        env2: http://114.141.177.5:22016/v3/quote
+bz:
+        env1: http://114.80.155.61:22016/v3/quote
+        env2: http://114.80.155.134:22016/v3/quote
 #csi:
 #        env1: http://114.80.155.61:22016/v3/quote
 #        env2: http://114.141.177.5:22016/v3/quote
