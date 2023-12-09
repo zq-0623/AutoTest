@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import logging
 import time,os
-
 import colorlog as colorlog
 
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
@@ -16,7 +15,7 @@ if not os.path.exists(LOG_PATH):
 class Logger():
     def __init__(self):
         # 创建以年月日为日志文件名
-        self.logname = os.path.join(LOG_PATH, "{}_{}.log".format(time.strftime("%y%m%d"),"mqtt_kline"))
+        self.logname = os.path.join(LOG_PATH, "{}.log".format(time.strftime("%y%m%d")))
 
         log_colors_config = {
             'DEBUG': 'fg_thin_cyan',  # cyan white
@@ -37,19 +36,19 @@ class Logger():
         self.console_handler.setLevel(logging.DEBUG)
 
         # 添加日志文件，用于输出日志文件
-        # self.file_handler = logging.FileHandler(self.logname, mode="a", encoding="utf-8")
+        self.file_handler = logging.FileHandler(self.logname, mode="a", encoding="utf-8")
         # 设置文件输出日志级别
-        # self.file_handler.setLevel(logging.DEBUG)
+        self.file_handler.setLevel(logging.DEBUG)
 
         # 将handler添加至日志器中
         self.logger.addHandler(self.console_handler)
-        # self.logger.addHandler(self.file_handler)
+        self.logger.addHandler(self.file_handler)
 
         # 自定义日志显示格式
-        # self.file_formatter = logging.Formatter(
-        #     fmt='%(asctime)s.%(msecs)02d %(filename)s -> %(funcName)s line:%(lineno)d [%(levelname)s] : %(message)s',
-        #     datefmt='%Y-%m-%d  %H:%M:%S'
-        # )
+        self.file_formatter = logging.Formatter(
+            fmt='%(asctime)s.%(msecs)02d %(filename)s -> %(funcName)s line:%(lineno)d [%(levelname)s] : %(message)s',
+            datefmt='%Y-%m-%d  %H:%M:%S'
+        )
         self.console_formatter = colorlog.ColoredFormatter(
             fmt='%(log_color)s%(asctime)s.%(msecs)03d %(filename)s -> %(funcName)s line:%(lineno)d [%(levelname)s] : %(message)s',
             datefmt='%Y-%m-%d  %H:%M:%S',
@@ -58,7 +57,7 @@ class Logger():
 
         # 将自定义日志格式赋予日志器handler
         self.console_handler.setFormatter(self.console_formatter)
-        # self.file_handler.setFormatter(self.file_formatter)
+        self.file_handler.setFormatter(self.file_formatter)
 
 
 logger = Logger().logger

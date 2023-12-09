@@ -11,7 +11,7 @@ from util.base93 import decode
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 # yaml_path = rootPath + '/testCase/quote/HisRef_file.yaml'
-yaml_path = rootPath + '/testCase/quote/quote.yaml'
+yaml_path = rootPath + '/testCase/quote/Kline.yaml'
 data = quote_yaml(yaml_path)
 
 
@@ -27,7 +27,7 @@ def decode_quote(msg):
             data_values = list(data[i].values())[0]
             if data_values == 'Y':
                 split_list[i] = decode(split_list[i])
-            print(split_list[i])
+            # print(split_list[i])
         list_result.append(split_list)
     return list_result
 
@@ -35,16 +35,16 @@ def decode_quote(msg):
 def request_run():
     headers = {
         "token":"MitakeWeb",
-        "symbol":"600000.sh",
-        "param":"0,1000,-1"
+        "symbol":"600600.sh",
+        "param":"20050531"
     }
     response = SseOptionQuote(url, headers=headers)
-    print(response.text)
-    # print(f"response_list1=====>'{decode_quote(response.text)}'")
+    # print(response.text)
+    print(f"response_list1=====>'{decode_quote(response.text)}'")
 
 
 if __name__ == '__main__':
-    url = "http://114.80.155.61:22016/v3/m1"
+    url = "http://114.80.155.134:22016/v3/monthk"
     request_run()
 
 

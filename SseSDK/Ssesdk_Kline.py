@@ -10,9 +10,6 @@ from util.base93 import decode
 import requests
 import yaml
 from util.logTool import logger
-import numpy as np
-# python两个数组做对比
-# np.array_equiv
 # 存放比对不上的股票名
 code_list = []
 # 存放比对不上的字段名
@@ -133,50 +130,51 @@ def excel_yaml_title():
 
 
 if __name__ == '__main__':
-    headers = {
-        "token": "MitakeWeb",
-        "symbol": "600000.sh"
-        # "param": "20231031140200"
-
-    }
-    # headers1 = {
+    # headers = {
     #     "token": "MitakeWeb",
-    #     "symbol": "getline"
+    #     "symbol": "600000.sh"
+    #     # "param": "20231031140200"
     #
     # }
-    # url1 = "http://114.80.155.61:22016/v1/sh1/dayk/601099?today=y&select=date,open,high,low,close,volume,amount,prevClose,fp_volume,fp_amount,ref,iopv,avg&begin=300&end=202206130930"
-    url2 = "http://114.80.155.134:22016/v3/m1"
+    headers = {
+        "token": "MitakeWeb",
+        "symbol": "getbj"
+
+    }
+    url = "http://114.80.155.58:22016/v5/bj/mink/821044?begin=20231129&end=-1&period=1&select=date,close,volume,avg,prevClose,open,high,low,amount&date=20231129&today=y"
+    # url = "http://61.152.102.87:17957/v5/bj/mink/821044?begin=20231129&end=-1&period=1&select=date,close,volume,avg,prevClose,open,high,low,amount&date=20231129&today=y"
+    # url = "http://114.80.155.134:22016/v3/m1"
     response_list1 = []
     response_list2 = []
-    response1 = SseOptionQuote(url2, header=headers)
+    response1 = SseOptionQuote(url, header=headers)
     # response2 = SseOptionQuote(url2, header=headers1)
     # print(type(response1.text))
     # MDS接口返回数据未解码，直接输出
-    # print(response1.text)
+    print(response1.text)
     # SDK接口返回数据加密，需要解码
-    decode_response = decode_quote(response1.text)
-    print(decode_response)
-    if response1:
-        response_list1.append(decode_response)
-        logger.debug(f"url1 success headers '{headers}'")
-    else:
-        logger.info(f"Failed to get response for url '{url2}'")
-    logger.info(f"所有K线数据=====>'{response_list1}'")
-    # 创建空列表  在所有K线数据中拿出当天的K线数据，以便和当天走势做数据对比
-    filtered_data = []
-    for items in response_list1:
-        for row in items:
-            if row[0] == current_date:
-                filtered_data.append(row)
-        logger.info(f"当天K线数据=====>'{filtered_data}'")
-    # res2 = response2.json()["kline"]
-    # response_list2.append(res2)
-    # if response2:
-    #     response_list2.append(response2.text)
-    #     logger.debug(f"url2 success headers '{headers}'")
+    # decode_response = decode_quote(response1.text)
+    # # print(decode_response)
+    # if response1:
+    #     response_list1.append(decode_response)
+    #     logger.debug(f"url1 success headers '{headers}'")
     # else:
-    #     logger.info(f"Failed to get response for url '{url2}'")
-    # compare_lists(response_list1,response_list2)
-    # logger.info(f"response_list2=====>'{response_list2}'")
-    write_excel(filtered_data,excel_yaml_title())
+    #     logger.info(f"Failed to get response for url '{url}'")
+    # logger.info(f"所有K线数据=====>'{response_list1}'")
+    # # 创建空列表  在所有K线数据中拿出当天的K线数据，以便和当天走势做数据对比
+    # filtered_data = []
+    # for items in response_list1:
+    #     for row in items:
+    #         if row[0] == current_date:
+    #             filtered_data.append(row)
+    #     logger.info(f"当天K线数据=====>'{filtered_data}'")
+    # # res2 = response2.json()["kline"]
+    # # response_list2.append(res2)
+    # # if response2:
+    # #     response_list2.append(response2.text)
+    # #     logger.debug(f"url2 success headers '{headers}'")
+    # # else:
+    # #     logger.info(f"Failed to get response for url '{url2}'")
+    # # compare_lists(response_list1,response_list2)
+    # # logger.info(f"response_list2=====>'{response_list2}'")
+    # write_excel(filtered_data,excel_yaml_title())
 

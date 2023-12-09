@@ -183,6 +183,7 @@ def compare_result(item):
     # 存放比对不上的字段名
     field_list = []
     # 判断比对结果
+    print("resp_list1",resp_list1)
     if resp_list1:
         # 获取比对不上的字段
         if 'values_changed' in resp_list1:

@@ -1,17 +1,11 @@
 # encoding=utf-8
-import json
 import os
-import re
-import time
-
-import pandas as pd
+from util.base93 import decode
 import requests
 import yaml
-from util.base93 import decode
-date = time.strftime("%Y%m%d", time.localtime())
-time1 = time.strftime("%H%M%S", time.localtime())
 curPath = os.path.abspath(os.path.dirname(__file__))
-yaml_path = "../testCase/quote/line.yaml"
+rootPath = os.path.split(curPath)[0]
+yaml_path = rootPath + '/testCase/quote/quote.yaml'
 
 
 def quote_yaml(path):
@@ -24,16 +18,6 @@ data = quote_yaml(yaml_path)
 
 
 def decode_quote(msg):
-    res_list = [msg.get('a'), msg.get('c'), msg.get('ot'), msg.get('h'), msg.get('i'), msg.get('l'), msg.get('m'),
-                msg.get('o'), msg.get('dt'), msg.get('r'), msg.get('t'), msg.get('v'), msg.get('r'), msg.get('ic')]
-    for i in range(len(res_list)):
-        data_values = list(data[i].values())[0]
-        if data_values == 'Y':
-            res_list[i] = decode(res_list[i])
-    print(res_list)
-
-
-def decode_quote1(msg):
     res_list = msg.split("\x03")
     list_result = []
     if res_list[-1] == '':
@@ -49,39 +33,20 @@ def decode_quote1(msg):
     return list_result
 
 
-def write_excel(json1,title):
-    excel_path = curPath + f'\\result\\{time1}test.xlsx'
-    if not os.path.exists(excel_path):
-        wr = pd.ExcelWriter(excel_path)
-        ew = pd.DataFrame(json1,columns=title)
-        ew.to_excel(wr,sheet_name=date,index=False)
-        wr.close()
-    else:
-        wr = pd.ExcelWriter(excel_path,mode="a",engine='openpyxl')
-        ew = pd.DataFrame(json1,columns=title)
-        ew.to_excel(wr,sheet_name=date,index=False)
-        wr.close()
-
-
-def excel_yaml_title():
-    keys_list = []
-    for i in data:
-        key_name = i.keys()
-        m = re.findall(r"'(.*?)'", str(key_name))
-        sheet_title = str(m).split("['")[1].split("']")[0]
-        keys_list.append(sheet_title)
-    return keys_list
-
-
 if __name__ == '__main__':
     headers = {
         "token": "MitakeWeb",
-        "symbol": "601099.sh",
-        "param": "202309141315"
+        "symbol": "SHSZBZ1300",
+        "param": "0,50,101,1,1"
     }
-    url1 = "http://114.80.155.61:22016/v4/line"
+    url1 = "http://114.80.155.61:22016/v4/catesorting"
     response = requests.get(url=url1,headers=headers)
-    json1 = decode_quote1(response.text)
+    json1 = response.text.split('\x03')
+    if json1[-1] == '':
+        json1.remove('')
+    for m in range(len(json1)):
+        split_list = json1[m].split("\x02")
+        print(split_list)
 
 
 
