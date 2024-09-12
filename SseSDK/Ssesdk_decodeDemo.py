@@ -1,17 +1,13 @@
-# -*-coding:GBK -*-
+# -*-coding:utf-8 -*-
 import os
-import time
-
-import requests
-import yaml
+from util.logTool import logger
 
 from Ssesdk_tool import SseOptionQuote, quote_yaml
 from util.base93 import decode
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
-# yaml_path = rootPath + '/testCase/quote/HisRef_file.yaml'
-yaml_path = rootPath + '/testCase/quote/Kline.yaml'
+yaml_path = rootPath + '/testCase/quote/line.yaml'
 data = quote_yaml(yaml_path)
 
 
@@ -27,7 +23,6 @@ def decode_quote(msg):
             data_values = list(data[i].values())[0]
             if data_values == 'Y':
                 split_list[i] = decode(split_list[i])
-            # print(split_list[i])
         list_result.append(split_list)
     return list_result
 
@@ -35,23 +30,18 @@ def decode_quote(msg):
 def request_run():
     headers = {
         "token":"MitakeWeb",
-        "symbol":"600600.sh",
-        "param":"20050531"
+        "symbol":"H11082.csi",
+        # 'param': '931,100,-1'
+        # "param":"20050531"
     }
     response = SseOptionQuote(url, headers=headers)
-    # print(response.text)
-    print(f"response_list1=====>'{decode_quote(response.text)}'")
+    res = decode_quote(response.text)
+    print(f"response_list1=====>'{res}'")
 
 
 if __name__ == '__main__':
-    url = "http://114.80.155.134:22016/v3/monthk"
+    url = "http://114.141.177.5:22016/v4/line5d"
     request_run()
-
-
-
-
-
-
 
 
 

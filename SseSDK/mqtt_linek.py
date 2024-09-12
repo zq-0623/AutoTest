@@ -1,13 +1,13 @@
 # encoding=utf-8
 import json
-import re
 
-import yaml
-from PyQt5.QtCore import QUrl
 import paho.mqtt.client as mqtt
-from util.logTool import logger
-from util.base93 import decode
+import yaml
 import zstd
+from PyQt5.QtCore import QUrl
+
+from util.base93 import decode
+from util.logTool import logger
 
 data = []
 yaml_path = "../testCase/quote/mqtt_lineK.yaml"
@@ -69,7 +69,7 @@ def mqtt_connect():
     mqtt_min1_client = mqtt.Client("MQTT_MIN1")
     # mqtt_min1_client.on_connect = on_connect
     mqtt_min1_client.on_message = on_message_min1
-    url = "tcp://114.80.155.61:22017"
+    url = "tcp://114.141.177.5:22017"
     url_tcp = QUrl(url)
     mqtt_min1_client.connect(url_tcp.host(), url_tcp.port(), 60)
     mqtt_min1_client.loop_start()

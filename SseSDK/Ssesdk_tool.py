@@ -25,7 +25,7 @@ def SseOptionQuote(url, headers, **kwargs):
 
 def quote_yaml(path):
     with open(path, 'r', encoding='gbk') as fp:
-        # load()������fp(һ��֧��.read()���ļ�����󣬰���һ��JSON�ĵ�)�����л�Ϊһ��Python����
+        # load()锟斤拷锟斤拷锟斤拷fp(一锟斤拷支锟斤拷.read()锟斤拷锟侥硷拷锟斤拷锟斤拷螅锟斤拷锟揭伙拷锟絁SON锟侥碉拷)锟斤拷锟斤拷锟叫伙拷为一锟斤拷Python锟斤拷锟斤拷
         return yaml.safe_load(fp)
 
 

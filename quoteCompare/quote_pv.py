@@ -3,9 +3,6 @@ import json
 import os
 import sys
 
-import zstd
-from PyQt5.QtCore import QUrl
-
 '''
 pv为分价接口
 股票交易量按价格展示，支持沪深港（不包含指数且不支持L1,仅支持L2）、期货
@@ -24,9 +21,6 @@ import pandas as pd
 import requests
 import yaml
 from deepdiff import DeepDiff
-from util.base93 import decode
-
-import paho.mqtt.client as mqtt
 
 # 当前日期
 date1 = time.strftime('%Y%m%d', time.localtime())
@@ -90,7 +84,8 @@ def thread_run(stock_list, item):
     for i in range(2):
         key = "env" + str(i + 1)
         env = item[key]
-        t = Thread(target=request_run, args=(stock_list, env, i))
+        t = Thread(target=request_run,
+                   args=(stock_list, env, i))
         thread_array.append(t)
         t.start()
     for t in thread_array:
@@ -108,7 +103,9 @@ def request_run(stock_list, env, flag):
             'Symbol': k
         }
         try:
-            resp = requests.session().get(url=env, headers=header,verify=False)
+            resp = requests.session().get(url=env,
+                                          headers=header,
+                                          verify=False)
             resp_list = resp.text.split("\x03")
             if resp_list[-1] == '':
                 resp_list.remove('')
@@ -120,19 +117,24 @@ def request_run(stock_list, env, flag):
             for m in range(len(resp_list)):
                 split_list = resp_list[m].split("\x02")
                 quote_dict = dict()
-                quote_dict["代码"] = k + "#" + str(split_list[0])
+                quote_dict["代码"] = k + "#" + str(
+                    split_list[0])
                 for i in range(len(split_list)):
                     data_key = data[i]
                     quote_dict[data_key] = split_list[i]
                 if flag == 0:
                     quote_list1.append(quote_dict)
-                    quote_map1[k + "#" + str(split_list[0])] = quote_dict
+                    quote_map1[k + "#" + str(
+                        split_list[0])] = quote_dict
                 else:
                     quote_list2.append(quote_dict)
-                    quote_map2[k + "#" + str(split_list[0])] = quote_dict
+                    quote_map2[k + "#" + str(
+                        split_list[0])] = quote_dict
         except Exception:
             exception_list.append(file_name)
             raise
+
+
 # 快照比对
 def compare_result(item):
     print("开始比对....")
@@ -144,7 +146,8 @@ def compare_result(item):
     print("股票价格数量：", len(quote_list1))
     print("股票价格数量：", len(quote_list2))
     # 结果比对
-    resp_list1 = DeepDiff(quote_list1, quote_list2, group_by='代码')
+    resp_list1 = DeepDiff(quote_list1, quote_list2,
+                          group_by='代码')
     # print(resp_list1)
     # 存放环境1数据
     envList1 = []
@@ -176,7 +179,8 @@ def compare_result(item):
                 field_list.append(m[1])
         # 获取多的字段
         if 'dictionary_item_added' in resp_list1:
-            dictionary_item_added = resp_list1['dictionary_item_added']
+            dictionary_item_added = resp_list1[
+                'dictionary_item_added']
             for di in dictionary_item_added:
                 code_list.append(di[6:-2])
                 field_list.append('All')
@@ -190,7 +194,8 @@ def compare_result(item):
                     envList2.append('')
         #  获取少的字段
         if 'dictionary_item_removed' in resp_list1:
-            dictionary_item_removed = resp_list1['dictionary_item_removed']
+            dictionary_item_removed = resp_list1[
+                'dictionary_item_removed']
             for di in dictionary_item_removed:
                 code_list.append(di[6:-2])
                 field_list.append('All')
@@ -202,7 +207,10 @@ def compare_result(item):
                     envList2.append(quote_map2[di[6:-2]])
                 else:
                     envList2.append('')
-        json1 = {'股票名称': code_list, '字段名': field_list, item['env1']: envList1, item['env2']: envList2}
+        json1 = {'股票名称': code_list,
+                 '字段名': field_list,
+                 item['env1']: envList1,
+                 item['env2']: envList2}
         write_excel(json1, file_name)
     else:
         # print("正确的：", item)
@@ -217,7 +225,8 @@ def key_sort_group(quote_list, str1):
     quote_list.sort(key=itemgetter(str1))  # code排序；无返回值
     # print(data)
     result = dict()
-    for code, items in groupby(quote_list, key=itemgetter(str1)):  # 按照code分组
+    for code, items in groupby(quote_list, key=itemgetter(
+            str1)):  # 按照code分组
         # print(type(items))
         # d = dict(ChainMap(*items))
         result[str(code)] = list(items)
@@ -229,6 +238,7 @@ def sort_dict_by_keys(d, reverse=True):
     keys = list(d.keys())
     keys.sort(reverse=reverse)
     return [(key, d[key]) for key in keys]
+
 
 # 结果写入excel
 def write_excel(json1, item):
@@ -242,7 +252,8 @@ def write_excel(json1, item):
     # 如果文件存在
     else:
         # wb = load_workbook(write_path, mode='a', engine='openpyxl')
-        ew = pd.ExcelWriter(write_path, mode='a', engine='openpyxl')
+        ew = pd.ExcelWriter(write_path, mode='a',
+                            engine='openpyxl')
         # ew.book = wb
         wr = pd.DataFrame(json1)
         wr.to_excel(ew, sheet_name=item, index=False)
@@ -273,18 +284,19 @@ if '__main__' == __name__:
         file_name = url_key
         if url_key == "hk":
             url = compare_url[url_key]
-        if url_key == "shl2":
-            url = compare_url[url_key]
-            file = "AllStock_sh.txt"
-        if url_key == "szl2":
-            url = compare_url[url_key]
-            file = "AllStock_sz.txt"
+        # if url_key == "shl2":
+        #     url = compare_url[url_key]
+        #     file = "AllStock_sh.txt"
+        # if url_key == "szl2":
+        #     url = compare_url[url_key]
+        #     file = "AllStock_bz.txt"
         # 存放环境1快照
         quote_list1 = []
         # 存放环境2快照
         quote_list2 = []
         print("==============================")
-        print(f"市场：{file_name} \n环境1： {url['env1']}\n环境2： {url['env2']}")
+        print(
+            f"市场：{file_name} \n环境1： {url['env1']}\n环境2： {url['env2']}")
 
         print("==============================")
         file_path = f'{stock_path}/{file}'

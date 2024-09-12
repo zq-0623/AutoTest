@@ -280,7 +280,7 @@ if '__main__' == __name__:
             file = "AllStock_sh.txt"
         if url_key == "szl2":
             url = compare_url[url_key]
-            file = "AllStock_sz.txt"
+            file = "AllStock_bz.txt"
         # 存放环境1快照
         quote_list1 = []
         # 存放环境2快照

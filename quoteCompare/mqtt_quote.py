@@ -115,8 +115,6 @@ def thread_run(stock_list, item):
         client1.on_message = on_message_1
         # 连接到url1所指定的mqtt服务器，并指定连接超时时间为60秒钟
         client1.connect(url1.host(), url1.port(), 60)
-        print(url1.host())
-        print(url1.port())
         # 遍历stock_list中的每个股票代码，并依次向client1订阅其所有相关的主题
         for k in stock_list:
             for topic in str(k[:-1]).split(','):
@@ -241,16 +239,10 @@ def on_message_2(client, userdata, msg):
 # 快照比对
 def compare_result(item):
     print("开始比对....")
-    # print(quote_list1)
-    # print(len(quote_list2))
-    # list1 = key_sort_group(quote_list1, '代码')
-    # list2 = key_sort_group(quote_list2, '代码')
-    # print(list1)
     print("股票数量：", len(quote_list1))
     print("股票数量：", len(quote_list2))
     # 结果比对
     resp_list1 = DeepDiff(quote_list1, quote_list2, group_by='代码')
-    # print(resp_list1)
     # 存放环境1数据
     envList1 = []
     # 存放环境2数据
@@ -265,8 +257,8 @@ def compare_result(item):
     if resp_list1:
         # print("错误的：", item)
         # 获取比对不上的字段
-        if 'values_changed' in resp_list1:
-            values_changed = resp_list1['values_changed']
+        if 'type_changes' in resp_list1:
+            values_changed = resp_list1['type_changes']
             key_list = list(values_changed.keys())
             val_list = list(values_changed.values())
             for i in val_list:
@@ -297,26 +289,6 @@ def compare_result(item):
         json1 = {'比对结果': ['完全相同']}
         write_excel(json1, file_name)
     print("比对完成写入excel")
-
-
-# 排序分组
-def key_sort_group(quote_list, str1):
-    """对列表中dict数据指定key排序，分组"""
-    quote_list.sort(key=itemgetter(str1))  # code排序；无返回值
-    # print(data)
-    result = dict()
-    for code, items in groupby(quote_list, key=itemgetter(str1)):  # 按照code分组
-        # print(type(items))
-        # d = dict(ChainMap(*items))
-        result[str(code)] = list(items)
-    return result
-
-
-def sort_dict_by_keys(d, reverse=True):
-    # 这里如果不强制转换会报错，因为d.keys()的类型是：<class 'dict_keys'>，没有sort方法
-    keys = list(d.keys())
-    keys.sort(reverse=reverse)
-    return [(key, d[key]) for key in keys]
 
 
 # 结果写入excel
@@ -360,16 +332,16 @@ if '__main__' == __name__:
         url = None
         file = "AllStock_" + url_key + ".txt"
         file_name = url_key
-        if url_key == "sh":
-            url = compare_url[url_key]
+        # if url_key == "sh":
+        #     url = compare_url[url_key]
         # if url_key == "sz":
         #     url = compare_url[url_key]
         # if url_key == "bz":
         #     url = compare_url[url_key]
         # if url_key == "csi":
         #     url = compare_url[url_key]
-        # if url_key == "hk":
-        #     url = compare_url[url_key]
+        if url_key == "hk":
+            url = compare_url[url_key]
         # if url_key == "shl2":
         #     url = compare_url[url_key]
         #     file = "AllStock_sh.txt"

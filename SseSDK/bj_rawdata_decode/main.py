@@ -3,14 +3,14 @@ import os
 import binascii
 from util.logTool import logger
 
-file_path = '20231205_bj/Ldds-RawData-BJZQ.dat'
-file_304000_path = '20231205_bj/304000.csv'
-file_301000_path = '20231205_bj/301000.csv'
-file_305000_path = '20231205_bj/305000.csv'
-file_307011_path = '20231205_bj/307011.csv'
-file_308011_path = '20231205_bj/308011.csv'
-file_308012_path = '20231205_bj/308012.csv'
-file_306001_path = '20231205_bj/306001.csv'
+file_path = '20231222_bj/Ldds-RawData-BJZQ.dat'
+file_304000_path = '20231222_bj/304000.csv'
+file_301000_path = '20231222_bj/301000.csv'
+file_305000_path = '20231222_bj/305000.csv'
+file_307011_path = '20231222_bj/307011.csv'
+file_308011_path = '20231222_bj/308011.csv'
+file_308012_path = '20231222_bj/308012.csv'
+file_306001_path = '20231222_bj/306001.csv'
 
 file = open(file_path, 'rb')
 file_304000 = open(file_304000_path, 'w')

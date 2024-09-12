@@ -38,7 +38,7 @@ class Logger():
         # 添加日志文件，用于输出日志文件
         self.file_handler = logging.FileHandler(self.logname, mode="a", encoding="utf-8")
         # 设置文件输出日志级别
-        self.file_handler.setLevel(logging.DEBUG)
+        self.file_handler.setLevel(logging.INFO)
 
         # 将handler添加至日志器中
         self.logger.addHandler(self.console_handler)

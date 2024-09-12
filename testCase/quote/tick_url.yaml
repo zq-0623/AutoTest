@@ -1,0 +1,58 @@
+# tick L1分时明细
+#sh:
+#  "url1": "http://114.28.169.97:22016/v2/tick"
+#  "url2": "http://114.141.177.5:22016/v2/tick"
+sz:
+  "url1": "http://114.28.169.97:22016/v2/tick"
+  "url2": "http://114.141.177.5:22016/v2/tick"
+#bz:
+#  "url1": "http://114.28.169.97:22016/v2/tick"
+#  "url2": "http://114.141.177.5:22016/v2/tick"
+#csi:
+#  "url1": "http://114.28.169.97:22016/v2/tick"
+#  "url2": "http://114.141.177.5:22016/v2/tick"
+#hk:
+#  "url1": "http://114.28.169.94:22016/v2/tick"
+#  "url2": "http://114.141.177.9:22016/v2/tick"
+
+# tick_L2 L2分时明细
+#shl2:
+#  "url1": "http://114.28.169.93:22016/v2/tick_l2"
+#  "url2": "http://114.141.177.8:22016/v2/tick_l2"
+#szl2:
+#  "url1": "http://114.28.169.96:22016/v2/tick_l2"
+#  "url2": "http://114.141.177.10:22016/v2/tick_l2"
+#hk:
+#  "url1": "http://114.28.169.96:22016/v2/tick_l2"
+#  "url2": "http://114.141.177.10:22016/v2/tick_l2"
+
+#shl2:
+#  "url1": "http://114.28.169.93:22016/v2/tickdetail_l2"
+#  "url2": "http://114.141.177.8:22016/v2/tickdetail_l2"
+#szl2:
+#  "url1": "http://114.28.169.96:22016/v2/tickdetail_l2"
+#  "url2": "http://114.141.177.10:22016/v2/tickdetail_l2"
+#hk:
+#  "url1": "http://114.28.169.96:22016/v2/tickdetail_l2"
+#  "url2": "http://114.141.177.10:22016/v2/tickdetail_l2"
+#shl2:
+#  "url1":   "http://114.28.169.93:22016/v2/tickindex_l2"
+#  "url2":  "http://114.141.177.8:22016/v2/tickindex_l2"
+#szl2:
+#  "url1":   "http://114.28.169.96:22016/v2/tickindex_l2"
+#  "url2":  "http://114.141.177.10:22016/v2/tickindex_l2"
+#hk:
+#  "url1":   "http://114.28.169.96:22016/v2/tickindex_l2"
+#  "url2":  "http://114.141.177.10:22016/v2/tickindex_l2"
+#shl2plus:
+#  "url1":   "http://114.28.169.101:22016/v2/tick_et"
+#  "url2":  "http://114.141.177.6:22016/v2/tick_et"
+#szl2plus:
+#  "url1":   "http://114.28.169.102:22016/v2/tick_et"
+#  "url2":  "http://114.141.177.7:22016/v2/tick_et"
+#shl2plus:
+#  "url1":   "http://114.28.169.101:22016/v2/tick_res"
+#  "url2":  "http://114.141.177.6:22016/v2/tick_res"
+#szl2plus:
+#  "url1":   "http://114.28.169.102:22016/v2/tick_res"
+#  "url2":  "http://114.141.177.7:22016/v2/tick_res"

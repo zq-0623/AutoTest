@@ -1,6 +1,23 @@
 ### PyQt5 - 使用 Qt 设计器生成对应的python文件
     pyuic5 -x demo.ui -o demo.py
 
+### git pull拉取服务器代码时报错
+    Your local changes will be overwritten by merge
+        这是因为本地有文件改动未提交，并且该文件和git服务器最新版本有冲突，此时pull更新就会提示报错，无法更新、
+    ## 处理方法一
+        保留本地改动的同时，并且把git服务器上的代码pull下来：
+            1、先把本地改动暂存到本地仓库，pull代码后再把这部分改动代码拿出来
+            通过 git-->Uncommitted Changes-->Stash Changes,将本地的所有改动暂存到本地仓库
+            2、开始pull服务器代码
+            3、如果想把自己修改的代码从本地仓库中再拿出来，可以通过git-->unStash Changes把之前的改动合并到本地。
+    ## 处理方法二
+            直接覆盖本地的代码，放弃自己本地的改动，只保留服务端的代码
+            1、直接git-->Reset head
+            2、选择需要的reset模式
+                git reset --soft 只是将HEAD引用指向指定的提交，工作区跟暂存区的内容不会改变
+                git reset --mixed（默认选项）将HEAD指向指定的提交，暂存区的内容随之改变，工作区内容不变
+                git reset --hard 将HEAD指向指定的提交，暂存区跟工作区都会改变
+
 ### 本地代码上传到GitHub
     1、为Github账户设置SSH key
         通过$ ssh-keygen -t rsa -C “1209405215@qq.com”来生成
@@ -49,12 +66,12 @@
 冒烟测试的用例样式及说明如下：
 ```
 #用例1：get请求
-- "url": "http://114.80.155.47:22013/v2/stockreportlist" #请求地址
+- "url": "http://114.80.155.437:22013/v2/stockreportlist" #请求地址
   "method": "get" #请求方式
   "request": {    #请求参数，需要填写header则添加相应参数，需要填写queryParam则添加相应参数
     "header": {  
       'Content-Type': 'application/json', 
-      'Token': 'MitakeWeb',
+      'Token': 'MitaykeWeb',
       "Symbol": "600000.sh",
       "Param": "-1,,20",
       "src": "d"
@@ -70,7 +87,7 @@
   }
 
 #用例2：post请求
-- "url": "http://172.34.80.131:9000/api/testPlan/new"
+- "url": "http://172.34.80.13:9000/api/testPlan/new"
   "method": "post"
   "request": {
     "header": {
@@ -131,14 +148,14 @@ name = "接口自动化测试报告"
 ```
 [
   {
-    "url1": "http://114.80.155.47:22013/v2/stockreportlist",
-    "url2": "http://114.80.155.57:22013/v2/stockreportlist",
+    "url1": "http://114.80.155.437:22013/v2/stockreportlist",
+    "url2": "http://114.80.155.547:22013/v2/stockreportlist",
     "method": "get",
     "csv_path": "../testCase/compare/compare.csv",
     "request": {
       "header": {
         "Content-Type": "application/json",
-        "Token": "MitakeWeb",
+        "Token": "MitaykeWeb",
         "Symbol": "$csv{Symbol}",
         "Param": "$csv{Param}",
         "src": "d"
@@ -176,7 +193,8 @@ name = "接口自动化测试报告"
 ```
 [
   {
-    "url": "http://58.63.252.60:32041/v2/sh1/mink/",  #请求url，
+    "url": "http://58.63.252.68:32041/v2/sh1/mink/",  #请求url，
+    "url": "http://58.63.252.68:32041/v2/sh1/mink/",  #请求url，
                                                        可用动态参数代替填写不同环境的url
     "code": "$csv{code}",      #股票代码的动态参数，具体value填写在csv中
     "field": "kline",          #接口返回数据的key值，如果是day或者mink则不用更改

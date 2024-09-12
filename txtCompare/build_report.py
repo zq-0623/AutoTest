@@ -2,8 +2,6 @@
 import os
 import sys
 
-from util.set_reportName import get_json_data
-
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
@@ -12,17 +10,16 @@ sys.path.append(rootPath)
 import json
 import time
 from contextlib import ExitStack
-from util import set_title
 
 from deepdiff import DeepDiff
 
 date1 = time.strftime('%Y%m%d', time.localtime())  # 当前日期
 time1 = time.strftime('%H%M%S', time.localtime())  # 当前时间
-# 线程数
+# 线程数y
 num = 5
 
-path1 = f'D:\\TencentWeChatFile\\TencentQQ\\1209405215\\FileRecv\\61_NQHQ'
-path2 = f'D:\\TencentWeChatFile\\TencentQQ\\1209405215\\FileRecv\\134_NQHQ'
+path1 = r'C:\Users\knapp\Desktop\2024Q3\20240912\新建文件夹 (3)\cs_AllStock_BanKuai'
+path2 = r'C:\Users\knapp\Desktop\2024Q3\20240912\qz_AllStock_BanKuai'
 # 比对结果存放路径
 result_path = 'result'
 
@@ -86,7 +83,6 @@ if __name__ == '__main__':
     # 添加环境参数
     os.system('copy  ..\\environment.properties  result\\environment.properties')
     os.system(f'allure generate ./result/ -o ./report/{date1}/{time1}/  ')  # 生成测试报告
-
 
 # os.system(f'allure generate ./result/{date1}/{time1}/ -o ./report/{date1}/{time1}/')  # 生成测试报告
 os.system(f'allure serve ./result/')  # allure server开启http服务
