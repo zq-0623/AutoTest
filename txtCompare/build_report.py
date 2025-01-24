@@ -10,7 +10,6 @@ sys.path.append(rootPath)
 import json
 import time
 from contextlib import ExitStack
-
 from deepdiff import DeepDiff
 
 date1 = time.strftime('%Y%m%d', time.localtime())  # 当前日期
@@ -18,8 +17,8 @@ time1 = time.strftime('%H%M%S', time.localtime())  # 当前时间
 # 线程数y
 num = 5
 
-path1 = r'C:\Users\knapp\Desktop\2024Q3\20240912\新建文件夹 (3)\cs_AllStock_BanKuai'
-path2 = r'C:\Users\knapp\Desktop\2024Q3\20240912\qz_AllStock_BanKuai'
+path1 = r'E:\AllStock_BanKuai\20241128\cs_AllStock_BanKuai\cs_AllStock_BanKuai'
+path2 = r'E:\AllStock_BanKuai\20241128\qz_AllStock_BanKuai\qz_AllStock_BanKuai'
 # 比对结果存放路径
 result_path = 'result'
 

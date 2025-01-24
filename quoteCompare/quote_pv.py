@@ -282,21 +282,20 @@ if '__main__' == __name__:
         url = None
         file = "AllStock_" + url_key + ".txt"
         file_name = url_key
-        if url_key == "hk":
-            url = compare_url[url_key]
+        # if url_key == "hk":
+        #     url = compare_url[url_key]
         # if url_key == "shl2":
         #     url = compare_url[url_key]
         #     file = "AllStock_sh.txt"
-        # if url_key == "szl2":
-        #     url = compare_url[url_key]
-        #     file = "AllStock_bz.txt"
+        if url_key == "szl2":
+            url = compare_url[url_key]
+            file = "AllStock_sz.txt"
         # 存放环境1快照
         quote_list1 = []
         # 存放环境2快照
         quote_list2 = []
         print("==============================")
-        print(
-            f"市场：{file_name} \n环境1： {url['env1']}\n环境2： {url['env2']}")
+        print(f"市场：{file_name} \n环境1： {url['env1']}\n环境2： {url['env2']}")
 
         print("==============================")
         file_path = f'{stock_path}/{file}'

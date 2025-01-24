@@ -1,0 +1,10 @@
+- name: "¿ìÕÕ½Ó¿Ú"
+  url: /v3/quote
+  headers:
+    token: MitakeWeb
+    symbol: 600000.sh
+  assertions:
+    - expected_key: status
+      expected_value: success
+    - expected_key: data
+      expected_value: true

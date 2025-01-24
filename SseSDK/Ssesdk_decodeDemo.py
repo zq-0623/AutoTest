@@ -1,6 +1,5 @@
 # -*-coding:utf-8 -*-
 import os
-from util.logTool import logger
 
 from Ssesdk_tool import SseOptionQuote, quote_yaml
 from util.base93 import decode
@@ -16,7 +15,7 @@ def decode_quote(msg):
     list_result = []
     if res_list[-1] == '':
         res_list.remove('')
-    for m in range(len(res_list)- 1):
+    for m in range(len(res_list)):
         split_list = res_list[m].split("\x02")
         for i in range(len(split_list)):
             data_key = list(data[i].keys())[0]
@@ -30,17 +29,18 @@ def decode_quote(msg):
 def request_run():
     headers = {
         "token":"MitakeWeb",
-        "symbol":"H11082.csi",
-        # 'param': '931,100,-1'
+        "symbol":"000002.sz",
+        'param': '-1,20,0'
         # "param":"20050531"
     }
     response = SseOptionQuote(url, headers=headers)
     res = decode_quote(response.text)
+    print(response.headers['params'])
     print(f"response_list1=====>'{res}'")
 
 
 if __name__ == '__main__':
-    url = "http://114.141.177.5:22016/v4/line5d"
+    url = "http://114.141.177.5:22016/v2/tick"
     request_run()
 
 

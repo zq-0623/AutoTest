@@ -1,16 +1,16 @@
 import os
 import time
 
+# from replaceYaml import env_replace_yaml
+# from set_reportName import write_json_data, get_json_data
+# from set_title import set_title
+from util.replaceYaml import env_replace_yaml
+from util.set_reportName import write_json_data, get_json_data
+from util.set_title import set_title
+
 # class Testrun:
 #     def run(self):
 # from interface.test_interface import get_case
-
-#from replaceYaml import env_replace_yaml
-#from set_reportName import write_json_data, get_json_data
-#from set_title import set_title
-from util.replaceYaml import env_replace_yaml
-from util.set_reportName import write_json_data,get_json_data
-from util.set_title import set_title
 
 # runType 可填两种值，smoke代表冒烟测试，compare代表数据比对
 runType = "compare"

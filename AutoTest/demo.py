@@ -1,328 +1,95 @@
-# filename = r"C:\Users\knapp\Desktop\redis_get_bztim.txt"  # 请将文件名替换成你的文件名
-#
-# with open(filename, 'r') as file:
-#     lines = file.readlines()
-#
-# for i in range(len(lines) - 1):
-#     current_line = int(lines[i])
-#     next_line = int(lines[i + 1])
-#
-#     if next_line > current_line:
-#         print(f"第{i+2}行比第{i+1}行大")
-#     elif next_line == current_line:
-#         print(f"第{i+2}行与第{i+1}行相等")
-#     else:
-#         print(f"第{i+2}行比第{i+1}行小")
-#
-#
-import os
-from datetime import datetime, timedelta
-
-import pandas as pd
-
-from util.logTool import logger
-
-
-# import psutil
-# print(psutil.cpu_times())  # 统计 CPU 的用户／系统／空闲时间
-# print(psutil.cpu_count())  # 获取 CPU 的逻辑数量
-# print(psutil.cpu_count(logical=False))  # 获取 CPU 的物理核心数量
-# for x in range(4):
-#     print(psutil.cpu_percent(interval=1,percpu=True))   # 查看 CPU 的使用率
-#     """
-#     :interval：表示每隔0.5s刷新一次
-#     :percpu：表示查看所有的cpu使用率
-#     """
-# print(psutil.cpu_stats())   # 查看 CPU 的统计信息，包括上下文切换、中断、软中断，以及系统调用次数等等
-# print(psutil.cpu_freq())    # 查看 CPU 的频率
-# print(psutil.virtual_memory())  # 查看内存使用情况    svmem(total=16876888064, available=3215986688, percent=80.9, used=13660901376, free=3215986688)
-# """
-# total: 总内存
-# available: 可用内存
-# percent: 内存使用率
-# used: 已使用的内存
-# """
-# print(psutil.swap_memory())   # 查看交换内存信息
-# print(psutil.disk_partitions())   # 查看磁盘分区、磁盘使用率和磁盘 IO 信息
-# print(psutil.disk_usage("D:\\"))   # 查看某个磁盘使用情况
-# print(psutil.disk_io_counters())  # 查看磁盘 IO 统计信息
-# """
-# read_count: 读次数
-# write_count: 写次数
-# read_bytes: 读的字节数
-# write_bytes: 写的字节数
-# read_time: 读时间
-# write_time: 写时间
-# """
-# print(psutil.disk_io_counters(perdisk=True))  # 分别列出每一个磁盘的统计信息
-
-# import matplotlib.pyplot as plt
-#
-# # 给定数据
-# x_axis_data = list(range(1, 489))
-# y_axis_data = [7192768,7194880,7200192,8776448,10169856,12285824,13392768,14668736,14888064,14863616,
-#                14720256,13141184,13185600,13198336,13206080,13276992,13274368,13286528,13285824,13282688,
-#                13251328,13253120,12435520,12412096,12390976,12385856,12402688,12406784,12406912,12401536,
-#                12400832,12403584,12407808,12400384,12399104,12399872,12400064,12400576,12398080,12397312,
-#                12403008,12408064,12412288,12413248,12414208,12416384,12406208,12409920,12402560,12403136,
-#                12407424,12408512,12414976,12412288,12405888,12393664,12364544,12372928,12374464,12376448,
-#                12397056,12398656,12411840,12406592,12398912,12406464,12408320,12412992,12408320,12411904,
-#                12410816,12405760,12415296,12410944,12409280,12406976,12409536,12411520,12407808,12405056,
-#                12407296,12409728,12414144,12403712,12400512,12404992,12398016,12407232,12404864,12405696,
-#                12404800,12407360,12412288,12408320,12408000,12420928,12395968,12401024,12390464,12383168,
-#                12381248,12381952,12405056,12402688,12405568,12410496,12411200,12415552,12412736,12411200,
-#                12406400,12405952,12415808,12416896,12413376,12416576,12416576,12422656,12417792,12438336,
-#                12487168,12532864,12575744,12565120,12569792,12584064,12600768,12605120,12601536,12627840,
-#                12641792,12642304,12644480,12641152,12641600,12641664,12641792,12647872,12643072,12645376,
-#                12633216,12630208,12635712,12627712,12610240,12605248,12586496,12585600,12582208,12564288,
-#                12557760,12541696,12541440,12536640,12520320,12516672,12502336,12506752,12500224,12487488,
-#                12486464,12473472,12476864,12474624,12464384,12465856,12457664,12461056,12456256,12451008,12451008,12446400,12451200,12446400,12443840,12443840,12440384,12443840,12440064,12444928,12445120,12446528,12449920,12445440,12446400,12447808,12447808,12448320,12445952,12445952,12447232,12452992,12462592,12457792,12464448,12471680,12472704,12484224,12480896,12481408,12485760,12493376,12498240,12497024,12501248,12518592,12518592,12524416,12519680,12525248,12525248,12525248,12531328,12725440,12740992,12782016,12879488,12961152,13030720,13076800,13159808,13185600,13258752,13288000,13338816,13394368,13447936,13506688,13563264,13624896,13681728,13743296,13777280,13850304,13924672,13978752,14025664,14087104,14162944,14215808,14286016,14319232,14388992,14436928,14505536,14561280,14615936,14688192,14752384,14810432,14848640,14908480,14953152,15007616,15049920,15126784,15172608,15209408,15196032,15196032,15194304,15188672,15203264,15202688,15212352,15212672,15204736,15214976,15212288,15212160,15212672,15214016,15211328,15207488,15201984,15216832,15215488,15219840,15205312,15206272,15212224,15194752,15207936,15197440,15190848,15196096,15206336,15210240,15214976,15214464,15207232,15205952,15214528,15213632,15208128,15204928,15205696,15213120,15212032,15210688,15204352,15197568,15205120,15200320,15194048,15191488,15187712,15195008,15185600,15184384,15180608,15184064,15198976,15192640,15183552,15210752,15264064,15318656,15378944,15447552,15497600,15564032,15630208,15689856,15743040,15805120,15846912,15910400,15954880,16009280,16108352,16077120,16111168,16190400,16195392,16204032,16177600,16209216,16236928,16232448,16231104,16249024,16263040,16269952,16277696,16276544,16266560,16272640,16296064,16291264,16292544,16272960,16283264,16271680,16271616,16314560,16308416,16319488,16309312,16309312,16316032,16311808,16321152,16330176,16376320,16361024,16356544,16364608,16332032,16329024,16334912,16329792,16341376,16326400,16329536,16333568,16328128,16336512,16327552,16327424,16323520,16327424,16336128,16325760,16325888,16331264,16331264,16336576,16331776,16331776,16331840,16331840,16332352,16327488,16327488,16327488,16331840,16336640,16331840,16331840,16331840,16331840,16336640,16331840,16331840,16331840,16331840,16336640,16331840,16331840,16333696,16332544,16337344,16332544,16332544,16332544,16332544,16337344,16332544,16332544,16332544,16332544,16337408,16332608,16332608,16331200,16331200,16336064,16331264,16331264,16336448,16336448,16339456,16342400,16348096,16348096,16348096,16343808,16343616,16343616,16343808,16343808,16344000,16343808,16343808,16345600,16345600,16348864,16348672,16348672,16348672,16348672,16348864,16348672,16348672,16350272,16350272,16350528,16350336,16350336,16350336,16350336,16351296,16351104,16351104,16351104,16351104,16351296,16351104,16351104,16351104,16351104,16355904,16351104,16351104,16351104,16351104,16355392,16350592,16350592,16350592,16354688,16359488,16354688,16354688,16354688,16354688,16359488,16354688,16354688,16354688,16354688,16356736,16351936,16351936,16351936,16351936,16356736,16351936,16351936,16354560,16354560,16359360,16354560,16354560,16354816,16350208,16354944,16350208,16350208,16353088,16353088,16357824,16354944,16354944,16354944,16354944,16362112,16357376,16357376,16358016,16358016,16362752,16358016,16358016,16357760,16357760,16362496,16359040,16359040,16359616,16359616,16364352,16359616,16359616,16361024,16358464,16363200,16358464,16358464,16358464,16358464,16358656,16358464,16358464,16358464,16358464,16358656,16358464,16358464,16358464,16358464,16358656,16358464,16362368,16362368,16362368,16362560,16359808,16359808,16359808,16359808,16360000,16359808,16359808,16359808,16359808,16360000,16359808,16359808,16359808,16359808,16355776,16355584,16355584,16355584,16359744,16359936,16359744,16359744,16362304,16362304,16367040,16362304,16362304,16362304,16362304,16364992,16360256,16360256,16360256,16360256,16364992,16360256,16360256,16360256,16360256,16365120,16360384,16360384,16360384,16360384,16360576,16360384,16360384,16360448,16360448,16360640,16360448,16361792,16362112,16362112,16362560,16362368,16362368,16362368,16362368,16362560,16362368,16362368,16363008,16363008,16364160,16361920,16359488,16359488,16359488,16359680,16359488,16359488,16359936,16359936,16360192,16360000,16360000,16358016,16358016,16358208,16358016,16358016,16358016,16358016,16362368,16362176,16362176,16362176,16362176,16362496,16362304,16362304,16362304,16362304,16362496,16362304,16362304,16360256,16360256,16366720,16361984,16361984,16361984,16361984,16366720,16361984,16361984,16361984,16361984,16366720,16359808,16359808,16359808,16359808,16364544,16359808,16359808,16359808,16359808,16364544,16359808,16359808,16359808,16359808,16364544,16366720,16366720,16366720,16364800,16369536,16364800,16364800,16364800,16364800,16369536,16364800,16364800,16369344,16369344,16369664,16369472,16369472,16369472,16369472,16369664,16369472,16369536,16367616,16368256,16369088,16368896,16368896,16368896,16370176,16370624,16370432,16370432,16370432,16370432,16370624,16370432,16370432,16370432,16370432,16370752,16369088,16369088,16369088,16369088,16369280,16369088,16369088,16371392,16371392,16373952,16369216,16370496,16370432,16370432,16375168,16370432,16370432,16370432,16370432,16375232,16370432,16370432,16370432,16370432,16375232,16370432,16370432,16370432,16370432,16373824,16369024,16369024,16369024,16369024,16373824,16369024,16369024,16369024,16369024,16373824,16369024,16369024,16369024,16369024,16367104,16366912,16366912,16366912,16366912,16367104,16366912,16371136,16371136,16371136,16371328,16371136,16371136,16369856,16369856,16366400,16366208,16366208,16370368,16370752,16370944,16370752,16370752,16370816,16370816,16371008,16370816,16370816,16370816,16371008,16371200,16371008,16371008,16368960,16368960,16369152,16368960,16371328,16371392,16371392,16376192,16371392,16371392,16371392,16371392,16376192,16371392,16371392,16370560,16370560,16375360,16370560,16370560,16370560,16370560,16375360,16370560,16370560,16370560,16370560,16375360,16370560,16370560,16368640,16368640,16373504,16368704,16368704,16368704,16368704,16373504,16368704,16368704,16368704,16368704,16373504,16368704,16371264,16371264,16371264,16371456,16370112,16370112,16370112,16370112,16370304,16370112,16370112,16370112,16370112,16370304,16370112,16370112,16370112,16370112,16370304]
-#
-# y_axis_data_unique = list(set(y_axis_data))
-# # 创建折线图
-# plt.plot(x_axis_data, y_axis_data_unique, marker='o', linestyle='-')
-#
-# # 添加标题和标签
-# plt.title('折线图示例', fontproperties='SimHei')
-# plt.xlabel('时间', fontproperties='SimHei')
-# plt.ylabel('数据', fontproperties='SimHei')
-#
-# # 显示网格
-# # plt.grid(True)
-# plt.legend(['数据'], loc='upper right')
-# # 显示图形
-# plt.show()
-
-
-
-# import re
-# import matplotlib.pyplot as plt
-# from datetime import datetime, timedelta
-#
-# # 读取文件内容
-# with open("pid_sh-1000-pass_4053525.log", "r",encoding="utf-8") as file:
-#     lines = file.readlines()
-#
-# # 提取每分钟的 VmRSS 值
-# vmrss_values = []
-#
-# for i in range(1, len(lines), 2):
-#     vmrss_line = lines[i]
-#
-#     vmrss_match = re.search(r'VmRSS:\s+(\d+)\s+kB', vmrss_line)  # 提取 VmRSS 值
-#     if vmrss_match:
-#         vmrss_value = int(vmrss_match.group(1))
-#         vmrss_values.append(vmrss_value)
-#     else:
-#         print("未能提取VmRSS值:", vmrss_line)
-#
-# # 去重
-# vmrss_values_unique = list(set(vmrss_values))
-#
-# # 对去重后的 VmRSS 值进行排序
-# vmrss_values_unique_sorted = sorted(vmrss_values_unique)
-#
-# # 确定横轴间距
-# x_ticks = range(len(vmrss_values_unique_sorted))
-#
-# # 绘制折线图
-# plt.plot(x_ticks, vmrss_values_unique_sorted, marker='o')
-# plt.title('去重后的 VmRSS 每分钟值')
-# plt.xlabel('时间')
-# plt.ylabel('VmRSS (kB)')
-# plt.xticks(x_ticks, vmrss_values_unique_sorted, rotation=45)  # 将横轴刻度设置为去重后的 VmRSS 值，并旋转标签
-# plt.grid(True)
-# plt.tight_layout()
-# plt.show()
-
-# -*-coding:GBK -*-
-# from dbfread import DBF
-# # 读取DBF文件头信息
-# with DBF('bj_securityclosemd_20240304.dbf', load=True, encoding='latin-1') as table:
-#     header_info = table.field_names
-#     header_data = table.fields
-#     header = table.header
-#     fields = table.fields
-# # 打印文件头信息
-# # print('header_info:',header_info)
-# # print('header_data:',header_data)
-# print('header:',header)
-# # print('fields:',fields)
-
-
-# -*-coding:utf-8 -*-
-import json
-import os
-import sys
-import zstd
-from PyQt5.QtCore import QUrl
-
-curPath = os.path.abspath(os.path.dirname(__file__))
-rootPath = os.path.split(curPath)[0]
-sys.path.append(rootPath)
-import re
-import time
-from itertools import groupby
-from operator import itemgetter
-
-import pandas as pd
+import requests
 import yaml
-from deepdiff import DeepDiff
-from util.base93 import decode
-
-import paho.mqtt.client as mqtt
-
-# 当前日期
-date1 = time.strftime('%Y%m%d', time.localtime())
-# 当前时间
-time1 = time.strftime('%Y%m%d_%H%M%S', time.localtime())
-# 快照字段名文件路径
-yaml_path = rootPath + '/testCase/quote/mqtt_quote.yaml'
-# 股名表文件路径
-stock_path = f'../testCase/AllStock'
-# url文件路径
-url_path = f'../testCase/quote/mqtt_tcp.yaml'
-
-# 比对结果存放路径
-result_path = 'result'
-# 每次请求传入的股票数量
-interval = 50
-# 存放快照字段
-data = []
-# 存放环境1快照
-quote_list1 = []
-# 存放环境2快照
-# 文件名称
-file_name = ""
-# 快照为空股票列表
-none_list = []
-# 请求异常的股票列表
-exception_list = []
-
-client1_topic = dict()
 
 
-# 定义一个名为thread_run的函数，传入参数为stock_list和item
-def thread_run(stock_list, item):
-    print("推送中....")
-    try:
-        # 解析item中的env1值为url1
-        url1 = "tcp://114.28.169.97:22017"
-        # 创建一个名为client1的mqtt客户端对象，指定客户端ID为quote-check-1，并指定on_message事件处理函数为on_message_1
-        client1 = mqtt.Client("quote-check-1")
-        client1.on_message = on_message_1
-        # 连接到url1所指定的mqtt服务器，并指定连接超时时间为60秒钟
-        client1.connect(url1, 60)
-        # 遍历stock_list中的每个股票代码，并依次向client1订阅其所有相关的主题
-        for k in stock_list:
-            for topic in str(k[:-1]).split(','):
-                client1.subscribe(topic)
-                client1_topic[topic] = ''
-        # 开启一个新线程来处理该mqtt客户端的消息
-        client1.loop_start()
-    except Exception as e:
-        # 遇到异常时将当前文件名加入exception_list中，并抛出异常
-        exception_list.append(file_name)
-        raise
-    # 初始化循环计数器为0
-    cycle_index = 0
-    client1.disconnect()
-
-
-# 定义一个名为on_message_1的事件处理函数，传入参数为client、userdata、msg
-def on_message_1(client, userdata, msg):
-    # 解压缩msg.payload的数据并转换为utf8编码格式
-    data_all = zstd.decompress(msg.payload).decode('utf8')
-    # 若解压缩后的数据小于等于1个，则将该消息的主题和环境信息加入none_list中，并从client1_topic中移除该主题
-    if len(str(data_all).split("\x02")) <= 1:
-        none_str = "代码：" + msg.topic + ",环境：" + str(client._host)
-        none_list.append(none_str)
-        client1_topic.pop(msg.topic, '')
-        return
-    # 定义一个字典结构的变量quote_dict和一个字典结构的变量dataMap
-    quote_dict = {}
-    dataMap = {}
-    # 遍历data_all中的每个数据块，将其按照“=”符号进行拆分并存储到dataMap中
-    for d in str(data_all).split("\x02"):
-        ds = d.split('=')
-        if len(ds) >= 2:
-            dataMap[ds[0]] = ds[1]
-    # 遍历data中的每个数据项
-    for d in data:
-        # 若该数据项的代码不在dataMap中、dataMap中的值为空或者值为''，则将quote_dict中该数据项的值设为空字符串
-        if d[0] not in dataMap or dataMap[d[0]] is None or dataMap[d[0]] == '':
-            quote_dict[d[1]] = ''
-        # 否则，在quote_dict中为该数据项的值解码并存储在quote_dict中
-        elif d[2] == 'Y':
-            quote_dict[d[1]] = decode(dataMap[d[0]])
-        else:
-            quote_dict[d[1]] = dataMap[d[0]]
-    # 将quote_dict加入quote_list1中
-    quote_list1.append(quote_dict)
-    # 取消该主题的订阅，并从client1_topic中移除该主题
-    client.unsubscribe(msg.topic)
-    client1_topic.pop(msg.topic, '')
-
-
-def sort_dict_by_keys(d, reverse=True):
-    # 这里如果不强制转换会报错，因为d.keys()的类型是：<class 'dict_keys'>，没有sort方法
-    keys = list(d.keys())
-    keys.sort(reverse=reverse)
-    return [(key, d[key]) for key in keys]
-
-
-if '__main__' == __name__:
-    # 判断存放路径是否存在
-    if os.path.exists(result_path):
-        pass
+# 读取 YAML 文件获取字段名称（只提取每一行的第一个字段）
+def load_yaml_data(yaml_file):
+    with open(yaml_file, 'r', encoding='gbk') as file:
+        data = yaml.load(file, Loader=yaml.FullLoader)
+    # 确保数据是列表类型，且每个元素是字典
+    if isinstance(data, list):
+        # 提取每个字典的键作为字段名
+        field_names = [list(item.keys())[0] for item in data if isinstance(item, dict)]
+        return field_names
     else:
-        os.makedirs(result_path)
-    # 读取快照字段文件
-    data = quote_yaml(yaml_path)
-    # 读取url文件
-    compare_url = quote_yaml(url_path)
-    # 读取股名表文件夹
-    dirs = os.listdir(stock_path)
-    # 比对环境的url
-    url = None
-    # 输出所有文件和文件夹
-    # for file in dirs:
-    #     file_name = file
-    # print(compare_url.keys())
-    for url_key in compare_url.keys():
-        url = None
-        file = "AllStock_" + url_key + ".txt"
-        file_name = url_key
-        if url_key == "sh":
-            url = compare_url[url_key]
-        # if url_key == "sz":
-        #     url = compare_url[url_key]
-        # if url_key == "bz":
-        #     url = compare_url[url_key]
-        # if url_key == "csi":
-        #     url = compare_url[url_key]
-        # if url_key == "hk":
-        #     url = compare_url[url_key]
-        # if url_key == "shl2":
-        #     url = compare_url[url_key]
-        #     file = "AllStock_sh.txt"
-        # if url_key == "szl2":
-        #     url = compare_url[url_key]
-        #     file = "AllStock_bz.txt"
-        # 存放环境1快照
-        quote_list1 = []
-        # 存放环境2快照
-        quote_list2 = []
-        print("==============================")
-        print(f"市场：{file_name} \n环境1： {url['env1']}\n环境2： {url['env2']}")
+        print("YAML 数据格式错误，期望列表字典格式")
+        return []
 
-        print("==============================")
-        file_path = f'{stock_path}/{file}'
-        interval_stock(file_path, url)
-        time.sleep(10)  # 休眠5秒
-    print("==============================")
-    print("快照为空的股票：")
-    print(none_list)
-    print("请求异常的的市场：")
-    print(exception_list)
 
+# 定义请求头
+headers = {
+    'token': 'MitakeWeb',
+    'symbol': '000001.sh',
+    'Param': '1,13|1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71'
+}
+
+# 获取 YAML 文件中的字段名称
+yaml_file = '../AutoTest/Sse_Auto_script/2024Q4/AddValue.yaml'  # 请替换为实际 YAML 文件路径
+field_names = load_yaml_data(yaml_file)
+
+# 如果没有提取到任何字段，输出错误并退出
+if not field_names:
+    print("未找到字段，无法继续操作")
+    exit()
+
+# 请求接口1
+url1 = 'http://114.28.169.97:22016/v3/quote'
+try:
+    response1 = requests.get(url1, headers=headers)
+    processed_data1 = {}
+    resp_list = response1.text.split("\x03")
+    if resp_list[-1] == '':
+        resp_list.remove('')
+    for m in range(len(resp_list)):
+        split_list = resp_list[m].split("\x02")
+        for n, field_name in zip(split_list, field_names):
+            if "\x01" in n:
+                processed_data1[field_name] = n.split("\x01")
+            else:
+                processed_data1[field_name] = [n]  # 存储当前数据
+    # print("url1 响应内容：", processed_data1)  # 打印响应内容，检查是否为有效的JSON
+except requests.exceptions.JSONDecodeError as e:
+    print(f"URL1 返回的数据不是有效的JSON格式：{e}")
+    processed_data1 = None
+
+# 请求接口2
+url2 = 'http://103.251.85.148:22016/v3/quote'
+try:
+    response2 = requests.get(url2, headers=headers)
+    processed_data2 = {}
+    resp_list = response2.text.split("\x03")
+    if resp_list[-1] == '':
+        resp_list.remove('')
+    for m in range(len(resp_list)):
+        split_list = resp_list[m].split("\x02")
+        for n, field_name in zip(split_list, field_names):
+            if "\x01" in n:
+                processed_data2[field_name] = n.split("\x01")
+            else:
+                processed_data2[field_name] = [n]  # 存储当前数据
+    # print("url2 响应内容：", processed_data2)  # 打印响应内容，检查是否为有效的JSON
+except requests.exceptions.JSONDecodeError as e:
+    print(f"URL2 返回的数据不是有效的JSON格式：{e}")
+    processed_data2 = None
+
+# 比较 processed_data1 和 processed_data2 的一致性
+if processed_data1 and processed_data2:
+    # 找出不一致的字段
+    discrepancies = {}
+    for field_name in processed_data1:
+        if processed_data1.get(field_name) != processed_data2.get(field_name):
+            discrepancies[field_name] = {
+                'url1_value': processed_data1.get(field_name),
+                'url2_value': processed_data2.get(field_name)
+            }
+    
+    if discrepancies:
+        print("接口返回数据不一致的字段：")
+        for field_name, values in discrepancies.items():
+            print(f"字段: {field_name}")
+            print(f"  url1 值: {values['url1_value']}")
+            print(f"  url2 值: {values['url2_value']}")
+    else:
+        print("两个接口的返回数据一致")
+else:
+    print("一个或两个接口的响应数据无效，无法比较")

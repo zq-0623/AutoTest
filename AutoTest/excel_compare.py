@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import os
+
 import pandas as pd
+
 from util.logTool import logger
 
 
@@ -25,9 +27,8 @@ def compare_columns(file1_data, file2_data, file1_column, file2_column):
     return different_results
 
 
-
 def read_file(file_path):
-    _, file_extension = os.path.splitext(file_path)   # '_' 是一个占位符，用于存储 os.path.splitext 返回的文件名和扩展名的元组中的第一个元素
+    _, file_extension = os.path.splitext(file_path)  # '_' 是一个占位符，用于存储 os.path.splitext 返回的文件名和扩展名的元组中的第一个元素
     file_extension = file_extension.lower()
     if file_extension == '.xlsx':
         return pd.read_excel(file_path)
@@ -70,7 +71,7 @@ def main():
         ('MDEntryPx', '最新价')
         # 添加更多列名组合
     ]
-    compare_files_in_folders(folder1,folder2,file_pairs)
+    compare_files_in_folders(folder1, folder2, file_pairs)
 
 
 if __name__ == '__main__':
